@@ -1,12 +1,4 @@
-# Langlands with AI
-
-This is a research repository for **LLM-assisted proof engineering** across three tightly related goals in Langlands program:
-
-1. **Validate + formalize the Gaitsgory(-Raskin et al.) proof of the (categorical, unramified) Geometric Langlands conjecture** (GLC).
-2. **Transfer the proof architecture/techniques to local ℓ-adic Langlands** in the **Fargues–Scholze** setting (ℓ ≠ p) using the attached blueprint (ladicgeom.tex).
-3. **Prototype a parallel path toward p-adic local Langlands** (ℓ = p) using the attached blueprint (padicgeom.tex).
-
-# Langlands-LLM-Lab
+# Langlands Program with AI
 
 A research repository for **LLM-assisted proof engineering** across three tightly related goals:
 
