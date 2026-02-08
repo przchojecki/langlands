@@ -6,6 +6,14 @@ This is a research repository for **LLM-assisted proof engineering** across thre
 2. **Transfer the proof architecture/techniques to local ℓ-adic Langlands** in the **Fargues–Scholze** setting (ℓ ≠ p) using the attached blueprint (ladicgeom.tex).
 3. **Prototype a parallel path toward p-adic local Langlands** (ℓ = p) using the attached blueprint (padicgeom.tex).
 
+# Langlands-LLM-Lab
+
+A research repository for **LLM-assisted proof engineering** across three tightly related goals:
+
+1. **Validate + formalize the Gaitsgory(-Raskin et al.) proof of the (categorical, unramified) Geometric Langlands conjecture** (GLC).
+2. **Transfer the proof architecture/techniques to local ℓ-adic Langlands** in the **Fargues–Scholze** setting (ℓ ≠ p) using the attached blueprint (ladicgeom.tex).
+3. **Prototype a parallel path toward p-adic local Langlands** (ℓ = p) using the attached blueprint (padicgeom.tex).
+
 > **Status:** research / pre-alpha.  
 > **Non-goal:** “LLMs prove Langlands.” The goal is **structured validation, dependency tracking, formalization scaffolding, and human-auditable workflows**.
 
@@ -101,6 +109,39 @@ Main components (as currently formulated in the blueprint):
 
 ---
 
+## Repository layout (suggested)
+
+This project is designed to grow into something like:
+
+.
+├── blueprints/
+│   ├── ladicgeom.tex          # ℓ ≠ p transfer blueprint (Fargues–Scholze track)
+│   └── padicgeom.tex          # ℓ = p conjectural framework blueprint
+├── sources/
+│   ├── glc/                   # bibliographic + retrieval metadata for GLC I–V
+│   └── bib/                   # BibTeX / CSL / citation normalization
+├── atlas/
+│   ├── glc/                   # “proof atlas”: theorem/lemma cards + dependency graph
+│   ├── fs/                    # local ℓ-adic atlas (FS conjecture → subclaims)
+│   └── padic/                 # p-adic conjecture package atlas
+├── formal/
+│   ├── lean/                  # Lean 4 formalization experiments (interface-level first)
+│   └── coq/                   # optional
+├── tools/
+│   ├── tex2claims/            # TeX → structured claims extraction
+│   ├── dedupe/                # “same lemma” detection across papers
+│   ├── citation-check/        # enforce provenance + exact pointers
+│   └── eval/                  # regression tests for LLM outputs
+└── prompts/
+├── extraction.md
+├── normalization.md
+├── formalization.md
+└── redteam.md
+
+If you fork this repo and don’t want the above structure, feel free to simplify — the **core** is the three workstreams.
+
+---
+
 ## How we use LLMs (discipline + guardrails)
 
 ### Provenance-first rule
@@ -140,4 +181,77 @@ If you have TeX installed:
 # from repo root
 latexmk -pdf -interaction=nonstopmode -halt-on-error blueprints/ladicgeom.tex
 latexmk -pdf -interaction=nonstopmode -halt-on-error blueprints/padicgeom.tex
+````
+
+(We recommend `latexmk` to avoid manual reruns.)
+
+---
+
+## Roadmap (high-level)
+
+### Milestone A — GLC proof atlas (Goal 1)
+
+* [ ] Canonical bibliography + download scripts (arXiv + MPIM PDFs)
+* [ ] Claim extraction for GLC I–V (defs/lemmas/thms)
+* [ ] Dependency DAG per paper + merged DAG across the series
+* [ ] “Gap list”: where a lemma uses technology outside the series (and where)
+
+### Milestone B — FS categorical geometrization blueprint → task graph (Goal 2)
+
+* [ ] Convert `ladicgeom.tex` into a machine-readable checklist of claims
+* [ ] Map each claim to a known input (FS, DHKM, etc.) or mark as open
+* [ ] Identify the *local analogs* of GLC proof steps (Whittaker, monadicity, gluing)
+
+### Milestone C — p-adic package stabilization (Goal 3)
+
+* [ ] Turn axioms/conjectures in `padicgeom.tex` into a minimal consistent “package”
+* [ ] Cross-check compatibility with Emerton–Gee–Hellmann expectations
+* [ ] Work out GL₂(Qₚ) test case: what would the conjectural kernel predict?
+
+---
+
+## Contributing
+
+Contributions are welcome in three modes:
+
+1. **Math contributions:**
+
+   * Add a lemma card, dependency edge, or “where-used” annotation.
+   * Provide exact pointers (paper/section/theorem/page).
+
+2. **Engineering contributions:**
+
+   * TeX → structured extraction, citation normalization, tooling.
+   * DAG visualization, regression tests, reproducibility.
+
+3. **Formalization contributions:**
+
+   * Interface lemmas (adjunctions/monads/compact generation).
+   * “Proof skeleton” formalizations that can later be refined.
+
+### Minimal PR standards
+
+* No new claim without a source pointer.
+* No rewritten theorem statement without the original quoted in the PR discussion.
+* If an LLM is used, include the prompt + model/output in the PR (or a link to it).
+
+---
+
+## Disclaimer
+
+This is a research-driven project.
+All mathematical content derived from LLM assistance is **subject to error** and must be independently verified.
+Nothing here should be treated as a substitute for the original sources or expert review.
+
+---
+
+## License
+
+Recommended: dual-license
+
+* code under **MIT** or **Apache-2.0**
+* notes/blueprints under **CC-BY 4.0** (unless you prefer a different arrangement)
+
+(Choose what matches your intended usage and attribution preferences.)
+
 
