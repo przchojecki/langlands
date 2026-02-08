@@ -1,0 +1,853 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+% ---------- Theorem environments ----------
+\theoremstyle{definition}
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{question}[conjecture]{Question}
+\newtheorem{definition}[conjecture]{Definition}
+\newtheorem{axiom}[conjecture]{Axiom}
+
+\theoremstyle{remark}
+\newtheorem{remark}[conjecture]{Remark}
+\newtheorem{example}[conjecture]{Example}
+
+\theoremstyle{plain}
+\newtheorem{proposition}[conjecture]{Proposition}
+\newtheorem{corollary}[conjecture]{Corollary}
+
+
+% ---------- Macros ----------
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Qp}{\mathbb{Q}_p}
+\newcommand{\Zp}{\mathbb{Z}_p}
+\newcommand{\Fp}{\mathbb{F}_p}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\GG}{\mathbb{G}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\Bun}{\mathrm{Bun}}
+\newcommand{\Mod}{\mathrm{Mod}}
+\newcommand{\IndCoh}{\mathrm{IndCoh}}
+\newcommand{\LocSys}{\mathrm{LocSys}}
+\newcommand{\Coh}{\mathrm{Coh}}
+\newcommand{\Perf}{\mathrm{Perf}}
+\newcommand{\QCoh}{\mathrm{QCoh}}
+\newcommand{\Shv}{\mathrm{Shv}}
+\newcommand{\Hecke}{\mathrm{Hecke}}
+\newcommand{\Loc}{\mathrm{Loc}}
+\newcommand{\Spec}{\mathrm{Spec}}
+\newcommand{\Spf}{\mathrm{Spf}}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Lie}{\mathrm{Lie}}
+\newcommand{\Rep}{\mathrm{Rep}}
+\newcommand{\Gal}{\mathrm{Gal}}
+\newcommand{\WF}{W_F}
+\newcommand{\ot}{\otimes}
+\newcommand{\wh}{\widehat}
+\newcommand{\checkG}{\check G}
+\newcommand{\ad}{\mathrm{ad}}
+
+\title{Toward a Geometric p-adic Langlands Program (draft)}
+\author{Przemyslaw Chojecki}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose a geometric framework for the $p$-adic Langlands program inspired by the architecture of the original geometric Langlands program as developed by Gaitsgory and collaborators. The intended picture is an automorphic category of $p$-adic sheaves on the stack of $G$-bundles on the Fargues--Fontaine curve, equipped with Hecke and parabolic functors, together with a spectral category of (ind-)coherent sheaves on a derived Emerton--Gee parameter stack of $p$-adic Galois representations. The core conjecture is an equivalence (or, in a minimal form, a fully faithful localization) intertwining a spectral Hecke action. We formulate axioms, propose a kernel formalism, and indicate how patching and completed cohomology should enter as geometric input producing the expected ``universal eigensheaf'' kernel.
+\end{abstract}
+
+\section{Introduction}
+
+The (classical) local Langlands correspondence has a well-established geometric avatar for $\ell\neq p$ via the Fargues--Scholze program: $\ell$-adic sheaves on $\Bun_G$ for the Fargues--Fontaine curve organize smooth representations of $G(E)$ and admit a spectral action by perfect complexes on a stack of $L$-parameters, governed by geometric Satake and Hecke correspondences \cite{FSGeometrization}.
+
+The goal of this note is to outline a \emph{geometric} approach to the \emph{$\ell=p$} or $p$-adic Langlands program that parallels the \emph{structural} features of the original geometric Langlands program (as in Gaitsgory's programmatic and proof-oriented accounts \cite{GaitsgoryOutline,GRMultone}):
+\begin{itemize}[leftmargin=2em]
+  \item build an automorphic category as a sheaf theory on a moduli stack of $G$-bundles (now on the Fargues--Fontaine curve),
+  \item produce a spectral action via Hecke operators/Satake,
+  \item identify the spectral side with coherent/ind-coherent sheaves on a parameter stack of Galois representations (now the derived Emerton--Gee stack),
+  \item impose a microlocal/singular-support condition that cuts the spectral side to the correct subcategory,
+  \item use parabolic functors (Eisenstein/constant term) and stratifications to glue and prove the equivalence.
+\end{itemize}
+
+A key difference at $\ell=p$ is that the coefficient theory on diamonds/v-stacks is delicate. We therefore formulate the framework as a package of axioms and conjectures, guided by: (i) the categorical $p$-adic Langlands program of Emerton--Gee--Hellmann \cite{EGHStacks}, (ii) derived and geometric foundations for Emerton--Gee stacks (Min) \cite{MinEGGeneral}, (iii) emerging $p$-adic six-functor formalisms on v-stacks (Ansch\"utz--Le~Bras--Mann) \cite{ALMSixOps}, and (iv) analytic enhancements via overconvergent $(\varphi,\Gamma)$-modules in families (Porat) \cite{PoratOverconv}.
+
+The conjectural framework proposed in this note is already completely compatible with the two cases in which
+$p$-adic local Langlands is best understood.
+First, for $G=\GG_m$ (and more generally for tori), the derived Emerton--Gee parameter stack is explicitly the
+moduli stack of continuous characters, so the corresponding spectral category is a (derived) category of modules
+over commutative Iwasawa-type deformation rings; in particular, the ``minimal'' categorical correspondence reduces
+to local class field theory and commutative algebra \cite{EGEtalePhiGamma,PhamRankOneEG,SerreLocalFields}.
+Second, for $G=\GL_2(\Qp)$ the classical $p$-adic local Langlands correspondence is known
+\cite{CDPpadicLL}, and moreover Johansson, Newton, and Wang-Erickson construct a categorical formulation as a
+fully faithful embedding of a derived category of locally admissible $\GL_2(\Qp)$-representations into
+$\IndCoh$ on the Emerton--Gee stack, together with a local--global compatibility formula relating this embedding
+to the cohomology of modular curves \cite{JNWErickson}.
+We view these two cases as rigidity tests for the general conjectures and as a guide for what remains missing at
+$\ell=p$: namely a sheaf-theoretic automorphic category on $\Bun_G$ with $p$-adic coefficients, together with
+Hecke and parabolic functors at $\ell=p$.
+
+
+\subsection*{Scope and philosophy}
+This note is intentionally speculative and synthetic. It does \emph{not} attempt to prove foundational results (existence of the relevant sheaf categories, finiteness, proper base change, etc.), but rather aims to present a coherent conjectural package and a roadmap for how existing tools could be assembled into a geometric $\ell=p$ Langlands machine.
+
+\section{Geometric objects: \texorpdfstring{$\Bun_G$}{BunG} and the Emerton--Gee stack}
+
+\subsection{The automorphic stack \texorpdfstring{$\Bun_G$}{BunG} on the Fargues--Fontaine curve}
+Let $E/\Qp$ be a finite extension and let $G/E$ be a connected reductive group. For a perfectoid base $S$ (or a suitable v-stack), one has the relative Fargues--Fontaine curve $X_{S,E}$. The v-stack
+\[
+  \Bun_G := \Bun_G(X_{-/E})
+\]
+classifies $G$-bundles on $X_{S,E}$ in families. It admits a stratification by the Kottwitz set $B(G)$ and its Harder--Narasimhan theory; in particular, each stratum $\Bun_G^b$ is closely related to the group $J_b(E)$ of self-quasi-isogenies attached to $b\in B(G)$, and for $b=1$ one recovers a stratum related to $G(E)$ itself (as in the $\ell\neq p$ geometrization of smooth representations).
+
+\subsection{The spectral parameter stack at \texorpdfstring{$\ell=p$}{l=p}}
+For $\ell\neq p$ the ``spectral stack'' may be taken to be a moduli of Weil--Deligne or Langlands parameters (e.g.\ the DHKM moduli \cite{DHKM}). For $\ell=p$, the spectral object should parameterize $p$-adic Galois representations in families.
+
+\begin{definition}[Derived Emerton--Gee stack (informal)]
+Let $\mathfrak X_{\checkG}^{\mathrm{EG}}$ denote a derived stack which, on appropriate test rings, classifies $\checkG$-valued $p$-adic Galois representations (or equivalently $\checkG$-structured prismatic/Laurent $F$-crystals or $(\varphi,\Gamma)$-modules), in the sense of the Emerton--Gee program. We view $\mathfrak X_{\checkG}^{\mathrm{EG}}$ as the $\ell=p$ analog of $\LocSys_{\checkG}$ in geometric Langlands.
+\end{definition}
+
+Min constructs derived enhancements and proves ``classicality'' results supporting the usability of $\mathfrak X_{\checkG}^{\mathrm{EG}}$ for coherent and ind-coherent sheaf theory \cite{MinEGGeneral}. (See also earlier work in the $\GL_d$ setting in the Emerton--Gee--Hellmann circle \cite{EGHStacks}.)
+
+\section{Automorphic categories at \texorpdfstring{$\ell=p$}{l=p}: candidate coefficient theories}
+
+\subsection{Motivation}
+For $\ell\neq p$, Fargues--Scholze take $\ell$-adic constructible sheaves on $\Bun_G$ and develop a Hecke/Satake formalism yielding a spectral action \cite{FSGeometrization}. At $\ell=p$, one cannot simply repeat the same construction with naive $p$-adic \'etale coefficients on diamonds; foundational replacements are needed.
+
+\subsection{A candidate: \texorpdfstring{$\Zp$}{Zp}-linear six operations on v-stacks}
+Ansch\"utz--Le~Bras--Mann develop a $\Zp$-linear six-functor formalism on small v-stacks \cite{ALMSixOps}. We take this as strong evidence that an appropriate automorphic category
+\[
+  \cA_G^{(p)} \simeq \cD_{[0,\infty)}(\Bun_G;\OO)
+\]
+should exist (perhaps after restricting to a constructible/compact subcategory) with:
+\begin{itemize}[leftmargin=2em]
+  \item pullback/pushforward (proper, etc.), tensor products, internal Homs,
+  \item Verdier duality and adjunctions,
+  \item base change and projection formulas under reasonable hypotheses.
+\end{itemize}
+
+\begin{axiom}[Automorphic $p$-adic sheaf category]\label{ax:automorphiccat}
+There exists a stable presentable $\OO$-linear $\infty$-category $\cA_G^{(p)}$ attached to $\Bun_G$ with a six-functor formalism sufficient to define Hecke operators and parabolic functors (Eisenstein/constant term).
+\end{axiom}
+
+\begin{remark}
+One may choose $\OO=\Zp$ (integral) and later invert $p$ to obtain $\Qp$-linear categories, or work over a finite extension $\OO=\OO_L$.
+\end{remark}
+
+\section{Hecke correspondences and the spectral action}
+
+\subsection{Template from \texorpdfstring{$\ell\neq p$}{l≠p}}
+In the $\ell\neq p$ geometrization, Hecke correspondences on $\Bun_G$ and the $B_{\mathrm{dR}}$-affine Grassmannian yield a geometric Satake equivalence and produce an action of $\Perf$ on a parameter stack of $L$-parameters \cite{FSGeometrization}. For our purposes, we treat that as a \emph{pattern}:
+\begin{center}
+\emph{Hecke correspondences} $\Longrightarrow$ \emph{Satake} $\Longrightarrow$ \emph{spectral monoidal action}.
+\end{center}
+
+\subsection{Axioms for the \texorpdfstring{$\ell=p$}{l=p} spectral action}
+We postulate:
+
+\begin{axiom}[Hecke/Satake at $\ell=p$]\label{ax:satake}
+The automorphic category $\cA_G^{(p)}$ admits Hecke functors indexed by representations of $\checkG$, compatible with convolution, and satisfying a Satake-type formalism sufficient to define a monoidal action of a ``spherical Hecke category'' on $\cA_G^{(p)}$.
+\end{axiom}
+
+\begin{axiom}[Spectral action]\label{ax:spectralaction}
+There is a canonical monoidal action
+\[
+  \Perf\big(\mathfrak X_{\checkG}^{\mathrm{EG}}\big)\ \curvearrowright\ \cA_G^{(p)}
+\]
+such that, under decategorification, it recovers the expected (commutative) spherical Hecke action on appropriate Grothendieck groups / cohomology.
+\end{axiom}
+
+\begin{remark}
+A key constraint (mirroring Gaitsgory's method) is that the spectral side should not merely parameterize ``eigenvalues'' but should act as a monoidal category on the automorphic category. This ``spectral action'' is the main structural bridge between the two sides \cite{GaitsgoryOutline,GRMultone}.
+\end{remark}
+
+\section{Main conjectures: minimal and strong forms}
+
+\subsection{The minimal form: categorical \texorpdfstring{$p$}{p}-adic local Langlands as localization}
+Emerton--Gee--Hellmann propose a categorical $p$-adic local Langlands framework producing a fully faithful functor from a derived category of $p$-adic representations to coherent sheaves on a parameter stack, with compatibility with duality and Hodge-theoretic loci \cite{EGHStacks}. We package this as:
+
+\begin{conjecture}[Minimal categorical $p$-adic Langlands (localization)]\label{conj:minimal}
+There exists a stable $\OO$-linear functor
+\[
+  \mathbb A:\ \cD_{\mathrm{rep}}(G(E))\ \longrightarrow\ \IndCoh\big(\mathfrak X_{\checkG}^{\mathrm{EG}}\big)
+\]
+such that:
+\begin{enumerate}[label=(\alph*), leftmargin=2em]
+  \item (\emph{Fully faithful}) $\mathbb A$ is fully faithful on a natural subcategory of ``finite type'' objects (e.g.\ derived locally admissible unitary Banach representations, or compact $\OO[[G(E)]]$-modules).
+  \item (\emph{Duality}) $\mathbb A$ intertwines natural dualities on both sides (Pontryagin/Schneider--Teitelbaum-type dualities vs Grothendieck duality).
+  \item (\emph{Hodge support}) Formation of locally algebraic vectors corresponds to restriction to potentially crystalline (or potentially semistable) loci in $\mathfrak X_{\checkG}^{\mathrm{EG}}$.
+\end{enumerate}
+\end{conjecture}
+
+\begin{remark}
+In the $\GL_2(\Qp)$ case, a closely related fully faithful embedding into $\IndCoh$ on a Galois moduli stack has been established, together with a local--global compatibility statement \cite{JNWErickson}.
+\end{remark}
+
+\subsection{The strong form: geometric \texorpdfstring{$\ell=p$}{l=p} local Langlands on \texorpdfstring{$\Bun_G$}{BunG}}
+We now state the Gaitsgory-shaped conjecture, which upgrades Conjecture~\ref{conj:minimal} by placing the automorphic category on $\Bun_G$.
+
+\begin{definition}[Singular-support condition (placeholder)]
+Let $\cN_p$ denote a (conjectural) closed conical subset of the ``singular/cotangent'' geometry of $\mathfrak X_{\checkG}^{\mathrm{EG}}$ (in the sense of ind-coherent sheaves), intended as the $\ell=p$ analog of the nilpotent/Arthur singular support condition in (derived) geometric Langlands.
+We write $\IndCoh_{\cN_p}(\mathfrak X_{\checkG}^{\mathrm{EG}})$ for the corresponding full subcategory.
+\end{definition}
+
+\begin{conjecture}[Geometric $p$-adic Langlands equivalence]\label{conj:strong}
+There exists an equivalence of stable $\OO$-linear $\infty$-categories
+\[
+  \cA_G^{(p)}\ \simeq\ \IndCoh_{\cN_p}\big(\mathfrak X_{\checkG}^{\mathrm{EG}}\big),
+\]
+intertwining:
+\begin{itemize}[leftmargin=2em]
+  \item the spectral action of $\Perf(\mathfrak X_{\checkG}^{\mathrm{EG}})$ on $\cA_G^{(p)}$ (Axiom~\ref{ax:spectralaction}),
+  \item the tautological action of $\Perf$ on $\IndCoh_{\cN_p}$ by tensor product.
+\end{itemize}
+\end{conjecture}
+
+\begin{remark}[Why a support condition?]
+Even in classical geometric Langlands, the spectral side is typically $\IndCoh_{\mathrm{Nilp}}(\LocSys_{\checkG})$ rather than $\QCoh(\LocSys_{\checkG})$; the support condition encodes the ``Arthur parameter'' direction and is forced by compatibility with Eisenstein series and singularities. In the $\ell=p$ setting, the correct analog is not yet clear; see \S\ref{sec:microlocal}.
+\end{remark}
+
+\section{A kernel formalism (integral transform viewpoint)}
+
+A Gaitsgory-style way to state (and eventually \emph{prove}) Conjecture~\ref{conj:strong} is by producing a universal kernel object.
+
+\begin{conjecture}[Universal $p$-adic eigensheaf kernel]\label{conj:kernel}
+There exists an object (a ``universal eigensheaf'')
+\[
+  \cK\ \in\ \cA_G^{(p)}\ \widehat\ot\ \IndCoh\big(\mathfrak X_{\checkG}^{\mathrm{EG}}\big)
+\]
+with the following properties:
+\begin{enumerate}[label=(\roman*), leftmargin=2em]
+  \item (\emph{Hecke eigensheaf}) For every $V\in\Rep(\checkG)$, the Hecke functor $H_V$ on $\cA_G^{(p)}$ satisfies
+  \[
+    H_V(\cK)\ \simeq\ \cK\otimes \mathcal V
+  \]
+  where $\mathcal V$ is the vector bundle on $\mathfrak X_{\checkG}^{\mathrm{EG}}$ associated with $V$.
+  \item (\emph{Integral transform}) The functor
+  \[
+    \Phi_{\cK}:\ \cA_G^{(p)}\ \to\ \IndCoh\big(\mathfrak X_{\checkG}^{\mathrm{EG}}\big),\qquad
+    \mathcal F\ \mapsto\ p_{2,*}(p_1^*\mathcal F\otimes \cK)
+  \]
+  lands in $\IndCoh_{\cN_p}$ and induces an equivalence as in Conjecture~\ref{conj:strong}.
+  \item (\emph{Duality}) $\Phi_{\cK}$ intertwines Verdier duality on $\cA_G^{(p)}$ with Grothendieck duality on $\IndCoh$.
+\end{enumerate}
+\end{conjecture}
+
+\begin{remark}
+Conjecture~\ref{conj:kernel} packages the geometric content into a single object $\cK$ on $\Bun_G\times \mathfrak X_{\checkG}^{\mathrm{EG}}$. Once such a kernel exists with the Hecke-eigen property, many structural statements become formal.
+\end{remark}
+
+\section{Strata, fibers, and representation-theoretic meanings}
+
+\subsection{Harder--Narasimhan strata and groups \texorpdfstring{$J_b(E)$}{Jb(E)}}
+The stack $\Bun_G$ admits a stratification by $b\in B(G)$, with strata heuristically of the form $\Bun_G^b\simeq [*/J_b(E)]$ (in the same sense used in the $\ell\neq p$ geometrization).
+
+\begin{conjecture}[Fibers over strata]\label{conj:strata}
+For each $b\in B(G)$, restriction of $\cA_G^{(p)}$ to $\Bun_G^b$ identifies with a derived category of $p$-adic representations of $J_b(E)$:
+\[
+  \cA_G^{(p)}\big|_{\Bun_G^b}\ \simeq\ \cD_{\mathrm{rep}}\big(J_b(E)\big).
+\]
+In particular, for $b=1$ this recovers the (derived) category relevant for local $p$-adic Langlands of $G(E)$.
+\end{conjecture}
+
+\begin{remark}
+Conjecture~\ref{conj:strata} is the mechanism by which the global geometry of $\Bun_G$ ``contains'' the local representation theory. In the $\ell\neq p$ world, this is a theorem in the Fargues--Scholze framework; at $\ell=p$, it becomes a guiding constraint on what the correct coefficient theory must accomplish.
+\end{remark}
+
+\subsection{Recovering the EGH localization}
+Assuming Conjecture~\ref{conj:strong} and Conjecture~\ref{conj:strata}, one expects Conjecture~\ref{conj:minimal} by restricting the kernel $\cK$ to the basic stratum $b=1$ and evaluating the integral transform on a ``tautological'' object representing a representation of $G(E)$.
+
+\section{Parabolic functors, Eisenstein series, and gluing}
+
+One of the key technical pillars in Gaitsgory's approach to geometric Langlands is the use of parabolic induction and constant term functors to glue categories and control adjunctions \cite{GRMultone}. In the Fargues--Fontaine setting at $\ell\neq p$, geometric Eisenstein series and constant term functors have been developed and shown to satisfy strong finiteness and adjointness properties \cite{HHSGeometricEis}.
+
+\subsection{Axioms for parabolic functors at \texorpdfstring{$\ell=p$}{l=p}}
+Let $P\subset G$ be a parabolic with Levi $M$. Write $\Bun_P$ and $\Bun_M$ for the corresponding moduli on the Fargues--Fontaine curve, with the usual maps
+\[
+  \Bun_M \xleftarrow{q} \Bun_P \xrightarrow{p} \Bun_G.
+\]
+
+\begin{axiom}[Eisenstein and constant term]\label{ax:eis}
+There exist functors
+\[
+  \mathrm{Eis}_P := p_* q^!:\ \cA_M^{(p)}\to \cA_G^{(p)},
+  \qquad
+  \mathrm{CT}_P := q_* p^!:\ \cA_G^{(p)}\to \cA_M^{(p)},
+\]
+satisfying expected adjunctions, compatibilities with Hecke functors, and finiteness conditions (compactness preservation on appropriate subcategories).
+\end{axiom}
+
+\subsection{Spectral gluing}
+In geometric Langlands, the parabolic formalism implies that the automorphic category is glued from Levi pieces and that the spectral side must carry a corresponding gluing decomposition, forcing singular support conditions (nilpotent/Arthur).
+
+\begin{conjecture}[Spectral gluing criterion]\label{conj:spectralgluing}
+The subcategory $\IndCoh_{\cN_p}(\mathfrak X_{\checkG}^{\mathrm{EG}})$ is characterized as the \emph{largest} subcategory of $\IndCoh(\mathfrak X_{\checkG}^{\mathrm{EG}})$ for which the Eisenstein/constant term formalism matches that on $\cA_G^{(p)}$ under Conjecture~\ref{conj:strong}. Equivalently, $\cN_p$ is forced by compatibility with parabolic induction and the resulting gluing.
+\end{conjecture}
+
+\section{Patching, completed cohomology, and the geometric origin of the kernel}
+
+The intended geometric approach should incorporate patching and completed cohomology as the \emph{global-to-local engine} that produces the kernel $\cK$ (Conjecture~\ref{conj:kernel}). The philosophy is:
+
+\begin{center}
+\emph{patched cohomology complexes} $\Longrightarrow$ \emph{families over deformation/parameter rings} $\Longrightarrow$ \emph{coherent sheaves on $\mathfrak X_{\checkG}^{\mathrm{EG}}$} $\Longrightarrow$ \emph{kernel on $\Bun_G\times \mathfrak X_{\checkG}^{\mathrm{EG}}$}.
+\end{center}
+
+\subsection{A toy formulation}
+Let $\mathcal M_\infty$ denote a patched complex (global input), equipped with commuting actions of a $p$-adic group (local input) and a deformation ring (Galois input). The deformation ring should correspond to functions on a formal neighborhood in $\mathfrak X_{\checkG}^{\mathrm{EG}}$. The patched complex thus yields a coherent sheaf (or IndCoh object) on $\mathfrak X_{\checkG}^{\mathrm{EG}}$ equipped with additional symmetries. The conjectural step is to ``geometrize'' the $p$-adic group action as an object on $\Bun_G$ with the correct Hecke-eigen property.
+
+\begin{question}[Geometric avatar of patching]
+Can one construct $\cK$ by interpreting patched complexes as global sections of an object on $\Bun_G\times \mathfrak X_{\checkG}^{\mathrm{EG}}$, with Hecke eigensheaf structure induced by the universal Galois parameter?
+\end{question}
+
+\section{The case \texorpdfstring{$G=\GL_2(\Qp)$}{G=GL2(Qp)} and evidence}
+
+For $G=\GL_2(\Qp)$, categorical approaches exhibit the expected shape: a derived category of representations embeds into ind-coherent sheaves on a moduli stack of $2$-dimensional Galois representations, and local--global compatibility is proved in a form compatible with the geometric expectation \cite{JNWErickson}. This provides:
+\begin{itemize}[leftmargin=2em]
+  \item evidence for Conjecture~\ref{conj:minimal} (fully faithful localization),
+  \item a testbed for defining/guessing $\cN_p$ via Hodge loci and trianguline geometry,
+  \item a guide for how global geometry produces kernels (via modular curves and their towers).
+\end{itemize}
+
+\section{Microlocal geometry at \texorpdfstring{$\ell=p$}{l=p}}\label{sec:microlocal}
+
+A major conceptual gap is the definition of the correct support condition $\cN_p$ on $\IndCoh(\mathfrak X_{\checkG}^{\mathrm{EG}})$. We list plausible constraints and options.
+
+\subsection{Constraints from Hodge theory}
+The Emerton--Gee--Hellmann framework demands a compatibility between ``locally algebraic vectors'' and potentially crystalline/potentially semistable loci \cite{EGHStacks}. This suggests that $\cN_p$ should behave well under restriction to Hodge-type substacks:
+\[
+  \mathfrak X_{\checkG}^{\mathrm{pst}} \subset \mathfrak X_{\checkG}^{\mathrm{EG}},\qquad
+  \mathfrak X_{\checkG}^{\mathrm{cris}} \subset \mathfrak X_{\checkG}^{\mathrm{pst}},
+\]
+and that $\IndCoh_{\cN_p}$ should restrict to a category reflecting monodromy constraints (``nilpotent $N$'') on the potentially semistable side.
+
+\subsection{Constraints from parabolic gluing}
+Conjecture~\ref{conj:spectralgluing} suggests $\cN_p$ is forced by compatibility with Eisenstein/constant term, i.e.\ by requiring that spectral parabolic induction matches automorphic parabolic induction. This mirrors the role of nilpotent singular support in classical geometric Langlands.
+
+\subsection{An analytic enhancement via overconvergence}
+Porat constructs an overconvergence map from the rigid fiber of Emerton--Gee stacks to analytic stacks of $(\varphi,\Gamma)$-modules \cite{PoratOverconv}. This suggests an analytic version of $\cN_p$ might be described more transparently on the analytic/Robba side (e.g.\ via trianguline loci), and then pulled back to $\mathfrak X_{\checkG}^{\mathrm{EG}}$.
+
+\begin{question}[Defining $\cN_p$]
+Is $\cN_p$ describable in terms of:
+\begin{itemize}[leftmargin=2em]
+  \item a ``Sen operator'' direction in the cotangent theory of $\mathfrak X_{\checkG}^{\mathrm{EG}}$,
+  \item nilpotence/monodromy conditions on the potentially semistable locus,
+  \item or an ``Arthur parameter'' enhancement of $\mathfrak X_{\checkG}^{\mathrm{EG}}$ that makes $\cN_p$ become an honest nilpotent cone?
+\end{itemize}
+\end{question}
+
+\section{Summary of the proposed package (axioms and conjectures)}
+
+For convenience, we collect the key statements:
+
+\begin{itemize}[leftmargin=2em]
+  \item Existence of an automorphic $\ell=p$ category $\cA_G^{(p)}$ on $\Bun_G$ with six operations (Axiom~\ref{ax:automorphiccat}).
+  \item Hecke/Satake formalism at $\ell=p$ (Axiom~\ref{ax:satake}).
+  \item A spectral action of $\Perf(\mathfrak X_{\checkG}^{\mathrm{EG}})$ on $\cA_G^{(p)}$ (Axiom~\ref{ax:spectralaction}).
+  \item A minimal fully faithful localization of the representation category into $\IndCoh(\mathfrak X_{\checkG}^{\mathrm{EG}})$ (Conjecture~\ref{conj:minimal}).
+  \item A strong equivalence $\cA_G^{(p)}\simeq \IndCoh_{\cN_p}(\mathfrak X_{\checkG}^{\mathrm{EG}})$ (Conjecture~\ref{conj:strong}).
+  \item A universal kernel eigensheaf $\cK$ inducing the equivalence (Conjecture~\ref{conj:kernel}).
+  \item Parabolic functors and spectral gluing forcing the support condition $\cN_p$ (Axiom~\ref{ax:eis}, Conjecture~\ref{conj:spectralgluing}).
+\end{itemize}
+
+\section{Translating the proof strategy of Gaitsgory and Raskin to the \texorpdfstring{$\ell=p$}{l=p} setting}\label{sec:GRtransfer}
+
+This section explains how the proof strategy of Gaitsgory and Raskin for the geometric Langlands conjecture can be transported, at the level of \emph{structure and method}, to the mixed characteristic setting of the Fargues--Fontaine curve with $\ell=p$ coefficients. We separate what is already available, what appears genuinely missing, and what one should gain from a successful transfer.
+
+\subsection{A schematic outline of the characteristic zero proof strategy}
+
+We first recall a high-level and somewhat idealized structure of the proof of the geometric Langlands conjecture in characteristic zero. The purpose is to isolate the steps that are formal once the correct categories and functors exist, and to identify the steps that require additional geometric input.
+
+\begin{enumerate}[label=\arabic*. , leftmargin=2em]
+  \item \textbf{Correct spectral category via singular support.}
+  The naive spectral category $\QCoh(\LocSys_{\checkG})$ is replaced by an ind-coherent category with a singular support condition. The foundational input is the theory of singular support for ind-coherent sheaves on quasi-smooth derived stacks and the nilpotent cone condition \cite{AGSingSupp}. This modification is forced by compatibility with Eisenstein series and is not a technicality: it is a conceptual correction.
+
+  \item \textbf{Construction of the geometric Langlands functor.}
+  One constructs a functor from the automorphic category (sheaves or differential operators on $\Bun_G$) to the spectral category, designed to be compatible with the Hecke action and to satisfy natural structural constraints. This is carried out in detail by Gaitsgory and Raskin \cite{GRProofI}. In the kernel formalism, one may view this functor as an integral transform induced by a universal Hecke eigensheaf.
+
+  \item \textbf{Compatibility with Hecke operators and parabolic functors.}
+  The functor is constructed to intertwine Hecke operators, and it must also be compatible with Eisenstein and constant term functors for all parabolic subgroups. The nilpotent singular support condition is precisely what makes such compatibilities possible in a robust way \cite{AGSingSupp}.
+
+  \item \textbf{Adjointness and ambidexterity.}
+  A decisive technical step is to show that the relevant functors admit both left and right adjoints and that these adjoints match in a precise sense. This is formulated and proved as an \emph{ambidexterity} theorem in the proof series \cite{GRProofIV}. Once ambidexterity holds, one can apply monadic methods (for example, Barr--Beck type arguments) to reduce equivalence statements to explicit verification on generators.
+
+  \item \textbf{Multiplicity one and control of the cuspidal part.}
+  The proof uses a strong uniqueness statement, a multiplicity one theorem, to control the cuspidal subcategory and to establish full faithfulness in the hardest range \cite{GRProofV}. In practice, this step identifies the relevant fibers of the functor and prevents unexpected extensions.
+
+  \item \textbf{Gluing from Levi subgroups.}
+  The category is reconstructed from Levi pieces using Eisenstein series and constant term functors, and the spectral category is glued in parallel. This gluing is a central theme in the geometric approach, and it turns many global statements into inductive statements on Levi subgroups.
+
+  \item \textbf{Uniform formulation for multiple sheaf theories.}
+  The introduction of the stack of local systems with restricted variation provides a formulation of geometric Langlands that is compatible with a broad class of constructible sheaf theories \cite{AGKRRVRestrictedVariation}. This is important conceptually: it isolates which parts of the argument depend on the coefficient theory and which parts are geometric.
+\end{enumerate}
+
+\subsection{A translation dictionary for the Fargues--Fontaine curve and \texorpdfstring{$\ell=p$}{l=p}}
+
+We now explain the expected replacements for the objects that enter the proof strategy above.
+
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{The curve and the automorphic stack.}
+  Replace a smooth projective curve over a field by the relative Fargues--Fontaine curve, and replace $\Bun_G$ of the curve by the v-stack $\Bun_G$ of $G$-bundles on the Fargues--Fontaine curve.
+
+  \item \textbf{Automorphic category.}
+  Replace the automorphic category of differential operators or constructible sheaves by a $\Zp$-linear (or $\OO$-linear) sheaf theory on v-stacks. A candidate formalism is provided by Ansch\"utz, Le~Bras, and Mann \cite{ALMSixOps}. The guiding expectation is a stable presentable category $\cA_G^{(p)}$ satisfying the six operations, duality, and finiteness statements needed to define Hecke and parabolic functors.
+
+  \item \textbf{Spectral stack at $\ell=p$.}
+  Replace $\LocSys_{\checkG}$ by the derived Emerton--Gee stack $\mathfrak X_{\checkG}^{\mathrm{EG}}$ of $\checkG$-valued $p$-adic Galois representations in families, using derived enhancements and geometric foundations developed by Min \cite{MinEGGeneral}.
+
+  \item \textbf{Spectral category and support condition.}
+  Replace $\IndCoh_{\mathrm{Nilp}}(\LocSys_{\checkG})$ by $\IndCoh_{\cN_p}(\mathfrak X_{\checkG}^{\mathrm{EG}})$, where $\cN_p$ is the conjectural $\ell=p$ analog of the nilpotent singular support condition. In the transfer, $\cN_p$ should be \emph{forced} by compatibility with Eisenstein series, as in \cite{AGSingSupp}.
+
+  \item \textbf{Hecke operators and Satake.}
+  Replace the classical affine Grassmannian by the $B_{\mathrm{dR}}$-affine Grassmannian and its Hecke correspondences. For $\ell\neq p$, Fargues and Scholze construct the corresponding geometric Satake and spectral action \cite{FSGeometrization}. At $\ell=p$, one expects an analogous construction inside the $\Zp$-linear sheaf theory on v-stacks.
+
+  \item \textbf{Parabolic functors.}
+  Replace the standard Eisenstein and constant term functors on $\Bun_G$ by their mixed characteristic analogs on the Fargues--Fontaine $\Bun_G$. For $\ell\neq p$, Hamann, Hansen, and Scholze develop geometric Eisenstein series and constant term functors on $\Bun_G$ with strong finiteness and adjointness properties \cite{HHSGeometricEis}. At $\ell=p$, this remains a major missing input.
+\end{itemize}
+
+\subsection{What is already available for the transfer}
+
+Several components of the characteristic zero proof strategy already have close analogs in the mixed characteristic geometry, at least for coefficients prime to $p$, and some foundations exist at $\ell=p$.
+
+\begin{enumerate}[label=\arabic*. , leftmargin=2em]
+  \item \textbf{A complete blueprint for $\ell\neq p$.}
+  The work of Fargues and Scholze provides the automorphic category on $\Bun_G$ with $\ell$-adic coefficients and constructs the Hecke theory, geometric Satake, and a spectral action for $\ell\neq p$ \cite{FSGeometrization}. This is a direct model for what should exist at $\ell=p$.
+
+  \item \textbf{Parabolic functors for $\ell\neq p$.}
+  Geometric Eisenstein series and constant term functors on $\Bun_G$ on the Fargues--Fontaine curve have been developed with strong structural properties \cite{HHSGeometricEis}. This is precisely the sort of parabolic formalism needed for the gluing arguments in the proof strategy.
+
+  \item \textbf{A plausible $\ell=p$ sheaf theory.}
+  Ansch\"utz, Le~Bras, and Mann construct a $\Zp$-linear six operation formalism on small v-stacks \cite{ALMSixOps}. While not yet a complete $\ell=p$ Langlands package on $\Bun_G$, it is a serious candidate for the coefficient theory required in Axiom~\ref{ax:automorphiccat}.
+
+  \item \textbf{A robust spectral parameter stack at $\ell=p$.}
+  Derived enhancements of Emerton--Gee stacks and foundational geometric properties (including classicality statements) have been established by Min \cite{MinEGGeneral}. This provides a credible target for coherent and ind-coherent sheaf theory.
+
+  \item \textbf{Test cases in rank two.}
+  For $\GL_2(\Qp)$, there is now substantial evidence for a categorical $p$-adic Langlands picture landing in ind-coherent sheaves on a moduli of Galois representations, including a local--global compatibility statement \cite{JNWErickson}. This serves as a laboratory for the kernel and support conditions.
+\end{enumerate}
+
+\subsection{What is missing for a literal \texorpdfstring{$\ell=p$}{l=p} transfer of the proof}
+
+The following list is our current best approximation to the \emph{minimal} set of missing ingredients needed to replicate the structure of the characteristic zero proof in the $\ell=p$ setting.
+
+\begin{enumerate}[label=\arabic*. , leftmargin=2em]
+  \item \textbf{An automorphic category on $\Bun_G$ with all required finiteness and duality.}
+  The six operation formalism must extend to the particular geometry of $\Bun_G$ and must support compact generation, duality, and base change statements strong enough to define Hecke, Eisenstein, and constant term functors with controlled cohomological amplitude.
+
+  \item \textbf{Geometric Satake and the spectral action at $\ell=p$.}
+  The Hecke category at $p$-adic coefficients must admit a Satake-type description and must produce a monoidal action of $\Perf(\mathfrak X_{\checkG}^{\mathrm{EG}})$ on $\cA_G^{(p)}$ as in Axiom~\ref{ax:spectralaction}. This is the mixed characteristic, $p$-adic coefficient analog of the structural input used in \cite{GRProofI}.
+
+  \item \textbf{The correct support condition $\cN_p$.}
+  The $\ell=p$ analog of nilpotent singular support must be defined and shown to have the stability properties needed for Eisenstein and constant term compatibilities. Conceptually, $\cN_p$ should be pinned down by the same logic as in \cite{AGSingSupp}: without a support condition, Eisenstein compatibility is expected to fail.
+
+  \item \textbf{Eisenstein and constant term functors at $\ell=p$.}
+  At $\ell\neq p$, this has been achieved on the Fargues--Fontaine $\Bun_G$ \cite{HHSGeometricEis}. At $\ell=p$, one must construct these functors and prove their adjunction properties (Axiom~\ref{ax:eis}). This step is needed to import the gluing arguments that organize both sides of the correspondence.
+
+  \item \textbf{Construction of the kernel.}
+  The characteristic zero proof builds the geometric Langlands functor and its properties in \cite{GRProofI}. In our proposal, the parallel construction is Conjecture~\ref{conj:kernel}: build a universal kernel $\cK$ on $\Bun_G\times \mathfrak X_{\checkG}^{\mathrm{EG}}$ with the Hecke eigenproperty. The most plausible source of such a kernel is patching and completed cohomology, but the geometric mechanism that produces the kernel remains to be formulated precisely.
+
+  \item \textbf{Ambidexterity and monadicity in mixed characteristic.}
+  The proof strategy relies on ambidexterity results \cite{GRProofIV}. Their $\ell=p$ analog requires deep finiteness, duality, and base change statements for the $\ell=p$ sheaf theory on $\Bun_G$. Without an ambidexterity principle, Barr--Beck type reductions cannot be executed cleanly.
+
+  \item \textbf{Multiplicity one type control of the cuspidal range.}
+  The role of the multiplicity one theorem \cite{GRProofV} is to rigidify the cuspidal part and to force uniqueness of the correspondence in the range where extensions could otherwise appear. An $\ell=p$ analog likely must use the geometry of semistable strata of $\Bun_G$ together with Hodge-theoretic loci on $\mathfrak X_{\checkG}^{\mathrm{EG}}$, and it may be visible first in rank two.
+
+  \item \textbf{A restricted variation formulation adapted to $p$-adic coefficients.}
+  The restricted variation approach \cite{AGKRRVRestrictedVariation} provides a formulation that is robust across coefficient theories. It is reasonable to expect that an $\ell=p$ version of restricted variation geometry will be needed to cleanly separate coefficient-theoretic issues from the geometric content of the conjecture.
+\end{enumerate}
+
+\subsection{What the transfer would give}
+
+Assuming the missing pieces above can be constructed, the transfer of the proof strategy would yield a geometric machine for the $\ell=p$ local $p$-adic Langlands program.
+
+\begin{enumerate}[label=\arabic*. , leftmargin=2em]
+  \item \textbf{A canonical construction of the categorical $p$-adic correspondence.}
+  The equivalence in Conjecture~\ref{conj:strong} would give a conceptual and geometric construction of the functor predicted by the categorical $p$-adic Langlands program, including duality and Hodge support properties.
+
+  \item \textbf{A geometric explanation of patching and completed cohomology.}
+  The universal kernel $\cK$ would serve as the geometric avatar of patched complexes, making local--global compatibility statements a formal consequence of the functoriality of the kernel construction.
+
+  \item \textbf{A uniform description of blocks and centers.}
+  The geometry of $\mathfrak X_{\checkG}^{\mathrm{EG}}$ would control the block decomposition of $p$-adic representation categories of $G(E)$ and explain the emergence of spectral actions by commutative algebras. In particular, it would provide a geometric description of endomorphism algebras acting on completed cohomology and related objects.
+
+  \item \textbf{Compatibility with parabolic induction and Jacquet modules.}
+  Eisenstein and constant term functors on $\Bun_G$ would identify parabolic induction and Jacquet modules with geometric functors, and spectral gluing would enforce the correct microlocal condition $\cN_p$.
+
+  \item \textbf{A bridge between $\ell\neq p$ and $\ell=p$.}
+  The $\ell=p$ construction would fit into a larger picture in which the Fargues--Fontaine geometry simultaneously organizes prime-to-$p$ and $p$-adic coefficient theories, suggesting a unified geometric origin for both the usual local Langlands correspondence and its $p$-adic refinement.
+\end{enumerate}
+
+\begin{proposition}[A proof template for the $\ell=p$ equivalence]\label{prop:template}
+Assume:
+\begin{enumerate}[label=(\alph*), leftmargin=2em]
+  \item the existence of $\cA_G^{(p)}$ with the six operations and Verdier duality (Axiom~\ref{ax:automorphiccat}),
+  \item a Hecke formalism and a spectral action of $\Perf(\mathfrak X_{\checkG}^{\mathrm{EG}})$ (Axioms~\ref{ax:satake} and \ref{ax:spectralaction}),
+  \item Eisenstein and constant term functors with adjunction and finiteness properties (Axiom~\ref{ax:eis}),
+  \item a kernel $\cK$ as in Conjecture~\ref{conj:kernel}, and an intrinsic support condition $\cN_p$ characterized by parabolic compatibility (Conjecture~\ref{conj:spectralgluing}),
+  \item an $\ell=p$ analog of ambidexterity for the resulting functor (in the spirit of \cite{GRProofIV}) and a cuspidal uniqueness statement (in the spirit of \cite{GRProofV}).
+\end{enumerate}
+Then the proof strategy of Gaitsgory and Raskin suggests that the functor $\Phi_{\cK}$ should be an equivalence
+\[
+  \cA_G^{(p)}\ \simeq\ \IndCoh_{\cN_p}(\mathfrak X_{\checkG}^{\mathrm{EG}})
+\]
+by combining monadicity arguments with parabolic gluing and cuspidal control.
+\end{proposition}
+
+\begin{remark}
+Proposition~\ref{prop:template} is not a theorem, but a reduction: it isolates which new geometric statements must be proved in mixed characteristic in order to make the characteristic zero proof strategy function at $\ell=p$.
+\end{remark}
+
+
+
+% ------------------------------------------------------------
+\section{The split torus case}\label{sec:torus-case}
+
+In this section we explain why the minimal categorical $p$-adic Langlands statement
+(Conjecture~\ref{conj:minimal}) is completely explicit for tori.  The essential point is that
+all deformation rings and Hecke-type actions are commutative, so the spectral category is forced to be
+a (derived) category of modules over commutative algebras.
+
+\subsection{Rank one: $G=\GG_m$ over $\Qp$}
+
+Fix a finite extension $L/\Qp$ with ring of integers $\OO$ and residue field $k$.
+Let $G_{\Qp}:=\Gal(\overline{\Q}_p/\Qp)$ and let $\varepsilon$ denote the $p$-adic cyclotomic character.
+
+\begin{proposition}[Rank one Emerton--Gee stack as a character stack]\label{prop:rankone-eg-character}
+Let $A$ be a $p$-adically complete $\Zp$-algebra.  The groupoid of rank one étale
+$(\varphi,\Gamma)$-modules over $A$ is equivalent to the groupoid of continuous characters
+$\delta:G_{\Qp}\to A^\times$.  Via local class field theory, this is equivalently the groupoid of continuous
+characters $\delta:\Qp^\times\to A^\times$.
+
+Consequently, the (derived) Emerton--Gee stack $\mathfrak X_{\GG_m}^{\mathrm{EG}}$ is canonically identified
+with the moduli stack of continuous characters of $\Qp^\times$.
+\end{proposition}
+
+\begin{proof}
+The explicit description of the rank one Emerton--Gee stack is proved in
+Emerton--Gee \cite[Prop.~7.2.17]{EGEtalePhiGamma}, and is re-proved by a direct classification of rank one
+$(\varphi,\Gamma)$-modules in families by Pham \cite{PhamRankOneEG}.
+The identification between continuous characters of $G_{\Qp}$ and continuous characters of $\Qp^\times$
+is local class field theory \cite{SerreLocalFields}.
+\end{proof}
+
+\subsection{The minimal categorical correspondence becomes commutative algebra}
+
+Write
+\[
+  \Qp^\times \cong p^{\Z}\times \Zp^\times, \qquad \Zp^\times\cong \mu_{p-1}\times (1+p\Zp).
+\]
+Let $\Lambda_{\Zp^\times}:=\OO[[\Zp^\times]]$ be the Iwasawa algebra of the compact open subgroup $\Zp^\times$.
+Introduce the Laurent variable $t$ corresponding to the element $p\in \Qp^\times$, and set
+\[
+  \Lambda := \Lambda_{\Zp^\times}[t,t^{-1}].
+\]
+Since $\Qp^\times$ is abelian, $\Lambda$ is a commutative Noetherian $\OO$-algebra.
+
+\begin{proposition}[Torus case of the minimal conjecture]\label{prop:gl1-minimal-is-known}
+Let $\cD_{\mathrm{rep}}(\Qp^\times)$ denote the derived category obtained from any of the standard
+equivalent ``locally finite'' models for $\Qp^\times$-representation theory that appear in the categorical
+$p$-adic Langlands literature (for example, the derived category of locally finite smooth $\OO$-representations,
+or equivalently the derived category of the Pontryagin dual pseudocompact $\Lambda$-modules).
+Then there is a canonical equivalence of stable $\OO$-linear categories
+\[
+  \cD_{\mathrm{rep}}(\Qp^\times)\ \simeq\ \IndCoh\big(\mathfrak X_{\GG_m}^{\mathrm{EG}}\big).
+\]
+In particular, Conjecture~\ref{conj:minimal} is a theorem for $G=\GG_m$.
+
+Moreover, the singular support condition of Conjecture~\ref{conj:strong} is vacuous for a torus:
+any reasonable choice of $\cN_p$ satisfies
+$\IndCoh_{\cN_p}(\mathfrak X_{\GG_m}^{\mathrm{EG}})=\IndCoh(\mathfrak X_{\GG_m}^{\mathrm{EG}})$.
+\end{proposition}
+
+\begin{proof}[Proof (formal reduction to commutative rings)]
+We indicate one convenient blockwise formulation.
+
+Fix a residual (mod $p$) character $\bar\delta:\Qp^\times\to k^\times$.
+Deformations of $\bar\delta$ to local Artinian $p$-adically complete $\OO$-algebras are determined by:
+(i) a deformation of $\bar\delta|_{\Zp^\times}$ (controlled by $\OO[[\Zp^\times]]$), and
+(ii) a lift of $\bar\delta(p)$ to a unit (recorded by adjoining an invertible parameter $t$).
+Thus the universal deformation ring $R_{\bar\delta}$ is (non-canonically) a localization of
+$\OO[[\Zp^\times]]$ by adjoining an invertible parameter; in particular, $R_{\bar\delta}$ is commutative and
+is represented by a formal affine chart of the character stack.
+
+On the spectral side, Proposition~\ref{prop:rankone-eg-character} identifies $\mathfrak X_{\GG_m}^{\mathrm{EG}}$
+with the moduli stack of characters; hence its formal completion at $\bar\delta$ is $\Spf(R_{\bar\delta})$.
+For an affine formal scheme $\Spf(R_{\bar\delta})$, ind-coherent sheaves are just derived
+$R_{\bar\delta}$-modules, so the corresponding summand of $\IndCoh(\mathfrak X_{\GG_m}^{\mathrm{EG}})$ is
+equivalent to $D(R_{\bar\delta})$.
+
+On the representation-theoretic side, since $\Qp^\times$ is abelian, the block of locally finite objects with
+residual character $\bar\delta$ is controlled by the same universal deformation ring: after applying Pontryagin
+duality to pass to pseudocompact modules, the block is equivalent to (derived) $R_{\bar\delta}$-modules.
+This yields a blockwise equivalence, and gluing over all residual characters gives the stated global equivalence.
+
+Finally, for a torus the adjoint representation is trivial, so there is no nontrivial ``nilpotent direction''
+to impose on singular support. This is the representation-theoretic shadow of the fact that parabolic induction
+and Arthur-type constraints are absent in the abelian case.
+\end{proof}
+
+\subsection{Split tori of higher rank}
+
+If $T/\Qp$ is a split torus of rank $r$, then $\check T\simeq (\GG_m)^r$ and the Emerton--Gee parameter stack
+satisfies $\mathfrak X_{\check T}^{\mathrm{EG}}\simeq (\mathfrak X_{\GG_m}^{\mathrm{EG}})^r$ (abelian nature of $\check T$).
+The above argument applies factorwise and shows that the minimal conjecture is likewise a theorem for $T$.
+
+% ------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------
+\section{The case $G=\GL_2(\Qp)$}\label{sec:gl2-case}
+
+In contrast with the general reductive case, the $\GL_2(\Qp)$ case is now known at the level that is
+most directly relevant for this note: the minimal categorical correspondence of
+Conjecture~\ref{conj:minimal} is a theorem, and it is compatible with a precise local--global compatibility
+statement.
+
+\subsection{The categorical correspondence as a fully faithful embedding}
+
+Fix a finite extension $L/\Qp$ with ring of integers $\OO$ and residue field $k$.
+Let $G=\GL_2(\Qp)$ and let $\zeta:\Qp^\times\to \OO^\times$ be a smooth central character.
+Let $\Mod^{\mathrm{lfin}}_{G,\zeta}(\OO)$ denote the abelian category of smooth $\OO$-linear representations of $G$
+with central character $\zeta$ that are locally of finite length (equivalently, locally admissible in the
+sense used by Johansson--Newton--Wang-Erickson).  Let $D(\Mod^{\mathrm{lfin}}_{G,\zeta}(\OO))$ be its derived category.
+
+Let $\varepsilon$ be the $p$-adic cyclotomic character and let $\mathfrak X_{2}^{\zeta\varepsilon}$ be the
+(algebraized, derived) Emerton--Gee stack of two-dimensional $p$-adic Galois representations of $G_{\Qp}$
+with determinant $\zeta\varepsilon$.
+
+\begin{proposition}[Johansson--Newton--Wang-Erickson]\label{prop:gl2-jnw-main}
+There exists an $\OO$-linear fully faithful functor
+\[
+  \mathbb A_{\zeta}\colon
+  D\big(\Mod^{\mathrm{lfin}}_{G,\zeta}(\OO)\big)
+  \longrightarrow
+  \IndCoh\big(\mathfrak X_{2}^{\zeta\varepsilon}\big).
+\]
+Moreover, this functor is compatible with the block decomposition on the representation side and the
+corresponding open-and-closed decomposition on the Emerton--Gee side, and blockwise it lands in the subcategory
+supported on the formal neighbourhood of the special fibre.
+
+In particular, blockwise the functor admits a continuous right adjoint, which may be regarded as a form of
+duality compatibility.
+\end{proposition}
+
+\begin{proof}
+This is Theorem~1.1.1 and Theorem~5.1.1 of Johansson--Newton--Wang-Erickson \cite{JNWErickson}.
+\end{proof}
+
+\begin{corollary}[Minimal conjecture for $\GL_2(\Qp)$]\label{cor:gl2-minimal-known}
+Conjecture~\ref{conj:minimal} holds for $G=\GL_2(\Qp)$, for the concrete choice
+\[
+  \cD_{\mathrm{rep}}(G)\ :=\ D\big(\Mod^{\mathrm{lfin}}_{G,\zeta}(\OO)\big)
+\]
+(with $\zeta$ fixed).
+\end{corollary}
+
+\begin{remark}[Relation to the classical $p$-adic local Langlands correspondence]
+The functor $\mathbb A_{\zeta}$ can be viewed as a categorical and geometric packaging of the classical
+$p$-adic local Langlands correspondence for $\GL_2(\Qp)$.
+Johansson--Newton--Wang-Erickson show that their formalism recovers the usual correspondence of Colmez and its
+refinements (often called the Montreal functor) when restricted to the appropriate Banach or compact models
+of the representation category. For background on the classical correspondence, see \cite{CDPpadicLL}.
+\end{remark}
+
+\subsection{Local--global compatibility as the current ``kernel-level'' input}
+
+A central motivation for \S 8 is that global objects (completed cohomology or completed homology, and patched
+complexes) should produce coherent or ind-coherent sheaves on Emerton--Gee stacks, and hence should be the
+input that eventually produces the universal kernel $\cK$ of Conjecture~\ref{conj:kernel}.
+
+For $\GL_2(\Qp)$, Johansson--Newton--Wang-Erickson prove an explicit local--global compatibility formula in
+this direction; it can be read as an identification of localized arithmetic (co)homology with derived global
+sections of an ind-coherent object built from the universal Galois representation. We record one representative
+form (their Corollary~6.4.5).
+
+\begin{proposition}[Local--global compatibility for modular curves]\label{prop:gl2-locglob-jnw}
+Let $G^{\mathrm{ad}}=\mathrm{PGL}_2$ and let $K_p\subset G^{\mathrm{ad}}(\Qp)$ be a compact open subgroup.
+Let $\tau$ be a left $\OO[[K_p]]$-module.  Then, after localizing at the relevant maximal ideal $\mathfrak m$ of the
+global deformation ring $R_{Q,N}$, there is a canonical isomorphism of $R_{Q,N}$-modules
+\[
+  H^{i}\big(K_p^{1}(N)_{K_p},\tau\big)_{\mathfrak m}
+  \ \cong\
+  H^{-i}\!\left(\mathfrak X^{r},
+  r^{\mathrm{univ}}(1)\otimes_{R_{Q,N}} f^{!}\!\left(\mathrm{F}_{\mathrm{ext}}\big(\OO[[G^{\mathrm{ad}}]]\otimes_{\OO[[K_p]]}\tau\big)\right)\right),
+\]
+and both sides vanish for $i\neq 1$.
+
+Here $\mathfrak X^{r}$ is the global Galois stack considered in \cite[\S 6.4]{JNWErickson},
+$r^{\mathrm{univ}}(1)$ is the universal Galois representation on $\mathfrak X^{r}$, and
+$\mathrm{F}_{\mathrm{ext}}$ is the extension functor of \cite[\S 6.1]{JNWErickson}.  (The notation $(1)$ denotes a
+grading shift in the sense of \cite{JNWErickson}.)
+\end{proposition}
+
+\begin{proof}
+This is Corollary~6.4.5 of Johansson--Newton--Wang-Erickson \cite{JNWErickson}, deduced from their
+Theorem~6.4.4.
+\end{proof}
+
+\begin{remark}[What this gives, and what is still missing]
+Proposition~\ref{prop:gl2-locglob-jnw} supplies a genuine local--global input on the \emph{spectral} side:
+global arithmetic invariants are expressed as global sections of ind-coherent objects on a Galois parameter stack.
+This is precisely the kind of structure that, in the framework of this note, should be repackaged as the
+spectral half of the universal kernel $\cK$.
+
+What is still missing for the full geometric picture proposed here is the \emph{automorphic} half at $\ell=p$:
+a sheaf theory $\cA_{\GL_2}^{(p)}$ on the Fargues--Fontaine stack $\Bun_{\GL_2}$ with the finiteness and
+functoriality needed to construct Hecke operators, Eisenstein and constant term functors, and ultimately an
+actual kernel object on $\Bun_{\GL_2}\times \mathfrak X_{2}^{\zeta\varepsilon}$.
+\end{remark}
+
+\subsection{A rank two candidate for the singular support condition}
+
+Even before a general definition of $\cN_p$ is available, Proposition~\ref{prop:gl2-jnw-main} suggests an intrinsic
+rank two substitute.
+
+\begin{definition}[Essential-image singular support condition for $\GL_2$]\label{def:gl2-support}
+Let $\cN_{p,2}$ be the smallest closed conical subset in the singular support space of $\mathfrak X_{2}^{\zeta\varepsilon}$
+(for the ind-coherent singular support theory) such that the essential image of $\mathbb A_{\zeta}$ is contained in
+$\IndCoh_{\cN_{p,2}}(\mathfrak X_{2}^{\zeta\varepsilon})$.
+\end{definition}
+
+\begin{remark}
+By construction, $\IndCoh_{\cN_{p,2}}(\mathfrak X_{2}^{\zeta\varepsilon})$ is the maximal spectral category through which
+the known $\GL_2(\Qp)$ correspondence factors.  Thus $\cN_{p,2}$ is the best current concrete candidate for the
+$\ell=p$ singular support condition in rank two, and it should serve as the first nontrivial test case for the
+parabolic-gluing constraints of \S\ref{sec:microlocal} and the proof-translation discussion of
+\S\ref{sec:GRtransfer}.
+\end{remark}
+
+% ------------------------------------------------------------
+
+
+\bibliographystyle{alpha}
+\begin{thebibliography}{99}
+
+\bibitem{FSGeometrization}
+L.~Fargues and P.~Scholze.
+\newblock \emph{Geometrization of the local Langlands correspondence}.
+\newblock Preprint (available on Scholze's webpage).
+\newblock \url{https://people.mpim-bonn.mpg.de/scholze/Geometrization.pdf}.
+
+\bibitem{GaitsgoryOutline}
+D.~Gaitsgory.
+\newblock \emph{Outline of the proof of the geometric Langlands conjecture for $\GL_2$}.
+\newblock Notes/preprint (programmatic overview).
+\newblock \url{https://people.mpim-bonn.mpg.de/gaitsgde/GL/outline.pdf}.
+
+\bibitem{GRMultone}
+D.~Gaitsgory.
+\newblock \emph{The Geometric Langlands Conjecture: a review (multone)}.
+\newblock Expository notes.
+\newblock \url{https://people.mpim-bonn.mpg.de/gaitsgde/GLC/multone.pdf}.
+
+\bibitem{EGHStacks}
+M.~Emerton, T.~Gee, and E.~Hellmann.
+\newblock \emph{An introduction to the categorical $p$-adic Langlands program / $p$-adic stacks}.
+\newblock IH\'ES 2022 lecture notes/preprint.
+\newblock \url{https://www.math.uchicago.edu/~emerton/pdffiles/IHES2022padicstacks.pdf}.
+
+\bibitem{MinEGGeneral}
+Y.~Min.
+\newblock \emph{The Emerton--Gee stack with $G$-structure and its derived enhancement}.
+\newblock \href{https://arxiv.org/abs/2411.12661}{arXiv:2411.12661}.
+
+\bibitem{ALMSixOps}
+J.~Ansch\"utz, A.~Le~Bras, and L.~Mann.
+\newblock \emph{The six operations on small v-stacks with $\Zp$-coefficients}.
+\newblock \href{https://arxiv.org/abs/2412.20968}{arXiv:2412.20968}.
+
+\bibitem{PoratOverconv}
+O.~Porat.
+\newblock \emph{Overconvergence of \'etale $(\varphi,\Gamma)$-modules in families}.
+\newblock \href{https://arxiv.org/abs/2209.05050}{arXiv:2209.05050}.
+
+\bibitem{JNWErickson}
+C.~Johansson, J.~Newton, and S.~Wang-Erickson.
+\newblock \emph{(Categorical) $p$-adic local Langlands for $\GL_2(\Qp)$ via ind-coherent sheaves on Galois moduli}.
+\newblock \href{https://arxiv.org/abs/2403.19565}{arXiv:2403.19565}.
+
+\bibitem{DHKM}
+J.-F.~Dat, D.~Helm, M.~Kurinczuk, and G.~Moss.
+\newblock \emph{Moduli spaces for Langlands parameters}.
+\newblock \href{https://arxiv.org/abs/2009.06708}{arXiv:2009.06708}.
+
+\bibitem{HHSGeometricEis}
+A.~Hamann, D.~Hansen, and P.~Scholze.
+\newblock \emph{Geometric Eisenstein series on $\Bun_G$ on the Fargues--Fontaine curve}.
+\newblock \href{https://arxiv.org/abs/2409.07363}{arXiv:2409.07363}.
+
+% New references for Section \ref{sec:GRtransfer}
+
+\bibitem{AGSingSupp}
+D.~Arinkin and D.~Gaitsgory.
+\newblock \emph{Singular support of coherent sheaves, and the geometric Langlands conjecture}.
+\newblock \href{https://arxiv.org/abs/1201.6343}{arXiv:1201.6343}.
+
+\bibitem{AGKRRVRestrictedVariation}
+D.~Arinkin, D.~Gaitsgory, D.~Kazhdan, S.~Raskin, N.~Rozenblyum, and Y.~Varshavsky.
+\newblock \emph{The stack of local systems with restricted variation and geometric Langlands theory with nilpotent singular support}.
+\newblock \href{https://arxiv.org/abs/2010.01906}{arXiv:2010.01906}.
+
+\bibitem{GRProofI}
+D.~Gaitsgory and S.~Raskin.
+\newblock \emph{Proof of the geometric Langlands conjecture I: construction of the functor}.
+\newblock \href{https://arxiv.org/abs/2405.03599}{arXiv:2405.03599}.
+
+\bibitem{GRProofIV}
+D.~Arinkin, D.~Beraldo, L.~Chen, J.~F{\ae}rgeman, D.~Gaitsgory, K.~Lin, S.~Raskin, and N.~Rozenblyum.
+\newblock \emph{Proof of the geometric Langlands conjecture IV: ambidexterity}.
+\newblock \href{https://arxiv.org/abs/2409.08670}{arXiv:2409.08670}.
+
+\bibitem{GRProofV}
+D.~Gaitsgory and S.~Raskin.
+\newblock \emph{Proof of the geometric Langlands conjecture V: the multiplicity one theorem}.
+\newblock \href{https://arxiv.org/abs/2409.09856}{arXiv:2409.09856}.
+
+% New bibitems (not already in your bibliography)
+
+\bibitem{EGEtalePhiGamma}
+M.~Emerton and T.~Gee.
+\newblock \emph{Moduli Stacks of \'Etale $(\varphi,\Gamma)$-Modules and the Existence of Crystalline Lifts}.
+\newblock Annals of Mathematics Studies, vol.~215, Princeton University Press, 2022.
+\newblock Preprint: \href{https://arxiv.org/abs/1908.07185}{arXiv:1908.07185}.
+
+\bibitem{PhamRankOneEG}
+D.~Pham.
+\newblock \emph{The Emerton--Gee stack of rank one $(\varphi,\Gamma)$-modules}.
+\newblock Documenta Mathematica 29 (2024), no.~3, 733--746.
+\newblock \href{https://arxiv.org/abs/2206.02888}{arXiv:2206.02888}.
+
+\bibitem{SerreLocalFields}
+J.-P.~Serre.
+\newblock \emph{Local Fields}.
+\newblock Graduate Texts in Mathematics, vol.~67, Springer-Verlag, 1979.
+
+\bibitem{CDPpadicLL}
+P.~Colmez, G.~Dospinescu, and V.~Pa{\v{s}}k{\={u}}nas.
+\newblock \emph{The $p$-adic local Langlands correspondence for $\mathrm{GL}_2(\mathbb{Q}_p)$}.
+\newblock Cambridge Journal of Mathematics 2 (2014), no.~1, 1--47.
+\newblock \href{https://arxiv.org/abs/1310.2235}{arXiv:1310.2235}.
+
+
+\end{thebibliography}
+
+\end{document}
