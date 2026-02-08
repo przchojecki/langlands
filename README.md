@@ -16,8 +16,9 @@ A research repository for **LLM-assisted proof engineering** across three tightl
 The relevant proofs and frameworks are:
 - **long** (hundreds of pages),
 - **highly interdependent** (definitions/lemmas migrate across papers),
-- **notation-heavy**, and
-- **spread across multiple formalisms** (D-modules / Betti sheaves / v-stacks / diamonds / IndCoh / singular support / spectral actions).
+- **notation-heavy**,
+- **spread across multiple formalisms** (D-modules / Betti sheaves / v-stacks / diamonds / IndCoh / singular support / spectral actions),
+- **centerpiece** of modern mathematics.
 
 LLMs are not trusted oracles here. We use them as:
 - a *parser* (TeX → structured claims),
@@ -25,6 +26,8 @@ LLMs are not trusted oracles here. We use them as:
 - a *refactoring assistant* (notation unification + “same statement, different paper” detection),
 - a *formalization copilot* (Lean/Coq stubs + interface-level lemmas),
 - and a *red-team tool* (spotting missing hypotheses, hidden uses of finiteness/adjointness, etc.).
+
+Ideally we would arrive at formalization (e.g. in Lean), that would validate first Gaitsgory proof and then also show new results in local adic context.
 
 ---
 
