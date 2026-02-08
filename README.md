@@ -107,39 +107,6 @@ Main components (as currently formulated in the blueprint):
 
 ---
 
-## Repository layout (suggested)
-
-This project is designed to grow into something like:
-
-.
-├── blueprints/
-│   ├── ladicgeom.tex          # ℓ ≠ p transfer blueprint (Fargues–Scholze track)
-│   └── padicgeom.tex          # ℓ = p conjectural framework blueprint
-├── sources/
-│   ├── glc/                   # bibliographic + retrieval metadata for GLC I–V
-│   └── bib/                   # BibTeX / CSL / citation normalization
-├── atlas/
-│   ├── glc/                   # “proof atlas”: theorem/lemma cards + dependency graph
-│   ├── fs/                    # local ℓ-adic atlas (FS conjecture → subclaims)
-│   └── padic/                 # p-adic conjecture package atlas
-├── formal/
-│   ├── lean/                  # Lean 4 formalization experiments (interface-level first)
-│   └── coq/                   # optional
-├── tools/
-│   ├── tex2claims/            # TeX → structured claims extraction
-│   ├── dedupe/                # “same lemma” detection across papers
-│   ├── citation-check/        # enforce provenance + exact pointers
-│   └── eval/                  # regression tests for LLM outputs
-└── prompts/
-├── extraction.md
-├── normalization.md
-├── formalization.md
-└── redteam.md
-
-If you fork this repo and don’t want the above structure, feel free to simplify — the **core** is the three workstreams.
-
----
-
 ## How we use LLMs (discipline + guardrails)
 
 ### Provenance-first rule
