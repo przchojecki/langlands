@@ -13,12 +13,15 @@ A research repository for **LLM-assisted proof engineering** across three tightl
 
 ## Why this exists
 
-The relevant proofs and frameworks are:
+Langlands Program is the centerpiece of modern mathematics. However the relevant proofs and frameworks are:
 - **long** (hundreds of pages),
 - **highly interdependent** (definitions/lemmas migrate across papers),
-- **notation-heavy**,
-- **spread across multiple formalisms** (D-modules / Betti sheaves / v-stacks / diamonds / IndCoh / singular support / spectral actions),
-- **centerpiece** of modern mathematics.
+- **notation-heavy**, and
+- **spread across multiple formalisms** (D-modules / Betti sheaves / v-stacks / diamonds / IndCoh / singular support / spectral actions).
+
+Especially the recent Gaitsgory proof (references below) is bound to have large ramifications for the field as well as similar conjectures.
+
+Our main goal is to formalize/streamline Gaitsgory proof and then use his techniques to approach l-adic/p-adic Langlands program through AI.
 
 LLMs are not trusted oracles here. We use them as:
 - a *parser* (TeX → structured claims),
