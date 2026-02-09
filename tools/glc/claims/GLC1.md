@@ -1,0 +1,255 @@
+# GLC1 claim index
+
+- Total claims: **60**
+
+## Counts by kind
+- remark: 24
+- proposition: 14
+- theorem: 12
+- lemma: 4
+- corollary: 3
+- conjecture: 2
+- question: 1
+
+## Claims (metadata + preview)
+
+- **Remark** `auto0001@L1081`  
+  - Location: `gaits1.tex` lines 1081-1091
+  - Context: Introduction
+  - Preview: In fact, in \cite[Sect. 21.4]{AGKRRV} the equivalence $$\text{Full GLC}\, \Leftrightarrow\, \text{Restricted GLC}$$ was proved directly, but under the assumption that the functor $\BL_G$ admits a left adjoint. \medskip The advantage of working with the tempered category is that t…
+- **Theorem** `t:cc-intro`  
+  - Location: `gaits1.tex` lines 1098-1107
+  - Context: Introduction
+  - Preview: \label{t:cc-intro} Suppose that $G$ has connected center, the genus of $X$ is $\geq 2$, and assume the geometric Langlands conjecture. Let $\sigma$ be an irreducible $\cG$-local system and let $\CF_{\sigma}$ be the corresponding Hecke eigensheaf. Then the characteristic cycle $\o…
+- **Remark** `auto0003@L1414`  
+  - Location: `gaits1.tex` lines 1414-1418
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: It is crucial, however, to consider the twisted version, when we study the Hecke functors. Otherwise, instead of the usual category $\Rep(\cG)$ one has to consider its twist by a certain canonical $Z_\cG$-gerbe, see \cite[Sect. 6.3]{GLys}.
+- **Theorem** `t:spectral decomp`  
+  - Location: `gaits1.tex` lines 1459-1462
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{t:spectral decomp} The action of $\Rep(\cG)_\Ran$ on $\Dmod_{\frac{1}{2}}(\Bun_G)$ factors via the functor \eqref{e:spec Loc}.
+- **Proposition** `p:det to BunN`  
+  - Location: `gaits1.tex` lines 1514-1517
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{p:det to BunN} The line $\fl_{G,N_{\CP_T}}$ admits a canonical square root.
+- **Corollary** `c:det to BunN rho`  
+  - Location: `gaits1.tex` lines 1605-1608
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{c:det to BunN rho} The line $\fl_{G,N_{\rho(\omega_X)}}$ admits a canonical square root.
+- **Remark** `auto0007@L1703`  
+  - Location: `gaits1.tex` lines 1703-1708
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: The notation $\BL^L_{G,\on{temp}}$ has to do with the fact that the essential image of this functor lands in the subcategory $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{temp}}\subset \Dmod_{\frac{1}{2}}(\Bun_G),$$ see \secref{sss:LL temp}.
+- **Remark** `auto0008@L1710`  
+  - Location: `gaits1.tex` lines 1710-1717
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: Once GLC (\conjref{c:GLC dR}) is proved, it would follow that the functor $\BL^L_{G,\on{temp}}$ is actually an equivalence $$\QCoh(\LS_\cG)\overset{\sim}\to \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{temp}},$$ see Remark \ref{r:L temp}.
+- **Theorem** `t:compact to bdd below dr`  
+  - Location: `gaits1.tex` lines 1808-1813
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{t:compact to bdd below dr} The functor $$\BL_{G,\on{coarse}}:\Dmod_{\frac{1}{2}}(\Bun_G)\to \QCoh(\LS_\cG)$$ sends compact objects in $\Dmod_{\frac{1}{2}}(\Bun_G)$ to bounded below (i.e., eventually coconnective) objects in $\QCoh(\LS_\cG)$.
+- **Corollary** `c:main dr`  
+  - Location: `gaits1.tex` lines 1833-1850
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{c:main dr} There exists a (colimit-preserving) functor $$\BL_G:\Dmod_{\frac{1}{2}}(\Bun_G)\to \IndCoh_\Nilp(\LS_\cG),$$ uniquely characterized by the following properties: \begin{itemize} \item The functor $\BL_G$ sends compact objects in $\Dmod_{\frac{1}{2}}(\Bun_G)$ to e…
+- **Conjecture** `c:GLC dR`  
+  - Location: `gaits1.tex` lines 1861-1863
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{c:GLC dR} The functor $\BL_G$ is an equivalence.
+- **Remark** `auto0012@L1865`  
+  - Location: `gaits1.tex` lines 1865-1881
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: By the same logic as in \corref{c:main dr}, using \thmref{t:compact to bdd below dr}, we can lift $\BL_{G,\on{coarse}}$ to a functor $$\BL'_G:\Dmod_{\frac{1}{2}}(\Bun_G)\to \IndCoh(\LS_\cG),$$ so that $$\Psi_{\on{all},\Nilp}\circ \BL'_G\simeq \BL_G,$$ where $\Psi_{\on{all},\Nilp}…
+- **Remark** `auto0013@L1883`  
+  - Location: `gaits1.tex` lines 1883-1916
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: That said, as was suggested by D.~Arinkin, one can consider a \emph{renormalized} version\footnote{The compact generators of the renormalization are !-extension of \emph{locally compact} objects on q.c. open substacks of $\Bun_G$.} $\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{ren}}$ of $\Dm…
+- **Proposition** `p:L and Hecke`  
+  - Location: `gaits1.tex` lines 1939-1944
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{p:L and Hecke} The functor $\BL_G$ carries a uniquely defined $\QCoh(\LS_\cG)$-linear structure, so that the induced $\QCoh(\LS_\cG)$-linear structure on $$\Psi_{\Nilp,\{0\}}\circ \BL_G\simeq \BL_{G,\on{coarse}}$$ is the natural $\QCoh(\LS_\cG)$-linear structure on $\BL_{G…
+- **Proposition** `p:bdd right`  
+  - Location: `gaits1.tex` lines 1987-1990
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{p:bdd right} The functor $\BL_{G,\on{coarse}}$ has a bounded cohomological amplitude on the right, i.e., there exists an integer $d$ so that $\BL_{G,\on{coarse}}[d]$ is right t-exact.
+- **Corollary** `c:bdd right`  
+  - Location: `gaits1.tex` lines 1997-1999
+  - Context: Construction of the Langlands functor (de Rham context)
+  - Preview: \label{c:bdd right} The functor $\BL_G$ has a bounded cohomological amplitude on the right.
+- **Proposition** `p:compact bdd below`  
+  - Location: `gaits1.tex` lines 2016-2018
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{p:compact bdd below} Compact objects of $\Dmod_{\frac{1}{2}}(\Bun_G)$ are bounded below (i.e., are eventually coconnective).
+- **Theorem** `t:L coarse left exact`  
+  - Location: `gaits1.tex` lines 2020-2023
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{t:L coarse left exact} The functor $\BL_{G,\on{coarse}}$ has a bounded cohomological amplitude on the left, i.e., there exists an integer $d$ so that $\BL_{G,\on{coarse}}[-d]$ is left t-exact.
+- **Remark** `r:left ampl`  
+  - Location: `gaits1.tex` lines 2025-2040
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{r:left ampl} In the course of the proof we will see that the integer $d$ in \thmref{t:L coarse left exact} can be taken to be the dimension of the classical algebraic stack underlying $\LS_\cG$ plus $\dim(\Bun_{N,\rho(\omega_X)})$ minus $\dim(\Bun_G)$. \medskip Note that w…
+- **Question** `auto0020@L2047`  
+  - Location: `gaits1.tex` lines 2047-2049
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: What is the actual bound on the left amplitude of $\BL_{G,\on{coarse}}$?
+- **Remark** `auto0021@L2051`  
+  - Location: `gaits1.tex` lines 2051-2066
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: Note that \thmref{t:L coarse left exact} does \emph{not} imply that the functor $\BL_G$ has a bounded cohomological amplitude on the left. In fact, this amplitude \emph{is} unbounded, unless $G$ is a torus. \medskip Namely, we claim the ``constant sheaf"" $\ul{k}_{\Bun_G}\in \Dmo…
+- **Proposition** `p:when >0`  
+  - Location: `gaits1.tex` lines 2218-2243
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{p:when >0} Let $\CY$ be an eventually coconnective algebraic stack. Let $\CM$ be an object of $\QCoh(\CY)$ such that for every field extension $k\subset k'$ and a $k'$-point $y$ of $\CY$, we have: $$i_y^!(\CM')\in \Vect_{k'}^{\geq 0},$$ where: \begin{itemize} \item $\CM'$…
+- **Remark** `auto0023@L2245`  
+  - Location: `gaits1.tex` lines 2245-2248
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: In practice, the fields $k'$ that will appear are fields of rational functions on irreducible subschemes of an affine scheme $Y$ that smoothly covers $\CY$.
+- **Theorem** `t:L coarse left exact Nilp`  
+  - Location: `gaits1.tex` lines 2331-2336
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{t:L coarse left exact Nilp} The functor $$\BL^{\on{restr}}_{G,\on{coarse}}[\dim(\Bun_G)-\dim(\Bun_{N,\rho(\omega_X)})]:\Dmod_{\frac{1}{2},\Nilp}(\Bun_G) \to \QCoh(\LS^{\on{restr}}_\cG).$$ is t-exact.
+- **Remark** `r:right ampl`  
+  - Location: `gaits1.tex` lines 2340-2350
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{r:right ampl} We emphasize that, unlike $\BL^{\on{restr}}_{G,\on{coarse}}$, the functor $\BL_{G,\on{coarse}}$ (shifted cohomologically by $[\dim(\Bun_G)-\dim(\Bun_{N,\rho(\omega_X)})]$), is \emph{not} right t-exact. One can see this already when $G=\BG_m$, in which case $\…
+- **Proposition** `p:when <0`  
+  - Location: `gaits1.tex` lines 2469-2478
+  - Context: Proof of \thmref{t:compact to bdd below dr}
+  - Preview: \label{p:when <0} Let $\CY$ be an eventually coconnective algebraic stack. There exists an integer $d$ such that the following holds: \medskip If $\CM$ be an object of $\QCoh(\CY)$ such that for every field extension $k\subset k'$ and a $k'$-point $y$ of $\CY$, we have: $$i_y^*(\…
+- **Remark** `auto0027@L2595`  
+  - Location: `gaits1.tex` lines 2595-2598
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: Note, however, that objects $\delta_y\in \Shv^{\on{Betti}}_{\frac{1}{2}}(\Bun_G)$ are \emph{not} compact, and that the category $\Shv^{\on{Betti}}_{\frac{1}{2}}(\Bun_G)$ itself is \emph{not} compactly generated.
+- **Proposition** `auto0028@L2625`  
+  - Location: `gaits1.tex` lines 2625-2628
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: The action of $\Rep(\cG)^{\on{Betti}}_\Ran$ on $\Shv^{\on{Betti}}_{\frac{1}{2}}(\Bun_G)$ factors via the localization \eqref{e:loc Betti}.
+- **Remark** `r:Kir`  
+  - Location: `gaits1.tex` lines 2651-2655
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{r:Kir} Note that when $\sfe=\BC$, under the Riemann-Hilbert equivalence, the object $\on{exp}/\BG_m$ corresponds to the !-direct image of $\on{exp}$ along the projection $$\BG_a\to \BG_a/\BG_m.$$
+- **Remark** `r:exp r/T`  
+  - Location: `gaits1.tex` lines 2684-2692
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{r:exp r/T} It follows from Remark \ref{r:Kir} and the projection formula that when $\sfe=\BC$, under the Riemann-Hilbert equivalence, the object $(\underset{i}\boxtimes\, \on{exp})/T$ is the !-direct image along the projection $$\underset{i}\Pi\, \BG_a\to (\underset{i}\Pi\…
+- **Remark** `r:exp chi/T`  
+  - Location: `gaits1.tex` lines 2716-2722
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{r:exp chi/T} It follows from Remark \ref{r:exp r/T} that when $\sfe=\BC$, under the Riemann-Hilbert equivalence, the object $\on{exp}_\chi/T$ corresponds to the !-direct image along the projection $$\Bun_{N,\rho(\omega_X)}\to \Bun_{N,\rho(\omega_X)}/T$$ of the object $$\on…
+- **Proposition** `p:Poinc Nilp comp`  
+  - Location: `gaits1.tex` lines 2738-2741
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{p:Poinc Nilp comp} The object $\on{Poinc}^{\on{Vac,glob}}_{!,\Nilp}\in \Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)$ is compact.
+- **Theorem** `t:compact to bdd below Betti`  
+  - Location: `gaits1.tex` lines 2801-2806
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{t:compact to bdd below Betti} The functor $$\BL^{\on{Betti}}_{G,\on{coarse}}:\Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)\to \QCoh(\LS^{\on{Betti}}_\cG)$$ sends compact objects in $\Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)$ to bounded below objects in $\QCoh(\LS^{\on{…
+- **Conjecture** `c:GLC Betti`  
+  - Location: `gaits1.tex` lines 2834-2836
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{c:GLC Betti} The functor $\BL^{\on{Betti}}_G$ of \eqref{e:L Betti} is an equivalence.
+- **Theorem** `t:dR => Betti`  
+  - Location: `gaits1.tex` lines 2857-2859
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{t:dR => Betti} The de Rham version of GLC implies the Betti version.
+- **Theorem** `t:dR => Betti bis`  
+  - Location: `gaits1.tex` lines 2909-2928
+  - Context: Geometric Langlands functor in the Betti context
+  - Preview: \label{t:dR => Betti bis} The following statements are logically equivalent: \smallskip \noindent{\em(i)} The functor $\BL_G$ is an equivalence. \smallskip \noindent{\em(i')} The functor $\BL_G^{\on{restr}}$ is an equivalence; \smallskip \noindent{\em(ii)} The functor $\BL^{\on{B…
+- **Proposition** `p:delta funs`  
+  - Location: `gaits1.tex` lines 3023-3027
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: \label{p:delta funs} Objects of the form $$(\iota^{\on{Betti}})^R\circ \bi^L(\delta_y)\in \Shv^{\on{Betti,constr}}_{\frac{1}{2},\Nilp}(\Bun_G)$$ are bounded below.
+- **Proposition** `p:L coarse left exact Nilp Betti`  
+  - Location: `gaits1.tex` lines 3029-3031
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: \label{p:L coarse left exact Nilp Betti} The functor $\BL_{G,\on{coarse}}^{\on{Betti,restr}}[\dim(\Bun_G)-\dim(\Bun_{N,\rho(\omega_X)})]$ is t-exact.
+- **Remark** `auto0039@L3033`  
+  - Location: `gaits1.tex` lines 3033-3039
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: When it comes to t-exactness properties, there is a substantial difference between the de Rham and Betti settings: one can show that the entire functor $$\BL_{G,\on{coarse}}^{\on{Betti}}[\dim(\Bun_G)-\dim(\Bun_{N,\rho(\omega_X)})]: \Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)\to…
+- **Lemma** `e:RH diag coarse`  
+  - Location: `gaits1.tex` lines 3076-3086
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: The diagram \begin{equation} \label{e:RH diag coarse} \CD \Dmod^{\on{RS}}_{\frac{1}{2},\Nilp}(\Bun_G) @>{\BL_{G,\on{coarse}}^{\on{restr}}}>> \QCoh(\LS^{\on{restr}}_\cG) \\ @V{\sim}VV @VV{\sim}V \\ \Shv^{\on{Betti,constr}}_{\frac{1}{2},\Nilp}(\Bun_G) @>{\BL_{G,\on{coarse}}^{\on{Be…
+- **Remark** `auto0041@L3103`  
+  - Location: `gaits1.tex` lines 3103-3106
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: There was no actual need to apply to Riemann-Hilbert in order to prove \propref{p:L coarse left exact Nilp Betti}: one could repeat the argument in \cite{FR} verbatim in the Betti setting.
+- **Lemma** `l:Beil`  
+  - Location: `gaits1.tex` lines 3203-3208
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: \label{l:Beil} The functor $(\iota^{\on{Betti}})^R\circ \bi^L$, followed by $$\Shv^{\on{Betti,constr}}_{\frac{1}{2},\Nilp}(\Bun_G)\overset{\iota^{\on{Betti}}}\hookrightarrow \Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)\overset{\bi}\hookrightarrow \Shv^{\on{Betti}}_{\frac{1}{2}}(…
+- **Remark** `e:forget constr`  
+  - Location: `gaits1.tex` lines 3235-3246
+  - Context: Proof of \thmref{t:compact to bdd below Betti}
+  - Preview: Note that the functor \begin{equation} \label{e:forget constr} \oblv^{\on{constr}}:\Shv^{\on{Betti,constr}}_{\frac{1}{2}}(\Bun_G) \to \Shv^{\on{Betti}}_{\frac{1}{2}}(\Bun_G) \end{equation} is not fully faithful. However, the composition $$\Shv^{\on{Betti,constr}}_{\frac{1}{2},\Ni…
+- **Remark** `auto0044@L3343`  
+  - Location: `gaits1.tex` lines 3343-3354
+  - Context: Restricted vs full GLC
+  - Preview: The implication (i') $\Rightarrow$ (i) was proved in \cite[Sect. 21.4]{AGKRRV}, under the assumption that the functor $\BL_G$ admits a left adjoint. \medskip We will prove that this is the case in one of the subsequent papers in this series\footnote{In fact, we will ultimately pr…
+- **Remark** `auto0045@L3384`  
+  - Location: `gaits1.tex` lines 3384-3394
+  - Context: Restricted vs full GLC
+  - Preview: The definition of $\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{temp}}$ in {\it loc. cit.} depended on the choice of a point $x\in X$, and independence of the point was conjectural. This conjecture was established by Beraldo (unpublished) and later by Faegerman-Raskin by a different method (…
+- **Remark** `r:L temp`  
+  - Location: `gaits1.tex` lines 3478-3497
+  - Context: Restricted vs full GLC
+  - Preview: \label{r:L temp} One can avoid appealing to \cite{FR} for the proof of ``$\BL^{\on{restr}}_G$ is an equivalence" $\Rightarrow$ ``$\BL^{\on{restr}}_{G,\on{temp}}$ is an equivalence". \medskip Indeed, it is not difficult to show that the functor $\BL_G$ respects the action of the f…
+- **Remark** `auto0047@L3499`  
+  - Location: `gaits1.tex` lines 3499-3509
+  - Context: Restricted vs full GLC
+  - Preview: In \secref{ss:temp to all} we will prove an inverse implication (which is far less trivial): the fact that $\BL_{G,\on{temp}}$ is an equivalence implies that $\BL_G$ is an equivalence. \medskip The same argument will show that if $\BL^{\on{restr}}_{G,\on{temp}}$ is an equivalence…
+- **Remark** `auto0048@L3520`  
+  - Location: `gaits1.tex` lines 3520-3529
+  - Context: Restricted vs full GLC
+  - Preview: Both deductions: $$\text{Full tempered GLC}\, \Rightarrow \text{Restricted tempered GLC},$$ carried out above, and $$\text{Full GLC}\, \Rightarrow \text{Restricted GLC},$$ carried out in \cite[Sect. 21.4]{AGKRRV}, follow the same logic, and both need that the corresponding versio…
+- **Proposition** `p:uR ff on compacts`  
+  - Location: `gaits1.tex` lines 3575-3579
+  - Context: Restricted vs full GLC
+  - Preview: \label{p:uR ff on compacts} The functor $$\bu^R|_{\Dmod_{\frac{1}{2}}(\Bun_G)^c}:\Dmod_{\frac{1}{2}}(\Bun_G)^c\to \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{temp}}$$ is fully faithful.
+- **Proposition** `p:images`  
+  - Location: `gaits1.tex` lines 3581-3586
+  - Context: Restricted vs full GLC
+  - Preview: \label{p:images} Assume that $\BL_{G,\on{temp}}$ is an equivalence (for the group $G$ and all its Levi subgroups). Then the essential image of $\Dmod_{\frac{1}{2}}(\Bun_G)^c$ in $\QCoh(\LS_\cG)$ of $\Dmod_{\frac{1}{2}}(\Bun_G)^c$ under $$\BL_{G,\on{temp}}\circ \bu^R\simeq \BL_{G,…
+- **Lemma** `l:temp and Eis gen`  
+  - Location: `gaits1.tex` lines 3712-3716
+  - Context: Restricted vs full GLC
+  - Preview: \label{l:temp and Eis gen} The objects in $$\left(\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{temp}}\right)^c \text{ and } \left(\Dmod_{\frac{1}{2}}(\Bun_G)_{\Eis}\right)^c$$ generate $\Dmod_{\frac{1}{2}}(\Bun_G)$.
+- **Lemma** `l:Eis`  
+  - Location: `gaits1.tex` lines 3798-3809
+  - Context: Restricted vs full GLC
+  - Preview: \label{l:Eis} For a given parabolic subgroup $P$ with Levi quotient $M$, the diagram $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M) @>{\BL_{M,\on{coarse}}}>> \QCoh(\LS_\cM) \\ @V{\Eis_!}VV @VV{\Eis^{\on{spec}}_{\on{coarse}}}V \\ \Dmod_{\frac{1}{2}}(\Bun_G) @>{\BL_{G,\on{coarse}}}>> \QCoh(\LS…
+- **Proposition** `p:uR ff on compacts Betti`  
+  - Location: `gaits1.tex` lines 3836-3841
+  - Context: Restricted vs full GLC
+  - Preview: \label{p:uR ff on compacts Betti} The functor $$\bu^R|_{\Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)^c}:\Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)^c\to \Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)_{\on{temp}}$$ is fully faithful.
+- **Proposition** `p:images Betti`  
+  - Location: `gaits1.tex` lines 3843-3849
+  - Context: Restricted vs full GLC
+  - Preview: \label{p:images Betti} Assume that $\BL^{\on{Betti}}_{G,\on{temp}}$ is an equivalence (for the group $G$ and all its Levi subgroups). Then the essential image of $\Shv^{\on{Betti}}_{\frac{1}{2},\Nilp}(\Bun_G)^c$ in $\QCoh(\LS^{\on{Betti}}_\cG)$ under $$\BL^{\on{Betti}}_{G,\on{tem…
+- **Theorem** `t:eigensheaves`  
+  - Location: `gaits1.tex` lines 3983-4041
+  - Context: The structure of Hecke eigensheaves / Statement of the main result
+  - Preview: \label{t:eigensheaves} As above, let $\sigma$ be an irreducible local system and assume the geometric Langlands conjecture. \begin{enumerate} \item\label{i:eigen-rs} $\CF_{\sigma}$ is holonomic and has regular singularities. \item\label{i:eigen-nilp} The singular support of $\CF_…
+- **Remark** `auto0056@L4059`  
+  - Location: `gaits1.tex` lines 4059-4067
+  - Context: The structure of Hecke eigensheaves / Statement of the main result
+  - Preview: We note that one can check directly that the multiplicity of the zero section in $[\Nilp]$ is $\prod_{d_i \geq 2} d_i^{\dim \Gamma(\Omega_X^{1,\otimes d_i})} = \prod d_i^{(2d_i-1)(g-1)}$ for $d_i$ running over the exponents of $G$; it follows that this is the rank of $\CF_{\sigma…
+- **Theorem** `t:cc-cts`  
+  - Location: `gaits1.tex` lines 4168-4175
+  - Context: The structure of Hecke eigensheaves / Characteristic cycles for eigensheaves / Idea of the proof
+  - Preview: \label{t:cc-cts} For every pair of irreducible local systems $\sigma_1,\sigma_2 \in \LS_{\cG}$ lying in the same irreducible component of $\LS_{\cG}$, $\on{CC}(\CF_{\sigma_1}) = \on{CC}(\CF_{\sigma_2})$.
+- **Theorem** `t:cc-existence` [Beilinson-Drinfeld]  
+  - Location: `gaits1.tex` lines 4179-4186
+  - Context: The structure of Hecke eigensheaves / Characteristic cycles for eigensheaves / Idea of the proof
+  - Preview: \label{t:cc-existence} Let $\LS_{\cG,\on{neut}} \subset \LS_{\cG}$ be the irreducible component of $\LS_{\cG}$ containing the trivial local system. Then there exists an irreducible local system $\sigma \in \LS_{\cG,\on{neut}}$ such that $\on{CC}(\CF_{\sigma}) = [\Nilp]$.
+- **Remark** `auto0059@L4193`  
+  - Location: `gaits1.tex` lines 4193-4198
+  - Context: The structure of Hecke eigensheaves / Characteristic cycles for eigensheaves / Idea of the proof
+  - Preview: Theorem \ref{t:cc-existence} is proved by de Rham methods, but Theorem \ref{t:cc-cts} will be proved by Betti methods.
+- **Theorem** `t:microstalk`  
+  - Location: `gaits1.tex` lines 4224-4242
+  - Context: The structure of Hecke eigensheaves / Proof of Theorem \ref{t:cc-cts} / Review of microstalks
+  - Preview: \label{t:microstalk} There is a functor $\mu_{\xi}:\Shv_{\Lambda}(\CY) \to \Vect$ with the following properties: \begin{enumerate} \item\label{i:micro-exact} $\mu_{\xi}$ is t-exact. \item\label{i:micro-corep} $\mu_{\xi}$ admits a left adjoint, i.e., $\mu_{\xi}$ is corepresented b…

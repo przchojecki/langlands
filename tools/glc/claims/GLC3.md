@@ -1,0 +1,1074 @@
+# GLC3 claim index
+
+- Total claims: **265**
+
+## Counts by kind
+- remark: 73
+- corollary: 54
+- proposition: 48
+- theorem: 46
+- lemma: 42
+- conjecture: 2
+
+## Claims (metadata + preview)
+
+- **Remark** `auto0001@L941`  
+  - Location: `gaits3.tex` lines 941-951
+  - Context: Introduction
+  - Preview: One can say that our approach to the proof of the geometric Langlands conjecture consists of playing diagrams \eqref{e:coeff comp L Intro} and \eqref{e:Langlands critical compat Intro} one against the other. \medskip Note that the approach to geometric Langlands via \eqref{e:coef…
+- **Theorem** `t:geom intertwiner`  
+  - Location: `gaits3.tex` lines 2531-2536
+  - Context: The local semi-infinite category
+  - Preview: \label{t:geom intertwiner} The composite functor $$\Dmod(\Gr_G)^{\fL(N(P))} \hookrightarrow \Dmod(\Gr_G)\twoheadrightarrow \Dmod(\Gr_G)_{\fL(N^-_P)}$$ is an equivalence (as factorization categories).
+- **Corollary** `c:geom intertwiner`  
+  - Location: `gaits3.tex` lines 2542-2550
+  - Context: The local semi-infinite category
+  - Preview: \label{c:geom intertwiner} The functor \begin{multline} \label{e:long intertwiner} \on{I}(G,P)^{\on{loc}}:=\Dmod_{\frac{1}{2}}(\Gr_G)^{\fL(N(P))\cdot \fL^+(M),\on{ren}} \hookrightarrow \\ \hookrightarrow \Dmod_{\frac{1}{2}}(\Gr_G)^{\fL^+(M),\on{ren}}\twoheadrightarrow \Dmod_{\fra…
+- **Remark** `r:non-trivial transl`  
+  - Location: `gaits3.tex` lines 2763-2770
+  - Context: The local semi-infinite category
+  - Preview: \label{r:non-trivial transl} The automorphism $(\on{transl}_{\CP_{Z_M}})^*$ of $\Sph_M$ is \emph{non-trivial}. However, its composition with the naive Satake functor $$\on{Sat}_M^{\on{nv}}:\Rep(\cM)\to \Sph_M.$$ \emph{is canonically} trivial.
+- **Theorem** `t:semiinf geom Satake`  
+  - Location: `gaits3.tex` lines 3636-3658
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{t:semiinf geom Satake} There exists an equivalence of unital factorization categories $$\Sat^{-,\semiinf}:\on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)}\to \on{I}(\cG,\cP^-)^{\on{spec,loc}},$$ compatible with the actions of \begin{equation} \label{e:Sat G tau} \Sph_G \overset…
+- **Remark** `auto0006@L3672`  
+  - Location: `gaits3.tex` lines 3672-3695
+  - Context: Spectral semi-infinite category/ies
+  - Preview: The existence of \emph{an} equivalence $$\on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)}\simeq \on{I}(\cG,\cP^-)^{\on{spec,loc}}$$ was established in \cite{CR}.\footnote{At the pointwise level, the existence of an equivalence between $\on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)}$ and…
+- **Corollary** `c:!-Jacquet on Whit`  
+  - Location: `gaits3.tex` lines 3707-3716
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{c:!-Jacquet on Whit} The following diagram of factorization categories and functors commutes: \begin{equation} \label{e:!-Jacquet on Whit} \CD \Whit^!(G) @>{\on{CS}_{G,\tau}}>> \Rep(\cG) \\ @V{J^{-,!}_{\Whit}}VV @VV{\on{inv}_{\cN^-_P}=J^{-,\on{spec},!}}V \\ \Whit^!(M) @>{\…
+- **Remark** `r:! Jaq`  
+  - Location: `gaits3.tex` lines 3718-3730
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{r:! Jaq} Although we stated the commutativity of \eqref{e:!-Jacquet on Whit} as a corollary of \thmref{t:semiinf geom Satake}, when it comes to proofs, the actual logic of the proofs is the other way around: one establishes \corref{c:!-Jacquet on Whit} first, and this is a…
+- **Remark** `r:Ups`  
+  - Location: `gaits3.tex` lines 3732-3744
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{r:Ups} What follows from \cite{CR} is that the diagram \begin{equation} \label{e:J* Whit} \CD \Whit^!(G) @>{\on{CS}_{G,\tau}}>> \Rep(\cG) \\ @V{J^{-,*}_{\Whit}}VV @VV{J^{-,\on{spec},*}}V \\ \Whit^!(M) @>{\on{CS}_{M,\tau}}>> \Rep(\cM) \endCD \end{equation} commutes.
+- **Proposition** `p:semiinf Sat IC`  
+  - Location: `gaits3.tex` lines 3815-3818
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{p:semiinf Sat IC} We have a canonical isomorphism of unital factorization algebras $$\Sat^{-,\semiinf}(\IC^{-,\semiinf})\simeq \IC^{-,\on{spec},\semiinf}.$$
+- **Corollary** `c:semiinf Sat IC`  
+  - Location: `gaits3.tex` lines 3820-3829
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{c:semiinf Sat IC} The following diagram of factorization categories and functors commutes: \begin{equation} \label{e:IC Jacquet on Whit and Rep} \CD \Whit^!(G) @>{\on{CS}_{G,\tau}}>> \Rep(\cG) \\ @V{J^{-,!*}_{\Whit}}VV @VV{\on{Res}^\cG_\cM\simeq J^{-,\on{spec},!*}}V \\ \Wh…
+- **Remark** `auto0012@L3831`  
+  - Location: `gaits3.tex` lines 3831-3840
+  - Context: Spectral semi-infinite category/ies
+  - Preview: The commutativity of \eqref{e:IC Jacquet on Whit and Rep} for $P=B$ (essentially) follows from \cite[Theorem 4.15.1]{Ra4}. A direct proof of \corref{c:semiinf Sat IC} (without referring to \propref{p:semiinf Sat IC}) for an arbitrary parabolic will be given in \cite{FH}.
+- **Remark** `r:IGP spec duality`  
+  - Location: `gaits3.tex` lines 3855-3872
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{r:IGP spec duality} Note according to \secref{sss:self-duality twisted geom cen}, the identification \eqref{e:self-duality I G P spec} is compatible with: \begin{itemize} \item The natural actions of $\Sph_\cG^{\on{spec}}$ on the two sides; \medskip \item The natural actio…
+- **Proposition** `p:semiinf spec IC dual`  
+  - Location: `gaits3.tex` lines 3959-3962
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{p:semiinf spec IC dual} The factorization algebra $\IC^{-,\on{spec},\semiinf}_{\on{co}}$ corresponds under the identification \eqref{e:self-duality I G P spec} to the factorization algebra $\IC^{-,\on{spec},\semiinf}$.
+- **Remark** `r:no LS N mer`  
+  - Location: `gaits3.tex` lines 4009-4035
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{r:no LS N mer} That said, one can consider the factorization category \begin{equation} \label{e:ambient spec QCo co} \QCoh_{\on{co}}(\LS^\Mmf_{\cP^-}), \end{equation} see \cite[Sect. B.13.8]{GLC2}. \medskip Over a fixed point $\ul{x}\in \Ran$, the functor $$\Psi_{\LS^\Mmf_…
+- **Theorem** `t:semiinf CS`  
+  - Location: `gaits3.tex` lines 4071-4088
+  - Context: Spectral semi-infinite category/ies
+  - Preview: \label{t:semiinf CS} There exists an equivalence of unital factorization categories \begin{equation} \label{e:ambient} \on{CS}^{-,\semiinf}_\tau: \Whit^!(G)\underset{\Sph_G}\otimes \on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)} \simeq \IndCoh^*((\LS^\Mmf_{\cP^-})^\wedge_\mf), \end{e…
+- **Remark** `auto0017@L4092`  
+  - Location: `gaits3.tex` lines 4092-4095
+  - Context: Spectral semi-infinite category/ies
+  - Preview: As far as the actual logic of the proofs is concerned, we will prove \thmref{t:semiinf CS} first, and then use it to deduce \thmref{t:semiinf geom Satake}.
+- **Remark** `auto0018@L4509`  
+  - Location: `gaits3.tex` lines 4509-4527
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: Recall (see \cite[Sect. B.14]{GLC2}) that $\hg\mod_{\crit_G+\kappa}$ has a natural structure of (unital) factorization category, and this structure in inherited by $(\hg\mod_{\crit_G+\kappa})_{\fL(N^-_P)}$. \medskip However, we do not know whether the operation of $\fL(N^-_P)$-\e…
+- **Remark** `auto0019@L4529`  
+  - Location: `gaits3.tex` lines 4529-4542
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: The version of the Wakimoto functor given by \eqref{e:semiinf Wak} may seem somewhat exotic. For example, it produces objects that are not seen by the t-structure on $\hg\mod_{\crit_G-\kappa}$ (i.e., all of their cohomologies are $0$). \medskip One recovers from it the usual Waki…
+- **Proposition** `p:wak-explicit, almost`  
+  - Location: `gaits3.tex` lines 4592-4631
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{p:wak-explicit, almost} The following diagram of (lax unital) factorization functors commutes: \[ \begin{tikzcd}[row sep = large, column sep = scriptsize] \hp^-\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\oblv^{\vee}"] \arrow[d,"\oblv"] && \hg…
+- **Remark** `e:triang g`  
+  - Location: `gaits3.tex` lines 4633-4648
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: Unwinding the abstraction, \propref{p:wak-explicit, almost} amounts to the identity \begin{equation} \label{e:triang g} \Gamma^{\IndCoh}(\fL(G),\delta_1) \simeq \Gamma^{\IndCoh}(\fL(P^-),\delta_1) \underset{\hb(M)}{\overset{\semiinf}{\otimes}} \Gamma^{\IndCoh}(\fL(B),\delta_1), \…
+- **Remark** `r:semiinf restr gen`  
+  - Location: `gaits3.tex` lines 4651-4658
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{r:semiinf restr gen} A similar result holds for any parabolic $\fp_2$ in place of the Borel, or more generally, any subalgebra $\fh \subset \fg$ with the property that $\fp^-+\fh = \fg$. In particular, we can apply it to $\fh=\fn$, see \lemref{l:wak restr to n} below.
+- **Corollary** `c:wak-explicit`  
+  - Location: `gaits3.tex` lines 4664-4684
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:wak-explicit} The following diagram of (lax unital) factorization functors commutes: \[ \begin{tikzcd}[row sep = large, column sep = scriptsize] \hm\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\Wak^{-,\semiinf}"] \arrow[d,"\oblv"] && \hg\mod_…
+- **Lemma** `l:wak restr to n`  
+  - Location: `gaits3.tex` lines 4691-4709
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{l:wak restr to n} The following diagram of (lax unital) factorization commutes \[ \begin{tikzcd}[row sep = large, column sep = scriptsize] \hp^-\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\oblv^{\vee}"] \arrow[d,"\oblv"] && \hg\mod_{\crit_G+\k…
+- **Corollary** `c:wak restr to n`  
+  - Location: `gaits3.tex` lines 4711-4730
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:wak restr to n} The following diagram of (lax unital) factorization functors commutes: \[ \begin{tikzcd}[row sep = large, column sep = scriptsize] \hm\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\Wak^{-,\semiinf}"] \arrow[d,"\oblv"] && \hg\mo…
+- **Corollary** `c:wak-usual-explicit prel`  
+  - Location: `gaits3.tex` lines 4784-4807
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:wak-usual-explicit prel} The following diagram of (lax unital) factorization functors commutes: \[ \begin{tikzcd}[row sep = large, column sep = large] \hm\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\Wak"] \arrow[d,"\oblv"] && \hg\mod_{\crit_…
+- **Corollary** `c:wak-usual-explicit`  
+  - Location: `gaits3.tex` lines 4813-4837
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:wak-usual-explicit} The following diagram of (lax unital) factorization functors commutes: \[ \begin{tikzcd}[row sep = large, column sep = large] \hm\mod_{\crit_M+\kappa-\rhoch_P} \arrow[rr,shorten <= 1ex, shorten >= 1ex, "\Wak"] \arrow[d,"\oblv"] && \hg\mod_{\crit_G+\ka…
+- **Remark** `auto0028@L4840`  
+  - Location: `gaits3.tex` lines 4840-4844
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \corref{c:wak-usual-explicit} expresses the following idea: the functor $\Wak$ produces objects that are ``semi-infinite free" with respect to $\fL(\fn_P)$, see \cite[Sect. 2.2]{Ga2}.
+- **Proposition** `p:wak-exact`  
+  - Location: `gaits3.tex` lines 4850-4855
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{p:wak-exact} At the pointwise level, the functor $\Wak$ is t-exact.
+- **Remark** `r:wak-exact`  
+  - Location: `gaits3.tex` lines 4857-4869
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{r:wak-exact} Note that \corref{c:wak-usual-explicit} implies that the t-exactness property in \propref{p:wak-exact} holds after applying the forgetful functor $\oblv:\hg\mod_{\crit_G+\kappa}^{\fL^+(N_P)} \to \Vect$. \medskip However, since the t-structure on $\hg\mod_{\cri…
+- **Lemma** `l:KM to Sph gen`  
+  - Location: `gaits3.tex` lines 4905-4920
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{l:KM to Sph gen} The functors $$\KL(G)_{\crit_G}\underset{\Sph_G}\otimes \Dmod_{\frac{1}{2}}(\Gr_G)_{\fL(N^-_P)}^{\fL^+(M),\on{ren}}\to \KL(G)_{\crit_G}\underset{\Sph_G}\otimes \Dmod_{\frac{1}{2}}(\Gr_G)_{\fL(N^-_P)}^{\fL^+(M)}$$ and $$\KL(G)_{\crit_G}\underset{\Sph_G}\oti…
+- **Corollary** `c:KM to Sph gen`  
+  - Location: `gaits3.tex` lines 4990-4992
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:KM to Sph gen} The functor \eqref{e:KM to Sph gen} identifies with the right adjoint of $\Accs$.
+- **Corollary** `c:Wak Sph via semiinf`  
+  - Location: `gaits3.tex` lines 4998-5005
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:Wak Sph via semiinf} The functor $\Wak^{-,\on{Sph}}$ is recovered from $\Wak^{-,\on{enh}}$ as \begin{multline*} \KL(M)_{\crit_M-\rhoch_P} \overset{\Wak^{-,\on{enh}}}\longrightarrow \KL(G)_{\crit_G}\underset{\Sph_G}\otimes \on{I}(G,P^-)^{\on{loc}} \overset{\on{Id}\otimes…
+- **Lemma** `l:DS of Wak`  
+  - Location: `gaits3.tex` lines 5379-5388
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{l:DS of Wak} The following diagram of (lax unital) factorization functors commutes: \begin{equation} \label{e:DS of Wak} \CD \hm\mod_{\crit_M+\kappa-\rhoch_P,\rho(\omega_X)} @>{\alpha_{\rho_P(\omega),\on{cent}}}>> \hm\mod_{\crit_M+\kappa-\rhoch_P+\kappa(\rho_P,-),\rho_M(\o…
+- **Corollary** `c:DS of Wak`  
+  - Location: `gaits3.tex` lines 5394-5403
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:DS of Wak} The following diagram of (lax unital) factorization functors commutes: $$ \CD \KL(M)_{\crit_M+\kappa-\rhoch_P+\kappa(\rho_P,-)} & @>{\alpha_{\rho_M(\omega),\on{taut}}}>>& \KL(M)_{\crit_M+\kappa-\rhoch_P+\kappa(\rho_P,-),\rho_M(\omega_X)} \\ @V{\Wak^{-,\semiinf…
+- **Corollary** `c:DS of Wak usual`  
+  - Location: `gaits3.tex` lines 5417-5426
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:DS of Wak usual} The following diagram of (lax unital) factorization functors commutes: $$ \CD \KL(M)_{\crit_M+\kappa-\rhoch_P+\kappa(\rho_P,-)} & @>{\alpha_{\rho_M(\omega),\on{taut}}}>>& \KL(M)_{\crit_M+\kappa-\rhoch_P+\kappa(\rho_P,-),\rho_M(\omega_X)} \\ @V{\Wak_{\rho…
+- **Corollary** `c:DS of Wak crit`  
+  - Location: `gaits3.tex` lines 5432-5449
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: \label{c:DS of Wak crit} The following diagrams of (lax unital) factorization functors commute: $$ \CD \KL(M)_{\crit_M-\rhoch_P} & @>{\alpha_{\rho_M(\omega),\on{taut}}}>>& \KL(M)_{\crit_M-\rhoch_P,\rho_M(\omega_X)} \\ @V{\Wak^{-,\semiinf}_{\rho_P(\omega_X)}}VV & & @VV{\DS_M}V \\…
+- **Lemma** `auto0038@L5521`  
+  - Location: `gaits3.tex` lines 5521-5537
+  - Context: Jacquet and Wakimoto functors for Kac-Moody modules
+  - Preview: Suppose $\fh$ is a Tate Lie algebra, $\mathfrak{k} \subset \fh$ is a subalgebra that is a lattice, and $\fh_0 \subset \fh$ is a Tate Lie subalgebra. Then for any $\CN \in \mathfrak{k}\mod$, $\on{ind}_{\mathfrak{k}}^{\fh}(\CN)$ has a canonical $\bZ^{\geq 0}$-indexed filtration $$\…
+- **Lemma** `l:Miura`  
+  - Location: `gaits3.tex` lines 6753-6755
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{l:Miura} The map \eqref{e:MOp to Op M} is an isomorphism.
+- **Remark** `auto0040@L6757`  
+  - Location: `gaits3.tex` lines 6757-6763
+  - Context: Jacquet functor(s) for opers
+  - Preview: The composition $$\sfp^{\on{Miu}}\circ (\sfq^{\on{Miu}})^{-1}$$ is a map $$\Op_{\cM,\rhoch_P}\to \Op_\cG,$$ called the (parabolic) Miura transform.
+- **Remark** `auto0041@L6765`  
+  - Location: `gaits3.tex` lines 6765-6778
+  - Context: Jacquet functor(s) for opers
+  - Preview: The assertion of \lemref{l:Miura} has the following classical counterpart: let $$\fb = \on{Fil}_0(\fg) \subset \on{Fil}_{-1}(\fg)\subset \fg$$ be the corresponding piece of the principal filtration. Then $$(\on{Fil}_{-1}(\fg)/\on{Ad}(B)\underset{\fg/\on{Ad}(G)}\times \fp^-/\on{Ad…
+- **Remark** `r:j not open`  
+  - Location: `gaits3.tex` lines 6945-6949
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{r:j not open} Note that although the map $$\MOp^\reg_{\cG,\cP^-}\to \Op^\reg_{\cG,\cP^-}$$ is an open embedding, this is \emph{no longer the case} for the three maps denoted $\jmath$ above.
+- **Remark** `auto0043@L7006`  
+  - Location: `gaits3.tex` lines 7006-7021
+  - Context: Jacquet functor(s) for opers
+  - Preview: Generalizing \cite{FG2}, we conjecture\footnote{In fact, we believe that this conjecture can be proved by the methods of {\it loc. cit.}} that the category $\IndCoh^!(\Op^\Mmf_{\cG,\cP^-,\ul{x}})$ is equivalent to the category $$((\hg\mod_{\crit_G})_{\fL(N^-_P)}^{\fL^+(M)})_{\ul{…
+- **Proposition** `p:MOp form comp`  
+  - Location: `gaits3.tex` lines 7459-7466
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{p:MOp form comp} The functor \begin{equation} \label{e:MOp form comp *} \IndCoh^*(\on{pt}\underset{\LS^\mer_\cG}\times\MOp^\Mmf_{\cG,\cP^-}) \underset{\IndCoh^*(\fL_\nabla(\cG))}\otimes \Vect \to \IndCoh^*((\MOp^\Mmf_{\cG,\cP^-})^\wedge_\mf) \end{equation} is an equivalenc…
+- **Corollary** `c:MOp form comp`  
+  - Location: `gaits3.tex` lines 7524-7531
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{c:MOp form comp} The functor \begin{equation} \label{e:MOp form comp !} \IndCoh^!((\MOp^\Mmf_{\cG,\cP^-})^\wedge_\mf)\to \IndCoh^!(\on{pt}\underset{\LS^\mer_\cG}\times\MOp^\Mmf_{\cG,\cP^-}) \overset{\IndCoh^!(\fL_\nabla(\cG))}\otimes \Vect \end{equation} is an equivalence.
+- **Remark** `auto0046@L7566`  
+  - Location: `gaits3.tex` lines 7566-7568
+  - Context: Jacquet functor(s) for opers
+  - Preview: Note that the map \eqref{e:J G-mf} is \emph{not} an open embedding, see Remark \ref{r:j not open} above.
+- **Lemma** `l:BC Miura`  
+  - Location: `gaits3.tex` lines 7676-7678
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{l:BC Miura} The natural transformations \eqref{e:BC Miura !} and \eqref{e:BC Miura *} are isomorphisms.
+- **Corollary** `c:factor Jacquet`  
+  - Location: `gaits3.tex` lines 7750-7766
+  - Context: Jacquet functor(s) for opers
+  - Preview: \label{c:factor Jacquet} \hfill \smallskip \noindent{\em(a)} The functor $J^{-,\on{spec}}_\Op$ identifies canonically with $$\IndCoh^!(\Op^\mf_\cG) \overset{\text{\eqref{e:Op to Op semiinf !}}}\longrightarrow \IndCoh^!((\Op^\Mmf_{\cG,\cP^-})^\wedge_\mf)\overset{J^{-,\on{spec},\se…
+- **Theorem** `t:local Jacquet`  
+  - Location: `gaits3.tex` lines 8054-8063
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: \label{t:local Jacquet} The following diagram of (lax unital) factorization functors commutes \begin{equation} \label{e:local Jacquet} \CD \KL(M)_{\crit_M+\rhoch_P} @>{\on{FLE}_{M,\crit_G+\rhoch_P}}>> \IndCoh^*(\Op_{\cM,\rhoch_P}^{\on{mon-free}}) \\ @A{J^{-,\Sph}_{\on{KM},\rho_P(…
+- **Remark** `auto0050@L8065`  
+  - Location: `gaits3.tex` lines 8065-8067
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: Note that the statement of \thmref{t:local Jacquet} bears a similarity with that of \corref{c:!-Jacquet on Whit}.
+- **Theorem** `t:local Jacquet enh`  
+  - Location: `gaits3.tex` lines 8167-8179
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: \label{t:local Jacquet enh} The following diagram of (lax unital) factorization functors commutes $$ \CD \KL(M)_{\crit_M+\rhoch_P} @>{\text{\eqref{e:Chev dual FLE M}}}>> \IndCoh^!(\Op^\mf_{\cM,\rhoch_P}) \\ @A{J^{-,\on{enh}_{\on{co}}}_{\on{KM},\rho_P(\omega_X)}}AA @AA{J^{-,\on{sp…
+- **Remark** `auto0052@L8182`  
+  - Location: `gaits3.tex` lines 8182-8184
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: Note the formal similarity between the statement of \thmref{t:local Jacquet dual enh} and that of \thmref{t:semiinf geom Satake}.
+- **Theorem** `t:local Jacquet dual`  
+  - Location: `gaits3.tex` lines 8230-8239
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: \label{t:local Jacquet dual} The following diagram of (lax unital) factorization functors commutes: \begin{equation} \label{e:dual Jacquet diagram} \CD \KL(M)_{\crit_G-\rhoch_P} @>{\FLE_{M,\crit_G+\rhoch_P}\circ \tau_M}>> \IndCoh^*(\Op_{\cM,\rhoch_P}^{\on{mon-free}}) \\ @V{\Wak^{…
+- **Theorem** `t:local Jacquet dual enh`  
+  - Location: `gaits3.tex` lines 8257-8270
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: \label{t:local Jacquet dual enh} The following diagram of (lax unital) factorization functors commutes: \smallskip \begin{equation} \label{e:dual Jacquet enh diagram} \CD \KL(M)_{\crit_G-\rhoch_P} @>{\FLE_{M,\crit_G+\rhoch_P}\circ \tau_M}>> \IndCoh^*(\Op_{\cM,\rhoch_P}^{\on{mon-f…
+- **Remark** `auto0055@L8291`  
+  - Location: `gaits3.tex` lines 8291-8303
+  - Context: Compatibility of the FLE with the Jacquet functors
+  - Preview: When working at the pointwise level, the statement of \thmref{t:local Jacquet dual enh} is close to what is proved in \cite{FG1}, and in fact one can generalize the results of {\it loc. cit.} to deduce the full statement of \thmref{t:local Jacquet dual enh} at the pointwise level…
+- **Remark** `r:OpMmf`  
+  - Location: `gaits3.tex` lines 8441-8451
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{r:OpMmf} Informally, one should thing of $\bC$ as a \emph{partial left completion} of the \emph{would-be} category \begin{equation} \label{e:OpMmf} \IndCoh^*(\Op^\Mmf_{\cG,\cP^-}). \end{equation} The problem is, however, that we do not know how to define \eqref{e:OpMmf} as…
+- **Remark** `r:OpMmf wedge`  
+  - Location: `gaits3.tex` lines 8513-8524
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{r:OpMmf wedge} Recall that although we could not define \eqref{e:OpMmf} as a factorization category, we could do so for $\IndCoh^*((\Op^\Mmf_{\cG,\cP^-})^\wedge_\mf)$. \medskip In the spirit of Remark \ref{r:OpMmf}, the category $$\Omega(R)^\Op\mod^{\on{fact}}\left(\IndCoh…
+- **Remark** `auto0058@L8563`  
+  - Location: `gaits3.tex` lines 8563-8584
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: Recall (see \eqref{e:Op semiinf * bis}) that we can think of $$\IndCoh^*(\Op_\cG^{\on{mon-free}}) \underset{\Sph_\cG^{\on{spec}}}\otimes \on{I}(\cG,\cP^-)^{\on{spec,loc}}$$ as $\IndCoh^*((\Op^\Mmf_{\cG,\cP^-})^\wedge_\mf)$. \medskip In terms of this identification and Remark \ref…
+- **Remark** `r:OpMmf functor`  
+  - Location: `gaits3.tex` lines 8610-8646
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{r:OpMmf functor} In terms of Remarks \ref{r:OpMmf} and \ref{r:OpMmf wedge}, the functor $\sF^{\on{spec}}_{\MOp(\cM)}$ is the composition \begin{multline*} \IndCoh^*(\Op_{\cM,\rhoch_P}^{\on{mon-free}})\overset{((\sfq^{\on{Miu,mon-free}})^\wedge)^!}\longrightarrow \IndCoh^*(…
+- **Remark** `auto0060@L8746`  
+  - Location: `gaits3.tex` lines 8746-8750
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: See Remark \ref{r:OpMmf functor} for the geometric meaning of the functor $\sF^{\on{spec,ext}}_{\MOp(\cM)}$.
+- **Proposition** `p:F KM Sph via semiinf`  
+  - Location: `gaits3.tex` lines 8845-8854
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{p:F KM Sph via semiinf} The functor $\on{pre-pre-}\!\sF_{\on{KM}(G)}$ identifies canonically with the composition \begin{multline} \label{e:F KM Sph via semiinf} \KL(G)_{\crit_G}\underset{\Sph_G}\otimes \on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)} \overset{\on{Id}\otimes \a…
+- **Proposition** `p:support of Wak Sph`  
+  - Location: `gaits3.tex` lines 8927-8964
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{p:support of Wak Sph} \hfill \smallskip \noindent{\em(a)} The functor $$\Wak^{-,\semiinf}_{\rho_P(\omega_X)}:\KL(M)_{\crit_M-\rhoch_P}\to (\hg\mod_{\crit_G})^{-,\semiinf}$$ sends $(\KL(M)_{\crit_M-\rhoch_P})_{\Gmf}\subset \KL(M)_{\crit_M-\rhoch_P}$ to essential image of \e…
+- **Corollary** `c:support of Wak Sph`  
+  - Location: `gaits3.tex` lines 8972-8978
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{c:support of Wak Sph} We have a canonical isomorphism $$\Wak^{-,\semiinf}_{\rho_P(\omega_X)}|_{(\KL(M)_{\crit_M-\rhoch_P})_{\Gmf}} \circ ((\sfq^{\on{Miu,mon-free}})^\wedge)^! \simeq \Wak^{-,\on{enh}}_{\rho_P(\omega_X)}$$ as functors $$\KL(M)_{\crit_M-\rhoch_P}\to \KL(G)_{\…
+- **Remark** `auto0064@L9103`  
+  - Location: `gaits3.tex` lines 9103-9108
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: Note that in computing the above compositions, the Chevalley involutions on either $G$ or $M$ played no role. They will, however, play a role for the next step in constructing \eqref{e:ident pre pre F}, see \secref{sss:center on Wak} below.
+- **Corollary** `c:Miura and Wak`  
+  - Location: `gaits3.tex` lines 9280-9287
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{c:Miura and Wak} The functor $$\Wak:\hm\mod_{\crit_M-\rhoch_P}\to (\hg\mod_{\crit_G})^{\fL^+(N_P)}$$ is compatible with the above actions via the monoidal functor \begin{equation} \label{e:Miura transform IndCoh} \IndCoh^!(\Op^\mer_\cG)\overset{(\sfp^{\on{Miu}})^!}\longrig…
+- **Corollary** `c:Miura and BRST`  
+  - Location: `gaits3.tex` lines 9300-9314
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{c:Miura and BRST} The composite functor $$(\hg\mod_{\crit_G})^{\fL^+(N_P)}\to \hg\mod_{\crit_G} \overset{J^{-}_{\on{KM}}}\longrightarrow \hm\mod_{\crit_M+\rhoch_P}$$ is $\IndCoh^!(\Op^\mer_\cG)$-linear via \eqref{e:Miura transform IndCoh}, where: \begin{itemize} \item $\In…
+- **Proposition** `p:mon via Sph gen`  
+  - Location: `gaits3.tex` lines 9389-9393
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{p:mon via Sph gen} The inclusion $$\KL(G)_{\crit}\underset{\Sph_G}\otimes \Dmod_{\frac{1}{2}}(\Gr_{G,\ul{x}}) \subset (\hg\mod_{\crit})_{\mf}$$ is an equality.
+- **Theorem** `t:FG1`  
+  - Location: `gaits3.tex` lines 9561-9576
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{t:FG1} At the \emph{pointwise level}, the two circuits of the diagram \eqref{e:dual Jacquet enh diagram} commute when evaluated on the object $\on{Vac}(M)_{\crit_M-\rhoch_P}\in \KL(M)_{\crit_M-\rhoch_P}$. Moreover: \medskip \noindent{\em(i)} This isomorphism is compatible…
+- **Corollary** `c:FG1`  
+  - Location: `gaits3.tex` lines 9590-9593
+  - Context: Proof of \thmref{t:local Jacquet dual enh}
+  - Preview: \label{c:FG1} The unital factorization algebras $\wt\CA$ and $\wt\CA^{\on{spec}}$ are canonically isomorphic.
+- **Remark** `r:coJ  exact`  
+  - Location: `gaits3.tex` lines 9859-9870
+  - Context: Proof of \thmref{t:local Jacquet dual enh}, continuation
+  - Preview: \label{r:coJ exact} The above argument shows that the restriction of the functor $\on{co}\!J^{-,\on{spec},\on{enh}}_\Op$ to $$\IndCoh^*((\MOp^\Mmf_{\cG,\cP^-})^\wedge_\mf)\subset \IndCoh^*(\MOp^\Mmf_{\cG,\cP^-})$$ is actually t-exact. \medskip Indeed, the connective subcategory o…
+- **Remark** `auto0071@L9898`  
+  - Location: `gaits3.tex` lines 9898-9912
+  - Context: Proof of \thmref{t:local Jacquet dual enh}, continuation
+  - Preview: The object $$R_\cG^\Op\in \on{FactAlg}^{\on{untl}}(\QCoh(\Op^\reg_\cG)\otimes \Rep(\cG))$$ introduced above is closely related to the object $$R_{\cG,\Op}\in \on{FactAlg}^{\on{untl}}(\Rep(\cG))$$ from \cite[Equation (4.8)]{GLC2}. \medskip Namely, $$(\Gamma(\Op^\reg_\cG,-)\otimes…
+- **Proposition** `p:IndCoh* Op mf via R`  
+  - Location: `gaits3.tex` lines 9957-9970
+  - Context: Proof of \thmref{t:local Jacquet dual enh}, continuation
+  - Preview: \label{p:IndCoh* Op mf via R} \hfill \medskip \noindent{\em(a)} The functors \eqref{e:IndCoh* Op mf via R} and \eqref{e:IndCoh* Op mf via R P} are fully faithful at the pointwise level. \medskip \noindent{\em(b)} In the factorization setting, the functors \eqref{e:IndCoh* Op mf v…
+- **Proposition** `p:iota diag Op`  
+  - Location: `gaits3.tex` lines 10124-10140
+  - Context: Proof of \thmref{t:local Jacquet dual enh}, continuation
+  - Preview: \label{p:iota diag Op} The functor \eqref{e:iota fact mod} admits a continuous right adjoint. Moreover, the natural transformation in the diagram $$ \xy (0,0)*+{\IndCoh^*(\Op^\Pmf_{\cG,\cP^-})}="A"; (75,0)*+{\IndCoh^*((\Op^\Mmf_{\cG,\cP^-})^\wedge_\mf)}="B"; (0,-30)*+{R_\cG^\Op\m…
+- **Remark** `r:global IGP untl`  
+  - Location: `gaits3.tex` lines 10428-10498
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{r:global IGP untl} The contents of this remark will not be used in the sequel: \medskip One can show that the category $\left(\Dmod_{\frac{1}{2}}(\Bun_M)^{-,\on{enh}}\right)_{\Ran^{\on{untl}},\on{indep}}$ is equivalent to the category $\on{I}(G,P^-)^{\on{glob}}$ from \cite…
+- **Lemma** `l:approx prel`  
+  - Location: `gaits3.tex` lines 10626-10633
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{l:approx prel} The functor \eqref{e:pre CT enh} factors via the quotient $$\Dmod_{\frac{1}{2}}(\Gr_{G,\ul{x}})^{\fL^+(P^-)_{\ul{x}}}\simeq \Dmod_{\frac{1}{2}}(\Gr_{G,\ul{x}})_{\fL^+(N^-_P)_{\ul{x}}}^{\fL^+(M)_{\ul{x}}}\twoheadrightarrow \Dmod_{\frac{1}{2}}(\Gr_{G,\ul{x}})_…
+- **Remark** `auto0076@L10660`  
+  - Location: `gaits3.tex` lines 10660-10669
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: Note that by the same mechanism as in \lemref{l:KM to Sph gen}, the functor \begin{multline*} \Dmod_{\frac{1}{2}}(\Bun_G)^{-,\on{enh}_{\on{co}}}_{\ul{x}}=\Dmod_{\frac{1}{2}}(\Bun_G)\underset{\Sph_{G,\ul{x}}}\otimes \on{I}(G,P^-)_{\on{co},\ul{x}}^{\on{loc}}\to \\ \to \Dmod_{\frac{…
+- **Remark** `auto0077@L10812`  
+  - Location: `gaits3.tex` lines 10812-10820
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: In terms of the equivalence $$\left(\Dmod_{\frac{1}{2}}(\Bun_M)^{-,\on{enh}}\right)_{\Ran^{\on{untl}},\on{indep}}\simeq \on{I}(G,P^-)^{\on{glob}},$$ the resulting functor $$\Dmod_{\frac{1}{2}}(\Bun_G) \to \on{I}(G,P^-)^{\on{glob}}$$ identifies with the enhanced constant term func…
+- **Remark** `auto0078@L11037`  
+  - Location: `gaits3.tex` lines 11037-11043
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: In \cite{Ga3}, the functor $\Mir_{\Bun_G}$ was defined in the untwisted setting, i.e., for $\Dmod(\Bun_G)$ rather than for $\Dmod_{\frac{1}{2}}(\Bun_G)$. However, the same procedure defines is also for $\Dmod_{\frac{1}{2}}(\Bun_G)$, and the resulting functor has the same properti…
+- **Theorem** `t:intertwiners`  
+  - Location: `gaits3.tex` lines 11086-11097
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{t:intertwiners} The following diagram commutes \begin{equation} \label{e:intertwiners} \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co},\Ran}^{-,\on{enh}_{\on{co}}} @>{\Mir^{-,\on{enh}}_{\Bun_M,\tau}}>> \Dmod_{\frac{1}{2}}(\Bun_M)^{-,\on{enh}}_\Ran \\ @V{\Eis^{-,\on{enh}_{\on{co}}…
+- **Remark** `auto0080@L11099`  
+  - Location: `gaits3.tex` lines 11099-11116
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: More precisely, \thmref{t:intertwiners} differs from \cite[Theorem 5.3.5(b)]{Ch2} in the following technical points: \begin{itemize} \item In \emph{loc.cit.}, the theorem was about the corresponding ``independent'' categories (see Remark \ref{r:global IGP untl}). Note that the fu…
+- **Remark** `e:funct eq`  
+  - Location: `gaits3.tex` lines 11118-11130
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \thmref{t:intertwiners} generalizes the result of \cite[Theorem 4.1.2]{Ga3}, which says that the diagram \begin{equation} \label{e:funct eq} \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co}} @>{\Mir_{\Bun_M,\tau}}>> \Dmod_{\frac{1}{2}}(\Bun_M) \\ @V{\Eis^-_{\on{co},*}[\delta_{N^-_P}]}VV…
+- **Corollary** `c:intertwiners CT`  
+  - Location: `gaits3.tex` lines 11142-11151
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{c:intertwiners CT} The following diagram commutes: $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co}} @>{\Mir_{\Bun_M,\tau}}>> \Dmod_{\frac{1}{2}}(\Bun_M) \\ @A{\on{CT}^{-,\on{enh}}_{\on{co},?}[-\delta_{N^-_P}]}AA @AA{\on{CT}_*^{-,\on{enh}_{\on{co}}}[\delta_{N^-_P}]}A \\ \Dmod_{…
+- **Corollary** `c:intertwiners CT simple`  
+  - Location: `gaits3.tex` lines 11154-11163
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{c:intertwiners CT simple} The following diagram commutes: $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co}} @>{\Mir_{\Bun_M,\tau}}>> \Dmod_{\frac{1}{2}}(\Bun_M) \\ @A{\on{CT}^-_{\on{co},?}[-\delta_{N^-_P}]}AA @AA{\on{CT}_*^-[\delta_{N^-_P}]}A \\ \Dmod_{\frac{1}{2}}(\Bun_G)_{\on…
+- **Corollary** `c:twisted intertwiners`  
+  - Location: `gaits3.tex` lines 11373-11383
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{c:twisted intertwiners} The following diagram commutes \begin{equation} \label{e:twisted intertwiners} \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co},\CP_{Z_M},\Ran}^{-,\on{enh}_{\on{co}}} @>{\Mir^{-,\on{enh}}_{\Bun_M,\tau,\CP_{Z_M}}}>> \Dmod_{\frac{1}{2}}(\Bun_M)^{-,\on{enh}}_{…
+- **Corollary** `c:intertwiners twisted CT`  
+  - Location: `gaits3.tex` lines 11395-11404
+  - Context: Eisenstein and constant term functors on the geometric side
+  - Preview: \label{c:intertwiners twisted CT} The following diagram commutes: $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M)_{\on{co}} @>{\Mir_{\Bun_M,\tau}}>> \Dmod_{\frac{1}{2}}(\Bun_M) \\ @A{\on{CT}^{-,\on{enh}}_{\on{co},?,\CP_{Z_M}}[-\delta_{N^-_P}]}AA @AA{\on{CT}_{*,\tau_M(\CP_{Z_M})}^{-,\on{enh}_{…
+- **Remark** `auto0086@L11699`  
+  - Location: `gaits3.tex` lines 11699-11712
+  - Context: Global interpretation of the enhanced functors
+  - Preview: The construction below could be coarsened and considered to take values in be given with values in $\Dmod_{\det^{\frac{1}{2}}_{G,M}}(\BunPmtpx)$, instead of $\Dmod_{\det^{\frac{1}{2}}_{G,M}}(\BunPmtpx)_{\on{co}/\Bun_M}$. However, we need the finer versions (i.e., with values in $…
+- **Proposition** `p:* BunPt unital`  
+  - Location: `gaits3.tex` lines 11790-11792
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{p:* BunPt unital} The left-lax unital structure on $\ul{(\pi_*\circ \wt\sfs^!)}^{\on{Av}}$ is strict.
+- **Proposition** `p:loc vs global CT enh co`  
+  - Location: `gaits3.tex` lines 12016-12021
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{p:loc vs global CT enh co} There is a canonical isomorphism $$\on{CT}^{-,\on{enh}_{\on{co}},\on{glob}}_{*,\CZ} \simeq \on{CT}^{-,\on{enh}_{\on{co}}}_{*,\CZ},$$ as $\Sph_{M,\CZ}$-linear functors $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\CZ}^{-,\on{enh}_{\on{co}}} \rightrightarrows \D…
+- **Lemma** `l:approx`  
+  - Location: `gaits3.tex` lines 12053-12056
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{l:approx} There is a canonical isomorphism $$((\sff_{\ul{x}})_*\circ \sfs_{\ul{x}}^!)^{\on{Av}}\simeq (\pi_*\circ \wt\sfs^!)^{\on{Av}}_{\ul{x}}[2\cdot \on{shift}].$$
+- **Corollary** `c:loc vs global CT enh co`  
+  - Location: `gaits3.tex` lines 12066-12071
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:loc vs global CT enh co} There is a canonical isomorphism $$\on{CT}^{-,\on{enh}_{\on{co}},\on{glob}}_* \simeq \on{CT}^{-,\on{enh}_{\on{co}}}_*,$$ as functors $$\Dmod_{\frac{1}{2}}(\Bun_G)_\Ran^{-,\on{enh}_{\on{co}}} \rightrightarrows \Dmod_{\frac{1}{2}}(\Bun_M).$$
+- **Corollary** `c:loc vs global Eis enh co`  
+  - Location: `gaits3.tex` lines 12129-12145
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:loc vs global Eis enh co} \hfill \smallskip \noindent{\em(a)} There is a canonical isomorphism $$\Eis^{-,\on{enh}_{\on{co}},\on{glob}}_{\on{co},*,\CZ}\simeq \Eis^{-,\on{enh}_{\on{co}}}_{\on{co},*,\CZ}$$ as $\Sph_{G,\CZ}$-linear functors $$\Dmod_{\frac{1}{2}}(\Bun_M)_{\on…
+- **Proposition** `p:loc-to-glob Drinf defnd`  
+  - Location: `gaits3.tex` lines 12269-12300
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{p:loc-to-glob Drinf defnd} \hfill \smallskip \noindent{\em(a)} The functor $(\pi_\CZ)_!$ is well-defined and is $(\Sph_G\otimes \Sph_M)_\CZ$-linear on the essential image of \begin{multline} \label{e:loc-to-glob Drinf defnd} \on{I}(G,P^-)^{\on{loc}}_\CZ\to \Dmod_{\det^{\fr…
+- **Lemma** `auto0093@L12479`  
+  - Location: `gaits3.tex` lines 12479-12482
+  - Context: Global interpretation of the enhanced functors
+  - Preview: Under the above circumstances, $F^L$ is defined and is $\bA$-linear on the full subcategory of $\bD$ generated by $\bD^0$ under the action of $\bA$.
+- **Lemma** `l:Verdier duality loc vs glob`  
+  - Location: `gaits3.tex` lines 12524-12545
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{l:Verdier duality loc vs glob} For $\CF\in (\on{I}(G,P^-)^{\on{loc}}_S)^c$ we have \begin{equation} \label{e:Verdier duality loc vs glob} \BD^{\on{glob}}((\pi_!\circ \wt\sfs^!)_S(\CF)) \simeq (\pi_*\circ \wt\sfs^!)^{\on{Av}}_\CZ(\BD^{\on{loc}}(\CF))[-2 \dim(\Bun_M)], \end{…
+- **Corollary** `c:! BunPt unital`  
+  - Location: `gaits3.tex` lines 12608-12610
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:! BunPt unital} The right-lax unital structure on $\ul{(\pi_!\circ \wt\sfs)}$ is strict.
+- **Lemma** `l:Eis enh glob`  
+  - Location: `gaits3.tex` lines 12645-12647
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{l:Eis enh glob} The functor $\on{pre-Eis}^{-,\on{enh},\on{glob}}_{!,\CZ}$ is the left adjoint of the functor \eqref{e:pre CT enh dual}.
+- **Corollary** `c:loc vs glob Eis ! enh`  
+  - Location: `gaits3.tex` lines 12717-12734
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:loc vs glob Eis ! enh} \hfill \smallskip \noindent{\em(a)} There is a canonical isomorphism $$\on{Eis}^{-,\on{enh},\on{glob}}_{!,\CZ}\simeq \on{Eis}^{-,\on{enh}}_{!,\CZ}$$ as $\Sph_{G,\CZ}$-linear functors $$\Dmod_{\frac{1}{2}}(\Bun_M)_{\CZ}^{-,\on{enh}} \rightrightarrow…
+- **Corollary** `c:loc vs global CT enh ? co`  
+  - Location: `gaits3.tex` lines 12796-12812
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:loc vs global CT enh ? co} \hfill \smallskip \noindent{\em(a)} There is a canonical isomorphism $$\on{CT}^{-,\on{enh},\on{glob}}_{\on{co},?,\CZ}\simeq \on{CT}^{-,\on{enh}}_{\on{co},?,\CZ}$$ as $\Sph_{M,\CZ}$-linear functors $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{co},\CZ}^{-,…
+- **Proposition** `p:compact Eis`  
+  - Location: `gaits3.tex` lines 12856-12858
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{p:compact Eis} The functor $\Eis^-_{!*}$ identifies canonically with $\Eis^-_{!,\IC}$.
+- **Corollary** `c:compact CT`  
+  - Location: `gaits3.tex` lines 12862-12864
+  - Context: Global interpretation of the enhanced functors
+  - Preview: \label{c:compact CT} The functor $\on{CT}^-_{\on{co},!*}$ identifies canonically with $\on{CT}^-_{\on{co},?,\IC}$.
+- **Theorem** `t:CT co of Poinc`  
+  - Location: `gaits3.tex` lines 12907-12945
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{t:CT co of Poinc} For $\CZ\to \Ran$, the following diagram of functors commutes: \begin{equation} \label{e:CT co of Poinc *} \CD \Whit_*(G)_\CZ @>{\on{ins.unit}_\CZ}>> \Whit_*(G)_{\CZ^{\subseteq}} \\ @VV{\on{Poinc}_{G,*,\CZ}[2\delta_{(N_P)_{\rho_P(\omega_X)}}+\delta_{(N^-_…
+- **Corollary** `c:coeff of Eis !`  
+  - Location: `gaits3.tex` lines 12972-12984
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{c:coeff of Eis !} The following diagram of functors commutes: $$ \CD \Whit^!(G)_{\Ran^{\on{untl}},\on{indep}} @<{\on{emb.indep}_{\Whit^!(G)}^L}<< \Whit^!(G)_{\Ran^{\on{untl}}} @<{(J^{-,!}_{\Whit,\Theta})^\vee}<< \Whit^!(M)_{\Ran^{\on{untl}}} \\ @AA{\on{coeff}_{G,\on{untl}}…
+- **Lemma** `l:indep L`  
+  - Location: `gaits3.tex` lines 13042-13053
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:indep L} In the context of \cite[Lemma H.1.10]{GLC2} assume that $\ul\bC$ is dualizable as a crystal of categories over $\Ran_{\on{untl}}$. Then the functor left adjoint to $$\on{emb.indep}:\bC^{\on{loc}}_{\Ran^{\on{untl}},\on{indep}}\hookrightarrow \bC^{\on{loc}}_{\Ran^…
+- **Corollary** `c:CT Poinc !`  
+  - Location: `gaits3.tex` lines 13066-13095
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{c:CT Poinc !} For $\CZ\to \Ran$, the following diagram of functors commutes: $$ \CD \Whit^!(G)_\CZ @>{\on{ins.unit}_\CZ}>> \Whit^!(G)_{\CZ^{\subseteq}} \\ @VV{\on{Poinc}_{G,!,\CZ}[d]}V @VV{J^{-,!}_{\Whit,\tau}}V \\ \Dmod_{\frac{1}{2}}(\Bun_G)\otimes \Dmod(\CZ) & & \Whit^!(…
+- **Theorem** `t:Kevin`  
+  - Location: `gaits3.tex` lines 13102-13113
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{t:Kevin} The diagram \begin{equation} \label{e:Mir and Poinc} \CD \Whit^!(G)_\Ran @<{\Theta_{\Whit(G)}}<< \Whit_*(\Gr_G)_\Ran \\ @V{\Poinc_{G,!}}VV @VV{\Poinc_{G,*}[2\delta_{N_{\rho(\omega_X)}}]}V \\ \Dmod_{\frac{1}{2}}(\Bun_G) @<{\Mir_{\Bun_G}[2\delta_G]}<< \Dmod_{\frac{1…
+- **Theorem** `t:local-to-global Whit`  
+  - Location: `gaits3.tex` lines 13357-13391
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{t:local-to-global Whit} \hfill \smallskip \noindent{\em(a)} The functor $((\pi_\CZ)_*)^{\on{Av},\chi}$ takes values in $\Whit^{\on{glob}}(G)_{\on{co},\CZ}$, and the resulting functor $$\Whit_*(G)_\CZ \overset{((\pi_\CZ)_*)^{\on{Av},\chi}}\longrightarrow \Whit^{\on{glob}}(G…
+- **Lemma** `l:UHA`  
+  - Location: `gaits3.tex` lines 13459-13461
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:UHA} The map $\sff$ of \eqref{e:gen vs Ran} is pseudo-proper and \emph{universally homologically acyclic}.\footnote{See \cite[Sect. A.1.8]{Ga5} for what this means.}
+- **Lemma** `l:unital local and global Whit`  
+  - Location: `gaits3.tex` lines 13512-13518
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:unital local and global Whit} For $\CF\in \Whit^{\on{glob}}(G)_\CZ$, the object $$(\pi^{\on{pos}}_{\CZ^{\subseteq}})^! \circ (\on{id}\times \on{pr}_{\on{small},\CZ})^!(\CF)\in \Dmod_{\frac{1}{2}}(\Gr^{\on{pos}}_{G,\rho(\omega)_X,\CZ^{\subseteq}})\subset \Dmod_{\frac{1}{2…
+- **Lemma** `l:pullback Delta`  
+  - Location: `gaits3.tex` lines 13631-13633
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:pullback Delta} The map \eqref{e:pullback Delta} is an isomorphism.
+- **Remark** `auto0110@L13810`  
+  - Location: `gaits3.tex` lines 13810-13815
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: The superscript $\Ran$ in the notations $\Zas^\Ran$ and $\Zas^\Ran_\CZ$ is meant to distinguish these spaces from $\Zas_\Ran$ and $\Ran_{\CZ^\subseteq}$, respectively.
+- **Lemma** `l:basic Zastava`  
+  - Location: `gaits3.tex` lines 13841-13874
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:basic Zastava} There exists a canonical isomorphism $$\Zas^\Ran_\CZ\underset{\BunNbMZsub}\times \Gr_{M,\rho_M(\omega_X),\CZ^\subseteq} \simeq \Gr^{\on{pos}}_{G,\rho(\omega_X),\CZ^\subseteq}\underset{\Gr_{G,\rho(\omega_X),\CZ^\subseteq}}\times (\Gr_{G,\rho(\omega_X)}\time…
+- **Lemma** `l:open Bruhat`  
+  - Location: `gaits3.tex` lines 13950-13952
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{l:open Bruhat} The map \eqref{e:CT co of Poinc LHS 12} is an isomorphism if $\CF\in \Whit^{\on{glob}}(G)_{\on{co},\CZ}$.
+- **Proposition** `p:CT co of Poinc`  
+  - Location: `gaits3.tex` lines 14059-14070
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{p:CT co of Poinc} There is a canonical isomorphism \begin{multline} \label{e:CT co of Poinc main} (\on{transl}_{\rho_P(\omega_X)})^*\circ (\fs_{\CZ^{\subseteq}})_*\circ \sff_{M,\CZ}^! \left(\left(({}'\wt\sfp^-_\CZ)^!\circ ((\pi_\CZ)_*)^{\on{Av},\chi}(-)\right) \sotimes ({}…
+- **Remark** `auto0114@L14086`  
+  - Location: `gaits3.tex` lines 14086-14099
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: Note that one can regard \propref{p:CT co of Poinc} as giving an expression for $J^{-,!}_{\Whit}$ in ``finite-dimensional" terms, i.e., in terms of sheaves with finite-dimensional support. Namely, it says that in terms of the equivalences $$\Whit^!(G)_\CZ\overset{\Theta_{\Whit(G)…
+- **Proposition** `p:CT co of Poinc next`  
+  - Location: `gaits3.tex` lines 14203-14220
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{p:CT co of Poinc next} \hfill \smallskip \noindent{\em(a)} The first factor in \eqref{e:CT co of Poinc LHS 4}, viewed as an object of $$\Dmod_{\det^{\frac{1}{2}}_G}(\Gr_{G,\rho(\omega_X)}\times \Gr_{M,\rho(\omega_X)})_{\CZ^\subseteq},$$ identifies with $$p_1^!\circ \on{ins…
+- **Theorem** `t:CT co of Poinc enh`  
+  - Location: `gaits3.tex` lines 14278-14318
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{t:CT co of Poinc enh} For $\CZ\to \Ran$, the following diagram commutes \begin{equation} \label{e:CT co of Poinc * enh} \CD (\Whit_*(G)\underset{\Sph_G}\otimes \on{I}(G,P^-)^{\on{loc}}_{\rho_P(\omega_X)})_\CZ @>{\on{ins.unit}_\CZ}>> (\Whit_*(G)\underset{\Sph_G}\otimes \on{…
+- **Corollary** `c:coeff of Eis ! enh`  
+  - Location: `gaits3.tex` lines 14339-14369
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{c:coeff of Eis ! enh} For $\CZ\to \Ran$, the following diagram commutes: $$ \CD \Whit^!(G)_{\CZ^{\subseteq,\on{untl}},\on{indep}} @<{\on{emb.indep}_{\Whit^!(G)}^L}<< \Whit^!(G)_{\CZ^{\subseteq,\on{untl}}} \\ @A{\on{coeff}_{G,\CZ,\on{untl}}[d]}AA @AA{\on{co}\!J^{-,\on{enh}}…
+- **Proposition** `p:pullback Delta gen`  
+  - Location: `gaits3.tex` lines 14433-14448
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: \label{p:pullback Delta gen} For $\CF_I\in \on{I}(G,P^-)^{\on{loc}}_\CZ$, the object \begin{multline*} (\pi^{\on{neg}}_{\CZ^\subseteq})^!\circ (\on{id}\times \on{pr}_{\on{small},\CZ})^!\left((\pi_!\circ \wt\sfs^!)_\CZ(\CF_I)\right)\in \\ \in \Dmod_{(\pi^{\on{neg}})^*(\det_{G,M}^{…
+- **Remark** `auto0119@L14452`  
+  - Location: `gaits3.tex` lines 14452-14458
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: As the proof of \propref{p:pullback Delta gen} will show, the isomorphism of functors $$ \on{I}(G,P^-)^{\on{loc}}_\CZ\rightrightarrows \Dmod_{\det_{\Gr_G}^{\frac{1}{2}}\otimes \det_{\Gr_M}^{\frac{1}{2}}}(\Gr_G\times \Gr_M)_{\CZ^{\subseteq}}$$ stated in \propref{p:pullback Delta g…
+- **Remark** `auto0120@L14515`  
+  - Location: `gaits3.tex` lines 14515-14520
+  - Context: Interaction of parabolic induction with the Whittaker model
+  - Preview: One can show that the map $$(\on{id}\times \on{pr}_{\on{small},\CZ})_!\circ (\pi^{\on{neg}}_{\CZ^\subseteq})_!\circ \on{Av}_!^{\fL(M)/\fL^+(M)}(\on{ins.unit}_\CZ(\CF_I))\to (\pi_!\circ \wt\sfs^!)_\CZ(\CF_I),$$ obtained by adjunction from \eqref{e:pullback Delta gen 2}, is an isom…
+- **Theorem** `t:Loc kappa`  
+  - Location: `gaits3.tex` lines 14682-14693
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{t:Loc kappa} For $\CZ\to \Ran$, the following diagram of functors canonically commutes \begin{equation} \label{e:Loc kappa 0} \CD \Dmod_{\crit_G+\kappa}(\Bun_{P^-})\otimes \Dmod(\CZ) @>{\sfq^{-,\on{shift}}_*\otimes \on{Id}}>> \Dmod_{\crit_M+\kappa}(\Bun_M)\otimes \Dmod(\CZ…
+- **Corollary** `c:CT and Loc kappa`  
+  - Location: `gaits3.tex` lines 14699-14710
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc kappa} For $\CZ\to \Ran$, the following diagram of functors canonically commutes \begin{equation} \label{e:CT and Loc kappa} \CD \Dmod_{\crit_G+\kappa}(\Bun_G)\otimes \Dmod(\CZ) @>{\on{CT}^-_*\otimes \on{Id}}>> \Dmod_{\crit_M+\kappa}(\Bun_M)\otimes \Dmod(\CZ)…
+- **Corollary** `c:CT and Loc crit`  
+  - Location: `gaits3.tex` lines 14722-14733
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc crit} For $\CZ\to \Ran$, the following diagram of functors canonically commutes \begin{equation} \label{e:CT and Loc crit} \CD \Dmod_{\frac{1}{2}}(\Bun_G)\otimes \Dmod(\CZ) @>{\on{CT}^-_*\otimes \on{Id}}>> \Dmod_{\frac{1}{2}}(\Bun_M)\otimes \Dmod(\CZ) \\ @A{\L…
+- **Proposition** `p:rel det`  
+  - Location: `gaits3.tex` lines 14761-14767
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{p:rel det} There is a canonical isomorphism of line bundles on $\Bun_M$: $$\det(T^*(\Bun_{P^-}/\Bun_M))\simeq \det^{\otimes \frac{1}{2}}_{\Bun_{G,M}}\otimes \CL_{\rhoch_P(\omega_X)}\otimes \fl_{N^-_P},$$ where $$\rhoch_P(\omega_X):=2\rhoch_P(\omega^{\otimes \frac{1}{2}}_X)…
+- **Proposition** `p:Loc and duality P`  
+  - Location: `gaits3.tex` lines 14816-14834
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{p:Loc and duality P} With respect to the identification $$\left(\KL(P^-)_{\crit_M-\kappa-\rhoch_P}\right)^\vee \simeq \KL(P^-)_{\crit_G+\kappa}$$ induced by \eqref{e:duality KL P}, and $$(\Dmod_{\crit_M-\kappa+\rhoch_P}(\Bun_{P^-})_{\on{co}})^\vee\simeq \Dmod_{-\crit_M+\ka…
+- **Remark** `auto0126@L14836`  
+  - Location: `gaits3.tex` lines 14836-14843
+  - Context: Constant term of Kac-Moody localization
+  - Preview: In the statement of \propref{p:Loc and duality P}, it is not claimed that the category $$\Dmod_{\crit_M-\kappa+\rhoch_P}(\Bun_{P^-})_{\on{co}}$$ is dualizable, so the symbol $(\Dmod_{\crit_M-\kappa+\rhoch_P}(\Bun_{P^-})_{\on{co}})^\vee$ is understood as $$\on{Funct}_{\on{cont}}(\…
+- **Theorem** `t:CT and Loc crit enh`  
+  - Location: `gaits3.tex` lines 14934-14947
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{t:CT and Loc crit enh} For $\CZ\to \Ran$, the following diagram of functors canonically commutes, in a way compatible with the $\Sph_{M,\CZ}$-actions: $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)^{-,\on{enh}_{\on{co}}}_\CZ @>{\on{CT}^{-,\on{enh}_{\on{co}}}_{*,\CZ}}>> \Dmod_{\frac{1}…
+- **Theorem** `t:coeff Loc`  
+  - Location: `gaits3.tex` lines 15378-15383
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{t:coeff Loc} We have a canonical isomorphism $$(\ul\sP^{\on{loc,true}}_G)^{\int\, \on{ins.unit}}\otimes \fl^{\otimes -\frac{1}{2}}_{G,N_{\rho(\omega_X)}}\otimes \fl_{N_{\rho(\omega_X)}}[\delta_{N_{\rho(\omega_X)}}]\simeq \ul\sP^{\on{glob,true}}_G$$ as local-to-global funct…
+- **Lemma** `l:global twistings shift`  
+  - Location: `gaits3.tex` lines 15483-15496
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{l:global twistings shift} The isomorphism $\alpha_{\CP_{Z_G},\on{cent}}$ identifies the twisting $\kappa$ on $\Bun_{G,\CP_{Z_G}}$ with the twisting $$\kappa-\kappa(\on{dlog}(\CP_{Z_G},-)$$ on $\Bun_G$. Furthermore, the diagram \begin{equation} \label{e:ZG twisted loc diag}…
+- **Corollary** `c:pullback transl twist`  
+  - Location: `gaits3.tex` lines 15511-15515
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:pullback transl twist} The pullback of the twisting of the twisting $\kappa$ on $\Bun_G$ with respect to $\on{transl}_{\CP_{Z_G}}$ identifies canonically with the twisting $\kappa-\kappa(\on{dlog}(\CP_{Z_G},-)$.
+- **Corollary** `c:CT and Loc kappa transl`  
+  - Location: `gaits3.tex` lines 15563-15581
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc kappa transl} For $\CZ\to \Ran$, the following diagram of functors canonically commutes $$ \CD \Dmod_{\crit_G+\kappa}(\Bun_G)\otimes \Dmod(\CZ) @>{\on{CT}^-_{*,\CP_{Z_M}}\otimes \on{Id}}>> \Dmod_{\crit_M+\kappa-\kappa(\on{dlog}(\CP_{Z_M}),-)}(\Bun_M)\otimes \D…
+- **Corollary** `c:CT and Loc crit transl`  
+  - Location: `gaits3.tex` lines 15585-15602
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc crit transl} For $\CZ\to \Ran$, the following diagram of functors canonically commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)\otimes \Dmod(\CZ) @>{\on{CT}^-_{*,\CP_{Z_M}}\otimes \on{Id}}>> \Dmod_{\frac{1}{2}}(\Bun_M)\otimes \Dmod(\CZ) \\ @A{\Loc_{G,\CZ}}AA @AA{\fl…
+- **Corollary** `c:CT and Loc crit transl rho`  
+  - Location: `gaits3.tex` lines 15606-15623
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc crit transl rho} For $\CZ\to \Ran$, the following diagram of functors canonically commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)\otimes \Dmod(\CZ) @>{\on{CT}^-_{*,\rho_P(\omega_X)}\otimes \on{Id}}>> \Dmod_{\frac{1}{2}}(\Bun_M)\otimes \Dmod(\CZ) \\ @A{\Loc_{G,\CZ}…
+- **Corollary** `c:CT and Loc crit transl enh`  
+  - Location: `gaits3.tex` lines 15629-15645
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc crit transl enh} For $\CZ\to \Ran$, the following diagram of functors canonically commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)^{-,\on{enh}_{\on{co}}}_\CZ @>{\on{CT}^{-,\on{enh}_{\on{co}}}_{*,\CP_{Z_M},\CZ}}>> \Dmod_{\frac{1}{2}}(\Bun_M)\otimes \Dmod(\CZ) \\ @A{…
+- **Corollary** `c:CT and Loc crit transl enh rho`  
+  - Location: `gaits3.tex` lines 15649-15665
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:CT and Loc crit transl enh rho} For $\CZ\to \Ran$, the following diagram of functors canonically commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)^{-,\on{enh}_{\on{co}}}_\CZ @>{\on{CT}^{-,\on{enh}_{\on{co}}}_{*,\rho_P(\omega_X),\CZ}}>> \Dmod_{\frac{1}{2}}(\Bun_M)\otimes \Dmod(…
+- **Corollary** `c:rel det transl`  
+  - Location: `gaits3.tex` lines 15671-15691
+  - Context: Constant term of Kac-Moody localization
+  - Preview: \label{c:rel det transl} There is a canonical isomorphism of lines $$ \fl_{N^-_P}\otimes \on{Weil}(\rho_P(\omega_X),\rhoch_P(\omega_X)) \simeq \fl_{G,N_{\rho(\omega_X)}}^{\otimes -\frac{1}{2}}\otimes \fl_{N_{\rho(\omega_X)}}\otimes \fl^{\otimes \frac{1}{2}}_{M,N(M)_{\rho_M(\omega…
+- **Lemma** `l:CT spec IndCoh vs QCoh`  
+  - Location: `gaits3.tex` lines 15786-15795
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{l:CT spec IndCoh vs QCoh} There is a commutative diagram $$ \CD \QCoh(\LS_\cM) @>{\left((-)\otimes \det(T^*(\LS_{\cP^-}/\LS_\cG))\right)\circ \Xi_{\LS_\cM}[-(2g-2)\cdot \dim(\cn_P)]}>> \IndCoh(\LS_\cM) \\ @A{\on{CT}^{-,\on{spec}}_\QCoh}AA @AA{\on{CT}^{-,\on{spec}}}A \\ \QC…
+- **Lemma** `l:rel det LS`  
+  - Location: `gaits3.tex` lines 15860-15868
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{l:rel det LS} There is a canonical isomorphism of (ungraded) line bundles $$\det(T^*(\LS_{\cP^-}/\LS_\cM))\simeq \CL_{2\rho_P(\omega_X)}$$ and $$\det(T^*(\LS_{\cP^-}/\LS_\cG))\simeq \CL_{-2\rho_P(\omega_X)}$$ where by a slight abuse of notation we denote by the same symbol…
+- **Theorem** `t:Eis spec Gamma`  
+  - Location: `gaits3.tex` lines 16006-16008
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{t:Eis spec Gamma} The natural transformation \eqref{e:Eis spec Gamma nat 1} is an isomorphism.
+- **Corollary** `c:Eis spec Gamma`  
+  - Location: `gaits3.tex` lines 16050-16052
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{c:Eis spec Gamma} The natural transformation \eqref{e:Eis spec Gamma nat 1 IndCoh} is an isomorphism.
+- **Theorem** `t:CT of Loc spec QCoh`  
+  - Location: `gaits3.tex` lines 16126-16128
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{t:CT of Loc spec QCoh} The natural transformation \eqref{e:CT spec Loc nat 2} is an isomorphism.
+- **Corollary** `c:CT of Loc spec IndCoh`  
+  - Location: `gaits3.tex` lines 16146-16160
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{c:CT of Loc spec IndCoh} The following diagram of functors commutes: $$ \CD \Rep(\cG)_\CZ @>{\on{ins.unit}_\CZ}>> \Rep(\cG)_{\CZ^\subseteq} @>{J^{-,\on{spec},!}}>> \Rep(\cM)_{\CZ^\subseteq} \\ @V{\Loc^{-,\on{spec}}_{\cG,\CZ}}VV & & @VV{\Loc^{-,\on{spec}}_{\cM,\CZ^\subseteq…
+- **Remark** `auto0143@L16162`  
+  - Location: `gaits3.tex` lines 16162-16171
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \corref{c:CT of Loc spec IndCoh} is the Langlands-dual counterpart of \corref{c:CT Poinc !}. Note that the functor $$(\on{transl}_{2\rho_P(\omega_X)})^*: \Dmod_{\frac{1}{2}}(\Bun_M)\to \Dmod_{\frac{1}{2}}(\Bun_M),$$ appearing in \corref{c:CT Poinc !}, is the Langlands-dual of $$\…
+- **Remark** `r:old pullback`  
+  - Location: `gaits3.tex` lines 16529-16577
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{r:old pullback} Here is another way to think about the composition \begin{multline} \label{e:LS M fp 0.5} \IndCoh(\LS_\cM)\otimes \on{I}(\cG,\cP^-)^{\on{spec,loc}}_{\ul{x}}\to \IndCoh(\LS_\cM)^{-,\on{enh}}_{\ul{x}}\to \\ \overset{(\sfq^{-,\on{spec}}_{\ul{x}})^{*,\IndCoh,\o…
+- **Proposition** `p:q* indep`  
+  - Location: `gaits3.tex` lines 16765-16767
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{p:q* indep} The functor \eqref{e:q* indep} is an equivalence.
+- **Lemma** `l:IndCoh tensor up`  
+  - Location: `gaits3.tex` lines 16843-16849
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{l:IndCoh tensor up} The functor \eqref{e:IndCoh tensor up} defines an equivalence $$\IndCoh(\LS_\cM)\underset{\QCoh(\LS_\cM)}\otimes \QCoh(\LS_{\cP^-})\simeq \IndCoh_{\cM}(\LS_{\cP^-}),$$ where $$\IndCoh_{\cM}(\LS_{\cP^-})\subset \IndCoh(\LS_{\cP^-})$$ is the full subcateg…
+- **Corollary** `c:IndCoh tensor up`  
+  - Location: `gaits3.tex` lines 16861-16867
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{c:IndCoh tensor up} The functor $$\IndCoh(\LS_\cM)^{-,\on{part.enh}}_{\Ran^{\on{untl}},\on{indep}} \to \IndCoh(\LS_{\cP^-}),$$ defined by the (unital) local-to-global functor $$\CZ\rightsquigarrow (\sfq^{-,\on{spec}}_\CZ)^{\IndCoh,*,\on{part.enh}},$$ is an equivalence onto…
+- **Theorem** `t:Nick`  
+  - Location: `gaits3.tex` lines 16902-16918
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{t:Nick} The category $\IndCoh(\LS_\cM)^{-,\on{enh}}_{\Ran^{\on{untl}},\on{indep}}$ identifies canonically with $$\on{I}(\cG,\cP^-)^{\on{spec,glob}}:=\IndCoh_\cM\left((\LS_{\cP^-})_\dr\underset{(\LS_{\cG})_\dr}\times \LS_{\cG}\right).$$ Under this identification, the forget…
+- **Proposition** `p:Eis !* spec`  
+  - Location: `gaits3.tex` lines 16954-16956
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{p:Eis !* spec} The functors $\Eis^{-,\on{spec}}_{\IC}$ and $\Eis^{-,\on{spec}}_{!*}$ are canonically isomorphic.
+- **Theorem** `t:Eis spec enh Gamma`  
+  - Location: `gaits3.tex` lines 17184-17186
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{t:Eis spec enh Gamma} The natural transformation in \eqref{e:Eis enh spec Gamma nat IndCoh 1} is an isomorphism.
+- **Remark** `auto0151@L17272`  
+  - Location: `gaits3.tex` lines 17272-17282
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: For a fixed $\ul{x}$, the prestack $\LS^{\mf_\cM,\on{glob}}_{\cP^-,\ul{x}}$ is actually an algebraic stack, locally almost of finite type, so we could work directly with the $\IndCoh$ category on it. \medskip However, we do not know how to define $\IndCoh$ of $\LS^{\mf_\cM,\on{gl…
+- **Remark** `auto0152@L17356`  
+  - Location: `gaits3.tex` lines 17356-17367
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: Parallel to Remark \ref{r:old pullback}, the composition\footnote{In the formula below, the first arrow is the left adjoint of the forgetful functor.} \begin{multline*} \IndCoh(\LS_\cG)\otimes \on{I}(\cG,\cP^-)^{\on{spec,loc}}_{\on{co}}\to \IndCoh(\LS_\cG)^{-,\on{enh}_{\on{co}}}_…
+- **Lemma** `l:spec CT and Eis IC`  
+  - Location: `gaits3.tex` lines 17587-17593
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{l:spec CT and Eis IC} With respect to the Serre duality identifications $$\IndCoh(\LS_\cG)^\vee \simeq \IndCoh(\LS_\cG) \text{ and } \IndCoh(\LS_\cM)^\vee \simeq \IndCoh(\LS_\cM),$$ there is a canonical isomorphism $$(\on{CT}^{-,\on{spec}}_{!*})^\vee \simeq \Eis^{-,\on{spe…
+- **Proposition** `p:CT spec IC`  
+  - Location: `gaits3.tex` lines 17599-17602
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{p:CT spec IC} The functors $\on{CT}^{-,\on{spec}}_{\IC}$ and $\on{CT}^{-,\on{spec}}_{!*}$ are canonically isomorphic.
+- **Conjecture** `c:Theta spec glob`  
+  - Location: `gaits3.tex` lines 17734-17744
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{c:Theta spec glob} The following diagram of functors commutes: $$ \CD \IndCoh(\LS_\cM)^{-,\on{enh}_{\on{co}}}_\CZ @>{\Theta_{\on{I}(\cG,\cP^-)^{\on{spec,glob}}}}>> \IndCoh(\LS_\cM)^{-,\on{enh}}_\CZ \\ @V{\Eis_\CZ^{-,\on{spec},\on{enh}_{\on{co}}}}VV @VV{\Eis_\CZ^{-,\on{spec…
+- **Remark** `auto0156@L17746`  
+  - Location: `gaits3.tex` lines 17746-17757
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: As a reality check, note, that according to \eqref{e:CT and Eis dual}, the diagram in \conjref{c:Theta spec glob} does become commutative when juxtaposed with the commutative square $$ \CD \IndCoh(\LS_\cM)\otimes \Dmod(\CZ) @>{((-)\otimes \CL_{2\rho_P(\omega_X)})[(2g-2)\cdot \dim…
+- **Conjecture** `c:Nick dual`  
+  - Location: `gaits3.tex` lines 17776-17780
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: \label{c:Nick dual} The self-duality on $\IndCoh_\cM\left((\LS_{\cP^-})_\dr\underset{(\LS_{\cG})_\dr}\times \LS_{\cG}\right)$ induced by the functor $\Theta_{\on{I}(\cG,\cP^-)^{\on{spec,glob}}}$ equals the canonical (Serre) self-duality defined on $\IndCoh$ of a prestack locally…
+- **Remark** `auto0158@L17782`  
+  - Location: `gaits3.tex` lines 17782-17786
+  - Context: Spectral Eisenstein and constant term functors
+  - Preview: Note that \conjref{c:Nick dual} implies \conjref{c:Theta spec glob}.
+- **Proposition** `p:j glob`  
+  - Location: `gaits3.tex` lines 17914-17916
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{p:j glob} The map $\jmath^{\on{glob}}$ of \eqref{e:j glob} is ind-proper.\footnote{In fact, as the proof will show, this map is an ind-closed embedding.}
+- **Theorem** `t:CT opers`  
+  - Location: `gaits3.tex` lines 18051-18053
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{t:CT opers} The natural transformation \eqref{e:Op nat trans int} is an isomorphism.
+- **Proposition** `p:j contr`  
+  - Location: `gaits3.tex` lines 18219-18221
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{p:j contr} The natural transformation \eqref{e:p contr} is an isomorphism.
+- **Proposition** `p:Op to Zast`  
+  - Location: `gaits3.tex` lines 18264-18266
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{p:Op to Zast} The image of \eqref{e:Op to Zast} lies in $\on{Zast}_\CZ$.
+- **Lemma** `l:J Zast`  
+  - Location: `gaits3.tex` lines 18296-18307
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{l:J Zast} \hfill \smallskip \noindent{\em(a)} The map $\wt\jmath_{\on{Zast}}$ is pseudo-proper; \smallskip \noindent{\em(b)} The fibers of $\wt\jmath_{\on{Zast}}$ over geometric points of $\on{Zast}_\CZ$ are $\CO$-contractible.
+- **Theorem** `t:CT opers enh`  
+  - Location: `gaits3.tex` lines 18653-18655
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{t:CT opers enh} The natural transformation \eqref{e:Op nat trans enh int} is an isomorphism.
+- **Theorem** `t:Poinc Gamma`  
+  - Location: `gaits3.tex` lines 18749-18754
+  - Context: Spectral constant term functor and opers
+  - Preview: \label{t:Poinc Gamma} There is a canonical isomorphism $$\sP^{\on{spec,glob,true}}_{\cG,\CZ}\simeq (\ul\sP^{\on{spec,loc,true}}_\cG)^{\int\, \on{ins.unit}}_\CZ$$ as local-to-global functors $$\ul\IndCoh^*(\Op^\mf_\cG)\underset{\ul\Sph^{\on{spec}}_\cG}\otimes \ul\Rep(\cG)\to \ul\D…
+- **Theorem** `t:Langlands and Loc Sat`  
+  - Location: `gaits3.tex` lines 18969-18971
+  - Context: Langlands functor and Eisenstein series
+  - Preview: \label{t:Langlands and Loc Sat} The datum of commutativity in \eqref{e:Loc compat Ran} is compatible with the Hecke actions via \eqref{e:Sat}.
+- **Theorem** `t:Langlands and Loc Sat tw`  
+  - Location: `gaits3.tex` lines 18988-18998
+  - Context: Langlands functor and Eisenstein series
+  - Preview: \label{t:Langlands and Loc Sat tw} We have a commutative diagram $$ \CD \Dmod_{\frac{1}{2}}(\Bun_G)@>{\BL_G}>> \IndCoh_\Nilp(\LS_\cG) \\ @A{\Loc_{G,\CP_{Z^0_\cG}}\otimes \fl[-d]}AA @AA{\on{Poinc}^{\on{spec}}_{G,*,\CP_{Z^0_\cG}}}A \\ \KL(G)_{\crit+\on{dlog}(\CP_{Z^0_\cG}),\Ran} @>…
+- **Theorem** `t:L and Eis`  
+  - Location: `gaits3.tex` lines 19026-19035
+  - Context: Langlands functor and Eisenstein series
+  - Preview: \label{t:L and Eis} The following diagram commutes \begin{equation} \label{e:L and Eis} \CD \Dmod_{\frac{1}{2}}(\Bun_G) @>{\BL_G}>> \IndCoh_\Nilp(\LS_\cG) \\ @A{\Eis^-_{!,\rho_P(\omega_X)}[\delta_{(N^-_P)_{\rho_P(\omega_X)}}]}AA @AA{\Eis^{-,\on{spec}}}A \\ \Dmod_{\frac{1}{2}}(\Bu…
+- **Remark** `e:Eis cube`  
+  - Location: `gaits3.tex` lines 19153-19205
+  - Context: Langlands functor and Eisenstein series
+  - Preview: Note that one can depict the proof of \thmref{t:L and Eis} given above as a cube: \begin{equation} \label{e:Eis cube} \xy (0,0)*+{\Whit^!(M)_{\Ran^{\on{untl}}}}="X"; (40,20)*+{\Whit^!(G)_{\Ran^{\on{untl}},\on{indep}}}="Y"; (70,0)*+{\Rep(\cM)_{\Ran^{\on{untl}}}}="X'"; (110,20)*+{\…
+- **Theorem** `t:L and Eis enh`  
+  - Location: `gaits3.tex` lines 19228-19239
+  - Context: Langlands functor and Eisenstein series
+  - Preview: \label{t:L and Eis enh} The following diagram commutes \begin{equation} \label{e:L and Eis enh} \hskip1cm \CD \Dmod_{\frac{1}{2}}(\Bun_G)\otimes \Dmod(\CZ) @>{\BL_G\otimes \on{Id}_\CZ}>> \IndCoh_\Nilp(\LS_\cG) \otimes \Dmod(\CZ) \\ @A{\Eis^{-,\on{enh}}_{!,\rho_P(\omega_X),\CZ}[\d…
+- **Corollary** `c:L and Eis !*`  
+  - Location: `gaits3.tex` lines 19312-19321
+  - Context: Langlands functor and Eisenstein series
+  - Preview: \label{c:L and Eis !*} The following diagram commutes \begin{equation} \label{e:L and Eis !*} \CD \Dmod_{\frac{1}{2}}(\Bun_G) @>{\BL_G}>> \IndCoh_\Nilp(\LS_\cG) \\ @A{\Eis^-_{!*,\rho_P(\omega_X)}[\delta_{(N^-_P)_{\rho_P(\omega_X)}}]}AA @AA{\Eis^{-,\on{spec}}_{!*}}A \\ \Dmod_{\fra…
+- **Theorem** `t:L and CT`  
+  - Location: `gaits3.tex` lines 19500-19502
+  - Context: Langlands functor and constant terms
+  - Preview: \label{t:L and CT} The natural transformation \eqref{e:CT Nat trans} is an isomorphism.
+- **Remark** `r:the scalar`  
+  - Location: `gaits3.tex` lines 19517-19527
+  - Context: Langlands functor and constant terms
+  - Preview: \label{r:the scalar} We repeat that we do not know whether the isomorphisms of Theorems \ref{t:CT compat} and \ref{t:L and CT} are the same. However, one can show that they differ at most by a (non-zero) scalar. \medskip The potential discrepancy between (analogues of) isomorphis…
+- **Proposition** `p:two lines`  
+  - Location: `gaits3.tex` lines 19629-19633
+  - Context: Langlands functor and constant terms
+  - Preview: \label{p:two lines} There exists a canonical isomorphism of lines $$\fl_{\on{Kost}(\cG)}\simeq \fl_{G,N_{\rho(\omega_X)}}\otimes \fl^{-\otimes 2}_{N_{\rho(\omega_X)}} \otimes \det(\Gamma(X,\CO_X)\otimes \fg) \otimes ((z_\fg)^{\otimes 2})^{\otimes (1-g)}.$$
+- **Remark** `auto0175@L19714`  
+  - Location: `gaits3.tex` lines 19714-19719
+  - Context: Langlands functor and constant terms
+  - Preview: The isomorphism constructed above was canonical. However, it relied on certain conventions. For example, we used weight lowering operators $f^i$ at one point, but sometimes one finds weight lowering operators $\frac{f^i}{i!}$ are better choices. These sorts of conventions do not…
+- **Theorem** `t:CT compat`  
+  - Location: `gaits3.tex` lines 19725-19735
+  - Context: Langlands functor and constant terms
+  - Preview: \label{t:CT compat} Assuming the validity of GLC for $M$, there exists a unique datum of commutation for the upper lid in \eqref{e:CT cube}, i.e., the square \begin{equation} \label{e:L and CT} \CD \Dmod_{\frac{1}{2}}(\Bun_G) @>{\BL_G}>> \IndCoh_\Nilp(\LS_\cG) \\ @V{\on{CT}^-_{*,…
+- **Lemma** `l:Eis doesnt matter`  
+  - Location: `gaits3.tex` lines 19847-19853
+  - Context: Langlands functor and constant terms
+  - Preview: \label{l:Eis doesnt matter} The functor $\on{CT}^{-,\mu}_{*,\rho_P(\omega_X)}$ factors as $$\Dmod_{\frac{1}{2}}(\Bun_G)\twoheadrightarrow \Dmod_{\frac{1}{2}}(\Bun_G^{(<\lambda)}) \overset{(\on{CT}^{-,\mu}_{*,\rho_P(\omega_X)})^{(<\lambda)}}\longrightarrow \Dmod_{\frac{1}{2}}(\Bun…
+- **Lemma** `l:HS gen`  
+  - Location: `gaits3.tex` lines 19889-19891
+  - Context: Langlands functor and constant terms
+  - Preview: \label{l:HS gen} For $\lambda$ large enough, the essential image of \eqref{e:Eis < lambda} generates the target.
+- **Proposition** `p:Eis spec doesnt matter`  
+  - Location: `gaits3.tex` lines 19953-19959
+  - Context: Langlands functor and constant terms
+  - Preview: \label{p:Eis spec doesnt matter} For a fixed $\mu$, and $\lambda$ large enough, for every standard parabolic $P'$ and $\lambda'\in \Lambda_{G,P'}$ satisfying $\lambda'\not<\lambda$, the functor $$\IndCoh_\Nilp(\LS_{\cM'})^{\lambda'}\overset{\Eis^{\on{spec}}}\longrightarrow \IndCo…
+- **Lemma** `l:qc quot`  
+  - Location: `gaits3.tex` lines 20046-20052
+  - Context: Langlands functor and constant terms
+  - Preview: \label{l:qc quot} The functor $$\KL(G)_{\crit,\Ran}\overset{\Loc_G}\to \Dmod_{\frac{1}{2}}(\Bun_G)\twoheadrightarrow \Dmod_{\frac{1}{2}}(\Bun^{(<\lambda),\ol\mu}_G)$$ is a Verdier quotient.
+- **Remark** `auto0181@L20310`  
+  - Location: `gaits3.tex` lines 20310-20338
+  - Context: Langlands functor and constant terms
+  - Preview: What we really need to assume for the proof to go through is a certain property of the category of $\IndCoh_\Nilp(\LS_{\cM})$, see \secref{sss:IndCoh as lim}. This property takes place purely on the spectral side, and it follows from GLC. \medskip Let us formulate this property f…
+- **Remark** `e:QCoh lambda`  
+  - Location: `gaits3.tex` lines 20340-20365
+  - Context: Langlands functor and constant terms
+  - Preview: For $\lambda\in \Lambda_G^{+,\BQ}$, denote by $\QCoh(\LS_\cG)^{(<\lambda)}$ the corresponding quotient of $\QCoh(\LS_\cG)$ so that we have a commutative diagram. \begin{equation} \label{e:QCoh lambda} \CD \QCoh(\LS_\cG) @<{\Xi_{0,\Nilp}^R}<< \IndCoh_\Nilp(\LS_\cG) \\ @VVV @VVV \\…
+- **Proposition** `p:kill Eis again`  
+  - Location: `gaits3.tex` lines 20468-20474
+  - Context: Langlands functor and constant terms
+  - Preview: \label{p:kill Eis again} For a fixed $\mu$ and $\lambda$ large enough, for every standard parabolic $P'$ and $\lambda'\in \Lambda_{G,P'}$ satisfying $\lambda'\underset{G}{\not<} \lambda$, the functor $$\IndCoh_\Nilp(\LS_{\cM'})^{\lambda'}\overset{\Eis^{\on{spec}}}\longrightarrow…
+- **Corollary** `c:kill Eis again`  
+  - Location: `gaits3.tex` lines 20482-20489
+  - Context: Langlands functor and constant terms
+  - Preview: \label{c:kill Eis again} For $\lambda$ large enough, the composite functor $$\Dmod_{\frac{1}{2}}(\Bun_G)\overset{\BL_G}\longrightarrow \IndCoh_\Nilp(\LS_\cG) \overset{\on{CT}^{-,\on{spec}}}\longrightarrow \IndCoh_\Nilp(\LS_\cM)\to \IndCoh_\Nilp(\LS_\cM)^{(<\mu)}$$ also factors vi…
+- **Theorem** `t:CT compat enh`  
+  - Location: `gaits3.tex` lines 20787-20800
+  - Context: Langlands functor and constant terms
+  - Preview: \label{t:CT compat enh} Assuming the validity of GLC for $M$, there exists a unique datum of commutativity for the upper lid in \eqref{e:CT cube enh}, i.e., the square \begin{equation} \label{e:L and CT enh} \hskip1cm \CD \Dmod_{\frac{1}{2}}(\Bun_G)_\CZ^{-,\on{enh}_{\on{co}}} @>{…
+- **Theorem** `t:left adjoint`  
+  - Location: `gaits3.tex` lines 21049-21059
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{t:left adjoint} The functor $\BL_G$ admits a left adjoint. Moreover, for every standard parabolic $P$, we have a commutative diagram \begin{equation} \label{e:Eis and Phi} \CD \Dmod_{\frac{1}{2}}(\Bun_M) @<{\BL_M^L}<< \IndCoh_\Nilp(\LS_\cM) \\ @V{\Eis^-_{!,\rho_P(\omega_X)…
+- **Remark** `e:LL Eis nat trans`  
+  - Location: `gaits3.tex` lines 21104-21134
+  - Context: The left adjoint of the Langlands functor
+  - Preview: Note that by passing to left adjoints along the horizontal arrows in \eqref{e:L and Eis}, we obtain a natural transformation \begin{equation} \label{e:LL Eis nat trans} \vcenter {\xy (0,0)*+{\Dmod_{\frac{1}{2}}(\Bun_G)}="X"; (50,0)*+{\IndCoh_\Nilp(\LS_\cG)}="Y"; (0,-30)*+{\Dmod_{…
+- **Theorem** `t:left adjoint as dual`  
+  - Location: `gaits3.tex` lines 21161-21164
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{t:left adjoint as dual} There exists a canonical isomorphism $$\Phi_G\simeq \BL_G^L.$$
+- **Lemma** `l:Phi pres comp`  
+  - Location: `gaits3.tex` lines 21370-21372
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{l:Phi pres comp} The functor $\Phi_G$ preserves compactness.
+- **Theorem** `t:AG`  
+  - Location: `gaits3.tex` lines 21454-21461
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{t:AG} The object $\CA_G$ belongs to \begin{multline*} \QCoh(\LS_\cG)\simeq \QCoh(\LS_\cG)\underset{\QCoh(\LS_\cG)}\otimes \QCoh(\LS_\cG)\subset \\ \subset \IndCoh_\Nilp(\LS_\cG)\underset{\QCoh(\LS_\cG)}\otimes \IndCoh_\Nilp(\LS_\cG). \end{multline*}
+- **Remark** `r:overall strategy`  
+  - Location: `gaits3.tex` lines 21466-21493
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{r:overall strategy} Once \thmref{t:AG} is proved, and given the fact that the functor $\BL_G$ is conservative, we will have interpreted GLC (i.e., \cite[Conjecture 1.6.7]{GLC1}) as the statement that the unit of the adjunction \begin{equation} \label{e:unit AG} \CO_{\LS_\c…
+- **Remark** `auto0192@L21538`  
+  - Location: `gaits3.tex` lines 21538-21545
+  - Context: The left adjoint of the Langlands functor
+  - Preview: Alternatively, it is easy to reduce the assertion of \thmref{t:AG} to the case when $G$ is semi-simple. In this case $\LS^{\on{irred}}_\cG$ is smooth, so the inclusion $$\QCoh(\LS^{\on{irred}}_\cG) \subseteq \IndCoh(\LS^{\on{irred}}_\cG)$$ is also an equality.
+- **Proposition** `p:endo red pres comp`  
+  - Location: `gaits3.tex` lines 21604-21607
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{p:endo red pres comp} The functor $(\BL_G\circ \BL^L_G)|_{ \IndCoh_\Nilp(\LS_\cG)_{\on{red}}}$ preserves compactness.
+- **Corollary** `c:endo red pres comp`  
+  - Location: `gaits3.tex` lines 21616-21619
+  - Context: The left adjoint of the Langlands functor
+  - Preview: \label{c:endo red pres comp} The restriction of $\CA_{G,\on{temp}}$ to the formal completion $(\LS_\cG)^\wedge_{\LS^{\on{red}}_\cG}$ is perfect as an object of $\QCoh((\LS_\cG)^\wedge_{\LS^{\on{red}}_\cG})$.
+- **Theorem** `t:main`  
+  - Location: `gaits3.tex` lines 21749-21752
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{t:main} Let us assume that GLC is valid for Levi subgroups of all proper parabolics of $G$. Then the adjoint functors in \eqref{e:Lang Eis} are mutually inverse equivalences.
+- **Remark** `auto0196@L21786`  
+  - Location: `gaits3.tex` lines 21786-21793
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: As was already mentioned, we do not know whether the isomorphism $$\on{CT}^{-,\on{spec}}\circ \BL_G \simeq \BL_M\circ \on{CT}^-_{*,\rho_P(\omega_X)}[-\delta_{N(P^-)_{\rho_P(\omega_X)}}],$$ constructed in \thmref{t:CT compat} above equals the one given by \thmref{t:L and CT}.
+- **Remark** `r:red to irred`  
+  - Location: `gaits3.tex` lines 21796-21811
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{r:red to irred} Note that \thmref{t:main} implies that GLC is equivalent to the statement that the functors $(\BL_G^L,\BL_G)$ define mutually inverse equivalences \begin{equation} \label{e:L on irred} \BL_{G,\on{irred}}: \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}} \leftrightar…
+- **Proposition** `p:* forth`  
+  - Location: `gaits3.tex` lines 21884-21893
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:* forth} The following diagram of functors commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M) @<{\BL^L_M}<< \IndCoh_\Nilp(\LS_\cM) \\ @A{\on{CT}^-_{*,\rho_P(\omega_X)}[-\delta_{(N^-_P)_{\rho_P(\omega_X)}}]}AA @AA{\on{CT}^{-,\on{spec}}}A \\ \Dmod_{\frac{1}{2}}(\Bun_G) @<<{\BL^L_…
+- **Corollary** `c:* back and forth`  
+  - Location: `gaits3.tex` lines 22019-22024
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{c:* back and forth} We have a canonical isomorphism $$\on{CT}^{-,\on{spec}}\simeq \on{CT}^{-,\on{spec}}\circ \BL_G\circ \BL_G^L$$ as functors $$\IndCoh_\Nilp(\LS_\cG)\rightrightarrows \IndCoh_\Nilp(\LS_\cM).$$
+- **Corollary** `c:* back and forth AG`  
+  - Location: `gaits3.tex` lines 22028-22031
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{c:* back and forth AG} We have an isomorphism in $\QCoh(\LS_\cM)\subset \IndCoh_\Nilp(\LS_\cM)$ $$\on{CT}^{-,\on{spec}}(\CA_G)\simeq \on{CT}^{-,\on{spec}}(\CO_{\LS_\cG}).$$
+- **Proposition** `p:AP 1`  
+  - Location: `gaits3.tex` lines 22108-22112
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:AP 1} For every proper parabolic, the object $$(\sfp^{-,\on{spec}})^*(\CA_G)\in \QCoh(\LS_{\cP^-})$$ is a line bundle.
+- **Lemma** `l:line bundle is enough`  
+  - Location: `gaits3.tex` lines 22117-22120
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{l:line bundle is enough} Let $\CY$ be an algebraic stack, and let $\CA_\CY$ be a unital associative algebra object in $\QCoh(\CY)$. Assume that $\CA_\CY$ is a line bundle. Then the unit map $\CO_\CY\to \CA_\CY$ is an isomorphism.
+- **Proposition** `p:AP 2`  
+  - Location: `gaits3.tex` lines 22177-22180
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:AP 2} The *-pullback of $(\sfp^{-,\on{spec}})^*(\CA_G)$ along \eqref{e:LS M to P again} is a line bundle on $\LS_\cM$.
+- **Lemma** `l:grading pos`  
+  - Location: `gaits3.tex` lines 22317-22319
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{l:grading pos} The grading on $(\sfq^{-,\on{spec}})_*\circ (\sfp^{-,\on{spec}})^*(\CA_G)$ is non-negative.
+- **Lemma** `l:gr Nakayama`  
+  - Location: `gaits3.tex` lines 22324-22329
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{l:gr Nakayama} Let $A$ be a non-negatively graded commutative algebra. Denote by $A_0$ its degree $0$ component. Let $M$ be a non-negatively graded $A$-module. Suppose that the $A_0$-module $$M_0:=A_0\underset{A}\otimes M$$ is invertible. Then $M$ is itself invertible.
+- **Proposition** `p:!* back and forth`  
+  - Location: `gaits3.tex` lines 22442-22447
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:!* back and forth} There is a canonical isomorphism $$\on{CT}^{-,\on{spec}}_{!*}\circ \BL_G\circ \BL_G^L\simeq \on{CT}^{-,\on{spec}}_{!*}$$ as functors $$\IndCoh_\Nilp(\LS_\cG)\rightrightarrows \IndCoh_\Nilp(\LS_\cM).$$
+- **Proposition** `p:!* back`  
+  - Location: `gaits3.tex` lines 22468-22477
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:!* back} The following diagram of functors commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M) @>{\BL_M}>> \IndCoh_\Nilp(\LS_\cM) \\ @A{\on{CT}^-_{!*,\rho_P(\omega_X)}[-\delta_{(N^-_P)_{\rho_P(\omega_X)}}]}AA @AA{\on{CT}^{-,\on{spec}}_{!*}}A \\ \Dmod_{\frac{1}{2}}(\Bun_G) @>>{\B…
+- **Proposition** `p:!* forth`  
+  - Location: `gaits3.tex` lines 22479-22488
+  - Context: The Langlands functor is an equivalence on the Eisenstein part(s)
+  - Preview: \label{p:!* forth} The following diagram of functors commutes $$ \CD \Dmod_{\frac{1}{2}}(\Bun_M) @<{\BL^L_M}<< \IndCoh_\Nilp(\LS_\cM) \\ @A{\on{CT}^-_{!*,\rho_P(\omega_X)}[-\delta_{(N^-_P)_{\rho_P(\omega_X)}}]}AA @AA{\on{CT}^{-,\on{spec}}_{!*}}A \\ \Dmod_{\frac{1}{2}}(\Bun_G) @<<…
+- **Proposition** `p:loops indsch`  
+  - Location: `gaits3.tex` lines 22685-22687
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{p:loops indsch} The prestack $\fL_\nabla(Y)_\Ran\to \Ran$ is a relative ind-scheme over $\Ran$.
+- **Remark** `auto0210@L22725`  
+  - Location: `gaits3.tex` lines 22725-22736
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: Here is another way to see that $\fL_\nabla(\cG/\cN^-_P)$ is a relative ind-scheme. Let $\ol{\cG/\cN^-_P}$ denote the affine closure of $\cG/\cN^-_P$. \medskip Then, by \secref{sss:open in hor loops}, $\fL_\nabla(\cG/\cN^-_P)$ is the open subscheme of $\fL_\nabla(\ol{\cG/\cN^-_P}…
+- **Lemma** `l:loops into base affine as fiber product`  
+  - Location: `gaits3.tex` lines 22742-22745
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{l:loops into base affine as fiber product} There is a canonical isomorphism $$\fL_\nabla(\cG/\cN^-_P)\simeq \on{pt}\underset{\LS^\mer_\cG}\times \LS^\mer_{\cP^-}\underset{\LS^\mer_\cM}\times \on{pt}.$$
+- **Corollary** `c:loops into base affine as fiber product`  
+  - Location: `gaits3.tex` lines 22753-22757
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{c:loops into base affine as fiber product} We have a canonical isomorphism $$\fL^+_\nabla(\cG)\backslash \fL_\nabla(\cG/\cN^-_P)/\fL^+_\nabla(\cM)\simeq \LS^\reg_\cG\underset{\LS^\mer_\cG}\times \LS^\mer_{\cP^-}\underset{\LS^\mer_\cM}\times \LS^\reg_\cM.$$
+- **Lemma** `l:descent for IndCoh^*`  
+  - Location: `gaits3.tex` lines 22782-22798
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{l:descent for IndCoh^*} \hfill \smallskip \noindent{\em(a)} The functor $$\IndCoh^*(\CY)\to \on{Tot}(\IndCoh^*(\CU^\bullet)),$$ given by $(\IndCoh,*)$-restriction, is an equivalence. \smallskip \noindent{\em(b)} The functor $$|\IndCoh^*(\CU^\bullet)|\to \IndCoh^*(\CY),$$ g…
+- **Lemma** `l:IndCoh vs QCoh arcs`  
+  - Location: `gaits3.tex` lines 22824-22829
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{l:IndCoh vs QCoh arcs} Assume that $Y$ is smooth. The functor $$\Psi_{\fL^+_\nabla(Y)}:\IndCoh^*(\fL^+_\nabla(Y))\to \QCoh(\fL^+_\nabla(Y))$$ is an equivalence.
+- **Proposition** `p:IndCoh'`  
+  - Location: `gaits3.tex` lines 22948-22950
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{p:IndCoh'} The functor \eqref{e:IndCoh'} is an equivalence.
+- **Proposition** `p:arcs to loops G/NP`  
+  - Location: `gaits3.tex` lines 23007-23010
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{p:arcs to loops G/NP} The functor \eqref{e:arcs to loops G/NP} admits a (conservative) right adjoint as a factorization functor, to be denoted $\iota^!$.
+- **Corollary** `c:IndCoh loops comp gen`  
+  - Location: `gaits3.tex` lines 23054-23056
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{c:IndCoh loops comp gen} The factorization category $\IndCoh^*(\fL_\nabla(\cG/\cN^-_P))$ is compactly generated.
+- **Proposition** `p:IndCoh^! dual of IndCoh^*`  
+  - Location: `gaits3.tex` lines 23103-23105
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{p:IndCoh^! dual of IndCoh^*} The factorization categories $$\IndCoh^*(\fL_\nabla(\cG/\cN^-_P)) \text{ and } \IndCoh^!(\fL_\nabla(\cG/\cN^-_P))$$ are naturally dual.
+- **Proposition** `p:t semiinf spec`  
+  - Location: `gaits3.tex` lines 23540-23544
+  - Context: The spectral semi-infinite category/ies over the Ran space
+  - Preview: \label{p:t semiinf spec} The endofunctor of $\Rep(\cP^-)\simeq \IndCoh^*(\LS^\reg_{\cP^-})$ underlying the monad $$({}'\!\iota)^!\circ ({}'\!\iota)^\IndCoh_*$$ is left t-exact.
+- **Lemma** `l:Gr G to M`  
+  - Location: `gaits3.tex` lines 23866-23869
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{l:Gr G to M} The precomposition of the functor $J^{-,\semiinf}$ with the functor \eqref{e:access} is the functor $J_\Gr^{-,\on{enh}}$ of \eqref{e:J Gr untwisted}.
+- **Remark** `auto0221@L23902`  
+  - Location: `gaits3.tex` lines 23902-23908
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: One could equivalently define $\Whit^!(\fL(G))^{-,\semiinf}$ as $$\left(\Whit^!(\Dmod(\fL(G)_{\rho(\omega_X)}))\right)^{-,\semiinf}:= \left(\Whit^!(\Dmod(\fL(G)_{\rho(\omega_X)}))\right)^{\fL(N^-_P)_{\rho(\omega_X)}\cdot \fL^+(M)_{\rho(\omega_X)}}.$$
+- **Theorem** `t:Whit vs Omega`  
+  - Location: `gaits3.tex` lines 23970-23987
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:Whit vs Omega} \hfill \smallskip \noindent{\em(a)} The functor $J_{\Whit,\Omega}^{-,\semiinf}$ is a \emph{pointwise} equivalence, i.e., it induces an equivalence $$\Whit^!(\fL(G))^{-,\semiinf}_{\ul{x}}\to \Omega\mod^{\on{fact}}(\Whit^!(M))_{\ul{x}}$$ for every $\ul{x}\in…
+- **Remark** `auto0223@L23997`  
+  - Location: `gaits3.tex` lines 23997-24002
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: In \thmref{t:Whit vs Omega bis} we will provide a more precise version of \thmref{t:Whit vs Omega}(b). Namely, we will describe explicitly the essential image of the restriction of $J_{\Whit,\Omega}^{-,\semiinf}$ to $\Whit^!(\fL(G))^{-,\semiinfAccs}$.
+- **Theorem** `t:LS N vs Omega`  
+  - Location: `gaits3.tex` lines 24117-24119
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:LS N vs Omega} The functor $\sQ^\wedge_\mf$ is fully faithful.
+- **Remark** `auto0225@L24123`  
+  - Location: `gaits3.tex` lines 24123-24133
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: One should view \thmref{t:LS N vs Omega} as a spectral counterpart of point (b) of \thmref{t:Whit vs Omega}. We will now proceed to formulating a spectral counterpart of \thmref{t:Whit vs Omega}(a). \medskip In addition, in \thmref{t:LS N vs Omega bis} we will describe explicitly…
+- **Theorem** `t:LS N vs Omega pt`  
+  - Location: `gaits3.tex` lines 24169-24171
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:LS N vs Omega pt} The functor $\sQ$ of \eqref{e:Jacquet spec full} is an equivalence.
+- **Theorem** `t:ident Omega`  
+  - Location: `gaits3.tex` lines 24181-24186
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:ident Omega} The equivalence $$\on{CS}_{\cM,\tau}:\Whit^!(M)\to \Rep(\cM)$$ maps the factorization algebras $\Omega$ and $\Omega^{\on{spec}}$ to one another.
+- **Theorem** `t:ident Omega bis`  
+  - Location: `gaits3.tex` lines 24195-24204
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:ident Omega bis} The following diagram of (lax unital) factorization functors commutes: \begin{equation} \label{e:ident Omega bis} \CD \Whit^!(G) @>{\on{CS}_{G,\tau}}>> \Rep(\cG) \\ @V{J^{-,!}_{\Whit}}VV @VV{\on{inv}_{\cN^-_P}}V \\ \Whit^!(M) @>{\on{CS}_{M,\tau}}>> \Rep(…
+- **Remark** `auto0229@L24209`  
+  - Location: `gaits3.tex` lines 24209-24212
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: Note that the assertion of \thmref{t:ident Omega} is a particular case of that of \thmref{t:ident Omega bis}. Namely, the two sides in \thmref{t:ident Omega} are obtained by evaluating the two circuits in \eqref{e:ident Omega bis} on the factorization unit.
+- **Remark** `auto0230@L24214`  
+  - Location: `gaits3.tex` lines 24214-24229
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: A detailed proof of \thmref{t:ident Omega bis} will appear in \cite{FH}. Here is the main idea: \medskip In the setting of coinvariants and $\Upsilon$ (see \secref{sss:orient}), as analogue of \thmref{t:ident Omega bis} was proved in \cite[Theorem 4.15.1]{Ra4} by reducing to a Za…
+- **Theorem** `t:Omega comp`  
+  - Location: `gaits3.tex` lines 24240-24246
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:Omega comp} The factorization algebra $\Omega^{\on{spec}}$ is ULA as\footnote{See \cite[Appendix B]{Ra3} or \cite[Sect. 2]{CR} for a detailed discussion of ULA objects in factorization categories.} an object of $\Omega^{\on{spec}}\mod^{\on{fact}}(\Rep(\cM))$, i.e., for e…
+- **Theorem** `t:LS N vs Omega bis`  
+  - Location: `gaits3.tex` lines 24296-24301
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:LS N vs Omega bis} The functor $\sQ^\wedge_\mf$ induces an equivalence $$\IndCoh^*((\LS^\Mmf_{\cP^-})^\wedge_\mf)\to \Omega^{\on{spec}}\mod^{\on{fact}}(\Rep(\cM))^{\Accs}.$$
+- **Corollary** `c:Omega comp`  
+  - Location: `gaits3.tex` lines 24370-24372
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{c:Omega comp} The factorization algebra $\Omega$ is ULA as an object of $\Omega\mod^{\on{fact}}(\Whit^!(M))$.
+- **Theorem** `t:Whit vs Omega bis`  
+  - Location: `gaits3.tex` lines 24392-24396
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: \label{t:Whit vs Omega bis} The resulting functor $$J_{\Whit,\Omega}^{-,\semiinf}:\Whit^!(\fL(G))^{-,\semiinfAccs}\to \Omega\mod^{\on{fact}}(\Whit^!(M))^{\Accs}$$ is an equivalence.
+- **Remark** `auto0235@L24459`  
+  - Location: `gaits3.tex` lines 24459-24468
+  - Context: Proof of semi-infinite Casselman-Shalika
+  - Preview: When $P=B$, the existence of \emph{an} equivalence between $\Whit^!(\on{Fl}^{\on{aff},I^-_P}_G)$ and $\Omega\mod^{\on{fact}}(\Whit^!(M))_{\ul{x}}$, interpreted as $\IndCoh(\LS^\Mmf_{\cP^-,\ul{x}})$, was established in \cite{AB}. \medskip One can show, however, that their equivale…
+- **Theorem** `t:LS H`  
+  - Location: `gaits3.tex` lines 24523-24525
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: \label{t:LS H} The functor $\sQ$ is an equivalence.
+- **Proposition** `p:P to Omega`  
+  - Location: `gaits3.tex` lines 24581-24583
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: \label{p:P to Omega} The map \eqref{e:P to Omega} is an isomorphism.
+- **Remark** `auto0238@L24587`  
+  - Location: `gaits3.tex` lines 24587-24595
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: Note that \propref{p:P to Omega} in particular says that $\sP_{\Omega^{\on{spec}}_\sH,x}$ is an \emph{object} of $\Omega^{\on{spec}}_\sH\mod^{\on{fact}}_{\ul{x}}$ (rather than a pro-object). \medskip But we will establish this fact \emph{a priori}.
+- **Proposition** `p:LS H as quot Spec`  
+  - Location: `gaits3.tex` lines 24759-24763
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: \label{p:LS H as quot Spec} There is a canonical isomorphism $$\LS_{H,x}^\mer \simeq ``\Spec\left((j_{!,\on{ComAlg}}\circ j^!(\on{inv}_\sH(k)\otimes \CO_{X_\dr}))_x\right)",$$ so that the map \eqref{e:P to Omega oblv} identifies with the map \eqref{e:Spec R quot map abs}.
+- **Proposition** `p:as good as conn`  
+  - Location: `gaits3.tex` lines 24765-24768
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: \label{p:as good as conn} The commutative algebra $$(j_{!,\on{ComAlg}}\circ j^!(\on{inv}_\sH(k)\otimes \omega_X))_x$$ is \emph{as good as connective}.
+- **Remark** `auto0241@L24847`  
+  - Location: `gaits3.tex` lines 24847-24856
+  - Context: Sheaves on the (pointwise) \texorpdfstring{$\LS_{\sH}^\mer$}{LSunip} for a unipotent group
+  - Preview: Note that the factorization algebra that we have denoted by $\Omega^{\on{spec}}_\sH$ is \emph{not} the same as the factorization algebra $\Omega(\sh)$ in \cite[Sect. 12.5.4]{GLC2}. \medskip Namely, the latter is $\on{Fact}(\on{C}^\cdot_{\on{chev}}(\sh\otimes \on{D}_X))$, while th…
+- **Lemma** `l:sheared Omega is conn`  
+  - Location: `gaits3.tex` lines 24890-24894
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{l:sheared Omega is conn} The object $$\on{inv}_{\cN^-_P}(k)^{\Rightarrow}\in \Rep(\cM)$$ is connective.
+- **Proposition** `p:Omega almost ULA`  
+  - Location: `gaits3.tex` lines 24934-24937
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{p:Omega almost ULA} The factorization algebra $\Omega^{\on{spec},\Rightarrow}$ is almost ULA in $\Omega^{\on{spec},\Rightarrow}\mod^{\on{fact}}(\Rep(\cM))$.
+- **Lemma** `l:compact vs almost compact`  
+  - Location: `gaits3.tex` lines 24978-24981
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{l:compact vs almost compact} Assume that $\bD$ is left-complete in its t-structure. Let $\bd\in \bD$ be almost compact. Then $\bd$ is compact if and only if it has a finite cohomological dimension of $\bd$.
+- **Proposition** `p:base change fin c.d.`  
+  - Location: `gaits3.tex` lines 25082-25088
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{p:base change fin c.d.} Assume that $\bd$ is almost compact and that $S$ is smooth. Then $\bd$ is compact if and only if there exists an integer $n$ such that for every geometric point $s:\Spec(k')\to S$, the object $$s^*(\bd)\in \bD_s:=\Vect_{k'}\underset{\QCoh(S)}\otimes…
+- **Lemma** `l:inner Hom ten`  
+  - Location: `gaits3.tex` lines 25151-25154
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{l:inner Hom ten} Assume that $\bd$ is almost compact and $\bd'\in \bD^{>-\infty}$ and $\CF$ is of finite Tor-dimension. Then the map \eqref{e:tensor inner Hom} is an isomorphism.
+- **Corollary** `c:inner Hom ten`  
+  - Location: `gaits3.tex` lines 25176-25181
+  - Context: Compactness of \texorpdfstring{$\Omega^{\on{spec}}$}{Omcomp}
+  - Preview: \label{c:inner Hom ten} Let $f:S'\to S$ be a morphism of finite Tor-dimension between affine schemes. Then for $\bd$ almost compact and $\bd'\in \bD^{>-\infty}$, the natural map $$f^*(\ul\CHom_{\bD}(\bd,\bd'))\to \ul\CHom_{\bD'}(f^*(\bd),f^*(\bd'))$$ is an isomorphism.
+- **Remark** `r:pre F`  
+  - Location: `gaits3.tex` lines 25376-25387
+  - Context: Proof of semi-infinite geometric Satake
+  - Preview: \label{r:pre F} Let us view $\on{I}(\cG,\cP^-)^{\on{spec,loc}}$ as acted on by $\Rep(\cM)$ via pullback along $$\LS^\reg_\cG\underset{\LS^\mer_\cG}\times \LS^\mer_{\cP^-}\underset{\LS^\mer_\cM}\times \LS^\reg_\cM\to \LS^\reg_\cM.$$ When we view $\on{pre-}\!\sF^{\on{spec}}$ as a $…
+- **Proposition** `p:F spec ff on pos`  
+  - Location: `gaits3.tex` lines 25451-25456
+  - Context: Proof of semi-infinite geometric Satake
+  - Preview: \label{p:F spec ff on pos} The functor $\sF^{\on{spec}}$ is fully faithful when restricted to the eventually coconnective subcategory of $\on{I}(\cG,\cP^-)^{\on{spec,loc}}$, i.e., for every affine scheme $S$, the corresponding functor $$(\on{I}(\cG,\cP^-)^{\on{spec,loc}}_S)^{>-\i…
+- **Proposition** `p:iota diag`  
+  - Location: `gaits3.tex` lines 25518-25545
+  - Context: Proof of semi-infinite geometric Satake
+  - Preview: \label{p:iota diag} \hfill \smallskip \noindent{\em(a)} The bottom horizontal arrow in \eqref{e:iota diag} admits a continuous right adjoint, so that the resulting monad on $R_\cG\mod^{\on{fact}}(\Rep(\cG)\otimes \Rep(\cP))$ is left t-exact. \smallskip \noindent{\em(b)} The natur…
+- **Corollary** `c:Omega to Omega spec`  
+  - Location: `gaits3.tex` lines 25874-25877
+  - Context: Proof of semi-infinite geometric Satake
+  - Preview: \label{c:Omega to Omega spec} The functor $\FLE_{\cG,\infty,\tau}^{-1}\otimes \on{CS}_{M,\tau}$ sends $$\Omega(R)\mapsto \Omega(R)^{\on{spec}}.$$
+- **Remark** `auto0252@L26363`  
+  - Location: `gaits3.tex` lines 26363-26382
+  - Context: Proof of \thmref{t:FG1} / Regular Kac-Moody representations
+  - Preview: The existence of this action is subtle and is related to the localization theorem of \cite{RY} (cf. below). However, in practice, we only will be interested in the bounded below category $\hg\mod_{\crit_G,\reg}^+$, where one can use a substitute as in \cite{RY}. \medskip Moreover…
+- **Theorem** `t:fg loc` [\cite{RY}]  
+  - Location: `gaits3.tex` lines 26388-26398
+  - Context: Proof of \thmref{t:FG1} / Regular Kac-Moody representations / The localization theorem
+  - Preview: \label{t:fg loc} There is a canonical t-exact equivalence \[ \Dmod_{\crit}(\Gr_G) \underset{\Rep(\cG)}{\otimes} \QCoh(\Op_{\cG}^{\reg}) \simeq \hg\mod_{\crit_G,\reg} \] \noindent of $\fL(G)$-categories.
+- **Corollary** `c:fg loc iwahori`  
+  - Location: `gaits3.tex` lines 26402-26413
+  - Context: Proof of \thmref{t:FG1} / Regular Kac-Moody representations / The localization theorem
+  - Preview: \label{c:fg loc iwahori} There is a canonical t-exact equivalence \[ \Dmod_{\crit}(\Gr_G)^{I_P} \underset{\Rep(\cG)}{\otimes} \QCoh(\Op_{\cG}^{\reg}) \simeq \hg\mod_{\crit_G,\reg}^{I_P} \] \noindent of categories acted on by the $(\fL(G),I_P)$-Hecke category.
+- **Theorem** `t:wak-trans`  
+  - Location: `gaits3.tex` lines 26578-26582
+  - Context: Proof of \thmref{t:FG1} / Wakimoto modules as objects of the transverse subcategory
+  - Preview: \label{t:wak-trans} $\BW_{\fg,\crit}$ lies in $(\hg\mod_{\crit_G,\reg}^{I_P})_{\on{trans}}$.
+- **Theorem** `t:vac-to-wak`  
+  - Location: `gaits3.tex` lines 26609-26613
+  - Context: Proof of \thmref{t:FG1} / Wakimoto modules as objects of the transverse subcategory
+  - Preview: \label{t:vac-to-wak} The map \eqref{eq:vac-wak-j} is an isomorphism.
+- **Remark** `auto0257@L26615`  
+  - Location: `gaits3.tex` lines 26615-26621
+  - Context: Proof of \thmref{t:FG1} / Wakimoto modules as objects of the transverse subcategory
+  - Preview: In the Borel case, \thmref{t:vac-to-wak} amounts to the assertion of \cite[Theorem 4.11]{FG1}. The proof we give below is similar in spirit, but has some changes to more easily adapt to the general parabolic case.
+- **Remark** `auto0258@L26953`  
+  - Location: `gaits3.tex` lines 26953-26960
+  - Context: Proof of \thmref{t:FG1} / Proof of \thmref{t:wak-trans}
+  - Preview: Formally, \cite[Proposition 2.6.1]{FG1} only deals with the Borel case. However, it is shown in \cite[Sect. 2.8]{FG1} that Proposition 2.6.1 implies its parallel version for the parabolic being the whole group; similar reasoning shows that the Borel case implies the general parab…
+- **Lemma** `l:jmath-psi`  
+  - Location: `gaits3.tex` lines 26968-26974
+  - Context: Proof of \thmref{t:FG1} / Proof of \thmref{t:vac-to-wak}
+  - Preview: \label{l:jmath-psi} The canonical map $\jmath^*(\BV_{\fg,\crit}) \to \BW_{\fg,\crit}$ is an isomorphism after applying the functor $$(\hg\mod_{\crit_G,\reg}^{I_P})_{\on{trans}} \overset{\jmath_*}\hookrightarrow \hg\mod_{\crit_G,\reg}^{I_P}\to \hg\mod_{\crit_G}\overset{\DS}\to \Ve…
+- **Lemma** `l:iwahori-ds-cons`  
+  - Location: `gaits3.tex` lines 26976-26982
+  - Context: Proof of \thmref{t:FG1} / Proof of \thmref{t:vac-to-wak}
+  - Preview: \label{l:iwahori-ds-cons} The functor $\DS$ is conservative when restricted to the eventually coconnective transverse subcategory $$(\hg\mod_{\crit_G,\reg}^{I_P})_{\on{trans}}^{>-\infty}:= (\hg\mod_{\crit_G,\reg}^{I_P})_{\on{trans}} \cap (\hg\mod_{\crit_G,\reg}^{I_P})^{>-\infty}.…
+- **Remark** `r:pi-j-quotes`  
+  - Location: `gaits3.tex` lines 27034-27046
+  - Context: Proof of \thmref{t:FG1} / Proof of \lemref{l:jmath-psi} / More on the transverse subcategory
+  - Preview: \label{r:pi-j-quotes} On the spectral side, $\pi^*$ and $\widetilde{\jmath}^*$ correspond to the maps \[ \begin{tikzcd} \on{pt}/\cB(M) \overset{\wt\jmath}{\to} \cP^-\backslash \cG/\cB(M) \overset{\pi}{\to} \cP^-\backslash \cG/\cB. \end{tikzcd} \]
+- **Lemma** `l:mop-jmath`  
+  - Location: `gaits3.tex` lines 27085-27100
+  - Context: Proof of \thmref{t:FG1} / Proof of \lemref{l:jmath-psi}
+  - Preview: \label{l:mop-jmath} The composition \[ \BV_{\fg,\crit} \underset{\CO_{\Op_{\cG}^{\reg}}}{\otimes} \CO_{\MOp_{\cG,\cP^-}^{\reg}} \to \jmath_*\circ \jmath^*(\BV_{\fg,\crit}) \to \BW_{\fg,\crit} \] \noindent is the canonical map coming from the map $\BV_{\fg,\crit} \to \BW_{\fg,\cri…
+- **Proposition** `p:jmath-psi-gr`  
+  - Location: `gaits3.tex` lines 27137-27152
+  - Context: Proof of \thmref{t:FG1} / Proof of \lemref{l:jmath-psi}
+  - Preview: \label{p:jmath-psi-gr} For any $\CF_0 \in \Dmod_{\crit}(\Gr_G)^{\fL^+(G)}$ with image $$\CF \in \Dmod_{\crit}(\Gr_G)^{I_P} \underset{\Rep(\cG)}{\otimes} \Rep(\cB),$$ the map \[ \pi_*\circ \pi^*(\CF) \overset{\eqref{eq:jmath-pi}}{\to} \jmath_*\circ \jmath^*(\CF) \] \noindent yield…
+- **Lemma** `auto0264@L27300`  
+  - Location: `gaits3.tex` lines 27300-27305
+  - Context: Proof of \thmref{t:FG1} / Proof of \lemref{l:jmath-psi}
+  - Preview: The morphism $$\pi_*\circ \pi^*(\CO_{\cP^-\backslash \cG/\cB})\to \jmath_*\circ \jmath^*(\CO_{\cP^-\backslash \cG/\cB})$$ induces an isomorphism after taking direct image along $$\cP^-\backslash \cG/\cB\to \on{pt}/\cB.$$
+- **Lemma** `l:abg-amp`  
+  - Location: `gaits3.tex` lines 27391-27396
+  - Context: Proof of \thmref{t:FG1} / Proof of \lemref{l:iwahori-ds-cons}
+  - Preview: \label{l:abg-amp} The equivalence \eqref{eq:iwahori-gr} has bounded cohomological amplitude for the natural t-structures on both sides.

@@ -1,0 +1,312 @@
+# GLC5 claim index
+
+- Total claims: **74**
+
+## Counts by kind
+- corollary: 17
+- remark: 17
+- lemma: 15
+- proposition: 11
+- theorem: 11
+- conjecture: 1
+- definition: 1
+- example: 1
+
+## Claims (metadata + preview)
+
+- **Remark** `auto0001@L981`  
+  - Location: `gaits5.tex` lines 981-997
+  - Context: Introduction
+  - Preview: The outline above uses a special feature of the de Rham setting. By contrast, Betti or \'etale moduli stacks of local systems have infinite dimensional algebras of global functions, while the de Rham moduli stack has very few global functions. For this reason, our strategy does n…
+- **Conjecture** `c:GLC`  
+  - Location: `gaits5.tex` lines 1517-1519
+  - Context: Summary of the preceding results
+  - Preview: \label{c:GLC} The functor $\BL_G$ is an equivalence.
+- **Proposition** `p:alm isogeny`  
+  - Location: `gaits5.tex` lines 1724-1734
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{p:alm isogeny} The following diagram of functors commutes \begin{equation} \label{e:alm isogeny} \CD \Dmod_{\frac{1}{2}}(\Bun_{G_1}) @>{\BL_{G_1}}>> \IndCoh_\Nilp(\LS_{\cG_1}) \\ @A{\phi^!}AA @A{(\phi^\vee)^\IndCoh_*}AA \\ \Dmod_{\frac{1}{2}}(\Bun_{G_2}) @>{\BL_{G_2}}>> \I…
+- **Remark** `auto0004@L1964`  
+  - Location: `gaits5.tex` lines 1964-1972
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: Note that the functor $'\!\phi_!$ is \emph{not} the left adjoint of $'\!\phi^!$: the latter would involve an additional step of !-averaging from $\fL^+(G_1)$-equivariance to $\fL^+(G_2)$-equivariance. \medskip Note also that the functor $'\!\phi_!$ is \emph{not} monoidal.
+- **Proposition** `p:change group 1`  
+  - Location: `gaits5.tex` lines 2083-2087
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{p:change group 1} The functor $$\QCoh(\LS_{\cG_2})\underset{\QCoh(\LS_{\cG_1})}\otimes \IndCoh_\Nilp(\LS_{\cG_1})\to \IndCoh_\Nilp(\LS_{\cG_2})$$ is an equivalence.
+- **Theorem** `t:change group 2`  
+  - Location: `gaits5.tex` lines 2096-2102
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{t:change group 2} The functor \begin{equation} \label{e:change group 2} \QCoh(\LS_{\cG_2})\underset{\QCoh(\LS_{\cG_1})}\otimes \Dmod_{\frac{1}{2}}(\Bun_{G_1}) \to \Dmod_{\frac{1}{2}}(\Bun_{G_2}) \end{equation} is an equivalence.
+- **Corollary** `c:change group`  
+  - Location: `gaits5.tex` lines 2108-2110
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{c:change group} Suppose that the functor $\BL_{G_1}$ is an equivalence. Then so is $\BL_{G_2}$.
+- **Corollary** `c:prel sc`  
+  - Location: `gaits5.tex` lines 2120-2122
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{c:prel sc} If GLC holds for $G_{\on{sc}}$, then it also holds for $G$.
+- **Corollary** `c:sc`  
+  - Location: `gaits5.tex` lines 2143-2146
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{c:sc} If GLC holds for all $G$ that are almost simple and simply-connected, then it holds for any reductive $G$.
+- **Lemma** `l:comps that arise`  
+  - Location: `gaits5.tex` lines 2296-2299
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{l:comps that arise} $$\Dmod_{\frac{1}{2}}(\Bun_{G_1})'= \underset{\alpha}\oplus\, \Dmod_{\frac{1}{2}}(\Bun_{G_1})_\alpha,$$ where $\alpha$ runs over the subset consisting of those characters that vanish on $\Gamma$.
+- **Proposition** `p:neutral`  
+  - Location: `gaits5.tex` lines 2376-2381
+  - Context: Reduction to the case when \texorpdfstring{$G$}{G} is almost simple and simply-connected
+  - Preview: \label{p:neutral} The full subcategory $$\Dmod_{\frac{1}{2}}(\Bun_{G_1})' \subset \Dmod_{\frac{1}{2}}(\Bun_{G_1})$$ equals $$\QCoh(\LS'_{\cG_1})\underset{\QCoh(\LS_{\cG_1})}\otimes \Dmod_{\frac{1}{2}}(\Bun_{G_1}).$$
+- **Proposition** `p:genus 1` [\cite{KS}, \cite{BFM}]  
+  - Location: `gaits5.tex` lines 2525-2528
+  - Context: Low genus cases
+  - Preview: \label{p:genus 1} Let $\sG$ be an adjoint group different from $PGL_n$. Then for a curve of genus $1$, we have $\LS_\sG^{\on{irred}}=\emptyset$.
+- **Remark** `auto0013@L2622`  
+  - Location: `gaits5.tex` lines 2622-2625
+  - Context: Calculation of the fundamental group
+  - Preview: The map \eqref{e:to gerbes} means that to a $\cG$-bundle we can canonically associate an \'etale $\pi_1(\cG)$-gerbe. Namely, this is the gerbe of \'etale-local lifts of our bundle to the simply-connected cover of $\cG$.
+- **Proposition** `p:pi 1 Bun`  
+  - Location: `gaits5.tex` lines 2643-2646
+  - Context: Calculation of the fundamental group
+  - Preview: \label{p:pi 1 Bun} The map \eqref{e:to gerbes} defines an isomorphism of $\tau_{\leq 1}$ truncations of \'etale homotopy types.
+- **Lemma** `l:every torsor`  
+  - Location: `gaits5.tex` lines 2728-2731
+  - Context: Calculation of the fundamental group
+  - Preview: \label{l:every torsor} Every $\mu_\infty$-torsor on every connected component of $\on{Ge}_{\pi_1(\cG)}(X)$ is the restriction of $\CL_{\CP_{Z_G}}$ for some $\CP_{Z_G}$.
+- **Theorem** `t:pi 1 LS`  
+  - Location: `gaits5.tex` lines 2774-2778
+  - Context: Calculation of the fundamental group
+  - Preview: \label{t:pi 1 LS} Assume that $g\geq 2$, and if $g=2$, then its root system does not have $A_1$ factors. Then the map \eqref{e:LS irred to Bun} induces an isomorphism on the $\tau_{\leq 1}$ truncations of \'etale homotopy types.
+- **Corollary** `c:pi 1 LS`  
+  - Location: `gaits5.tex` lines 2783-2788
+  - Context: Calculation of the fundamental group
+  - Preview: \label{c:pi 1 LS} For every connected component of $\LS_\cG^{\on{irred}}$, every \'etale local system of $k$-vector spaces on it splits as a direct sum of 1-dimensional ones. Each of the latter is isomorphic to the restriction of $\CL_{\CP_{Z_G}}$ for some $\CP_{Z_G}\in \Bun_{Z_G…
+- **Proposition** `p:compl 1`  
+  - Location: `gaits5.tex` lines 2798-2801
+  - Context: Calculation of the fundamental group
+  - Preview: \label{p:compl 1} Under the assumptions on $G$ and $g$ specified in \thmref{t:pi 1 LS}, the complement of $\Bun_\cG^{\on{stbl}}$ in $\Bun_\cG$ has codimension $\geq 2$.
+- **Remark** `auto0019@L2803`  
+  - Location: `gaits5.tex` lines 2803-2813
+  - Context: Calculation of the fundamental group
+  - Preview: Statements of this type are classical in the literature of $\Bun_G$; they begin with \cite[Sect. 9]{NR}. The literature we found concerned coarse moduli spaces instead of moduli stacks, so we include the argument for \propref{p:compl 1} in \secref{ss:proof of compl 1}. There are…
+- **Proposition** `p:conn on stable bundles`  
+  - Location: `gaits5.tex` lines 2835-2840
+  - Context: Calculation of the fundamental group
+  - Preview: \label{p:conn on stable bundles} The map $$\LS_\cG^{\on{stbl}}\to \Bun_\cG^{\on{stbl}}$$ is smooth and surjective. The fibers of this map are affine spaces.
+- **Theorem** `t:Hecke Z 0`  
+  - Location: `gaits5.tex` lines 3000-3005
+  - Context: The core of the proof
+  - Preview: \label{t:Hecke Z 0} For $\alpha\in (Z_G)^\vee$ as above, the idempotent $$\CO_{\LS_{\cG,\alpha}}\otimes (-):\Dmod_{\frac{1}{2}}(\Bun_G)\to \Dmod_{\frac{1}{2}}(\Bun_G),$$ where $\otimes$ denotes the spectral action of $\QCoh(\LS_\cG)$ on $\Dmod_{\frac{1}{2}}(\Bun_G)$, identifies c…
+- **Theorem** `t:Hecke Z 1`  
+  - Location: `gaits5.tex` lines 3011-3017
+  - Context: The core of the proof
+  - Preview: \label{t:Hecke Z 1} For $\CP_{Z_G}\in \Bun_{Z_G}$ and the corresponding $\CL_{\CP_{Z_G}}\in \QCoh(\LS_\cG)$, the functor $$\CL^{\otimes -1}_{\CP_{Z_G}}\otimes(-):\Dmod_{\frac{1}{2}}(\Bun_G)\to \Dmod_{\frac{1}{2}}(\Bun_G),$$ where $\otimes$ denotes the spectral action of $\QCoh(\L…
+- **Theorem** `t:end Poinc vac a`  
+  - Location: `gaits5.tex` lines 3045-3049
+  - Context: The core of the proof
+  - Preview: \label{t:end Poinc vac a} For every $\alpha$, the map $$k\to H^0(\CEnd(\on{Poinc}^{\on{Vac}}_{G,!,\alpha}))$$ is an isomorphism.
+- **Theorem** `t:end Poinc vac a'`  
+  - Location: `gaits5.tex` lines 3054-3056
+  - Context: The core of the proof
+  - Preview: \label{t:end Poinc vac a'} $H^i(\CEnd(\on{Poinc}^{\on{Vac,glob}}_{G,!}))=0$ for $i\neq 0$.
+- **Corollary** `c:end Poinc vac a`  
+  - Location: `gaits5.tex` lines 3060-3062
+  - Context: The core of the proof
+  - Preview: \label{c:end Poinc vac a} $\dim\left(H^0(\CEnd(\on{Poinc}^{\on{Vac,glob}}_{G,!}))\right)=|Z_G|$.
+- **Theorem** `t:end Poinc vac b`  
+  - Location: `gaits5.tex` lines 3068-3071
+  - Context: The core of the proof
+  - Preview: \label{t:end Poinc vac b} For a non-trivial $\CP_{Z_G}\in \Dmod_{\frac{1}{2}}(\Bun_G)$, $$H^0\left(\CHom(\on{Poinc}^{\on{Vac,glob}}_{G,!},\CP_{Z_G}\cdot \on{Poinc}^{\on{Vac,glob}}_{G,!})\right)=0.$$
+- **Theorem** `t:end Poinc vac b'`  
+  - Location: `gaits5.tex` lines 3076-3079
+  - Context: The core of the proof
+  - Preview: \label{t:end Poinc vac b'} For a non-trivial $\CP_{Z_G}\in \Dmod_{\frac{1}{2}}(\Bun_G)$, $$\CHom(\on{Poinc}^{\on{Vac,glob}}_{G,!},\CP_{Z_G}\cdot \on{Poinc}^{\on{Vac,glob}}_{G,!})=0.$$
+- **Theorem** `t:LS CM`  
+  - Location: `gaits5.tex` lines 3089-3092
+  - Context: The core of the proof
+  - Preview: \label{t:LS CM} The stack $\LS_\cG$ is a classical locally complete intersection of dimension $$\dim(\fg)\cdot 2(g-1).$$
+- **Corollary** `c:LS CM`  
+  - Location: `gaits5.tex` lines 3094-3096
+  - Context: The core of the proof
+  - Preview: \label{c:LS CM} The stack $\LS_\cG$ is Cohen-Macaulay of dimension $\dim(\fg)\cdot 2(g-1)$.
+- **Proposition** `p:compl 2`  
+  - Location: `gaits5.tex` lines 3102-3105
+  - Context: The core of the proof
+  - Preview: \label{p:compl 2} Excluding the case of $g=2$ with the root system of $G$ containing an $A_1$ factor, the complement to $\LS_\cG^{\on{irred}}$ in $\LS_\cG$ has codimension $\geq 2$.
+- **Corollary** `c:compl 2`  
+  - Location: `gaits5.tex` lines 3113-3116
+  - Context: The core of the proof
+  - Preview: \label{c:compl 2} The embedding $\LS^{\on{irred}}_\cG\hookrightarrow \LS_\cG$ induces a bijection between the sets of connected components.
+- **Proposition** `p:A irred`  
+  - Location: `gaits5.tex` lines 3129-3133
+  - Context: The core of the proof
+  - Preview: \label{p:A irred} The restriction of $\CA_{G,\on{irred}}$ to every connected component is isomorphic to a direct sum of lines bundles, each of which is a restriction of some $\CL_{\CP_{Z_G}}$ (see \secref{sss:L P Z G}).
+- **Remark** `auto0033@L3238`  
+  - Location: `gaits5.tex` lines 3238-3242
+  - Context: The core of the proof
+  - Preview: Note that the last step in the above argument shows that the map $$\CO_{\LS_\cG} \to \jmath_*(\CO_{\LS^{\on{irred}}_\cG})$$ also induces an isomorphism at the level of $H^0(\Gamma(\LS_\cG,-))$.
+- **Corollary** `c:O on LS`  
+  - Location: `gaits5.tex` lines 3409-3413
+  - Context: The core of the proof
+  - Preview: \label{c:O on LS} For $g\geq 2$, for every connected component $\alpha$ of $\LS_\cG$, the map $$k\to \Gamma(\LS_{\cG,\alpha},\CO_{\LS_{\cG,\alpha}})$$ is an isomorphism.
+- **Remark** `auto0035@L3415`  
+  - Location: `gaits5.tex` lines 3415-3418
+  - Context: The core of the proof
+  - Preview: One can prove \corref{c:O on LS} directly by a deformation argument using \cite[Theorem 4.2]{FT}.
+- **Remark** `auto0036@L3420`  
+  - Location: `gaits5.tex` lines 3420-3423
+  - Context: The core of the proof
+  - Preview: We remark that Corollary \ref{c:O on LS} is a special feature of the de Rham setting; there are many more global functions on the Betti moduli stack.
+- **Corollary** `auto0037@L3429`  
+  - Location: `gaits5.tex` lines 3429-3431
+  - Context: The core of the proof
+  - Preview: For $g\geq 2$, for a non-trivial $\CP_{Z_G}$, we have $\Gamma(\LS_\cG,\CL_{\CP_{Z_G}})=0$.
+- **Remark** `auto0038@L3851`  
+  - Location: `gaits5.tex` lines 3851-3855
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: Note that the assertion of \propref{p:compl 1} is false for $G=SL_2$ and $g=2$: in this case the dimension of the semi-stable but unstable locus is $2$, which is $>$ than $$1=3-2=\dim(\Bun_G)-2.$$
+- **Lemma** `l:LS P estim`  
+  - Location: `gaits5.tex` lines 3891-3903
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: \hfill \label{l:LS P estim} \smallskip \noindent{\em(a)} Each fiber of the map $\sfq$ has dimension $\leq \dim(\fn(P))\cdot (2g-1)$. \smallskip \noindent{\em(b)} There exists a dense open substack of $\LS_M$ over which $\sfq$ is smooth.
+- **Corollary** `c:LS P estim`  
+  - Location: `gaits5.tex` lines 3914-3918
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: \label{c:LS P estim} $\dim(\LS_P) \leq \dim(\LS_M) + \dim(\fn(P))\cdot (2g-1) - 1$.
+- **Remark** `auto0041@L3950`  
+  - Location: `gaits5.tex` lines 3950-3954
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: Note that the assertion of \propref{p:compl 2} is false for $G=SL_2$ and $g=2$: in this case the dimension of the reducible locus is $5$, which is greater than $$4=6-2=\dim(\LS_G)-2.$$
+- **Lemma** `auto0042@L3991`  
+  - Location: `gaits5.tex` lines 3991-3998
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: Let $Y$ be a quasi-smooth scheme of virtual dimension $d$. Suppose that $m$ is an integer such that for all field-valued points $y\in Y$ we have $$\dim(H^{-1}(T^*_y(Y)))\leq m.$$ Then $\dim(Y)\leq d+m$.
+- **Corollary** `auto0043@L4010`  
+  - Location: `gaits5.tex` lines 4010-4019
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: Let $\CY$ be a quasi-smooth algebraic stack of virtual dimension\footnote{Recall that for a quasi-smooth algebraic stack $\CY$, its dimension/virtual dimension are defined as follows: for a smooth cover $Y\to \CY$ with $Y$ a scheme, the dimension/virtual dimension of $\CY$ equals…
+- **Remark** `auto0044@L4138`  
+  - Location: `gaits5.tex` lines 4138-4148
+  - Context: Geometry of \texorpdfstring{$\Bun_G$}{geomBunG}
+  - Preview: The above argument can be refined to prove the following criterion (originally due to A.~Weil) for a $G$-bundle $\CP_G$ to admit a connection: \medskip This happens if and only if, for every reduction of $\CP_G$ to a \emph{Levi subgroup} $M$, this reduction, viewed as an $M$-bund…
+- **Remark** `r:not 1 aff`  
+  - Location: `gaits5.tex` lines 4279-4295
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{r:not 1 aff} The central players in the paper \cite{Ga3} are prestacks that are \emph{1-affine}, i.e., those for each the functor of \emph{enhanced} global sections \begin{equation} \label{e:glob sect shv categ} \on{ShvCat}(\CY)\overset{\bGamma^{\on{enh}}(\CY,-)}\longright…
+- **Lemma** `l:invol`  
+  - Location: `gaits5.tex` lines 4363-4367
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:invol} Under the above circumstances, if $\on{2-FM}_{\CY_1\to \CY_2}$ is an equivalence, then so is $\on{2-FM}_{\CY_2\to \CY_1}$, and $$\on{2-FM}_{\CY_2\to \CY_1}\circ \on{2-FM}_{\CY_1\to \CY_2}\simeq \on{Id}.$$
+- **Lemma** `l:Hecke 1 abs gen`  
+  - Location: `gaits5.tex` lines 4424-4427
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:Hecke 1 abs gen} Under the identification of \eqref{e:fiber FM gen zero}, the action of $a$ on $\bC_2|_{\zero_{\CH_2}}$ corresponds to the endofunctor of $\bC_1$, given by tensoring wity $\CL_a$.
+- **Lemma** `l:Hecke 0 abs gen`  
+  - Location: `gaits5.tex` lines 4451-4456
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:Hecke 0 abs gen} Under the identification of \eqref{e:fiber FM gen zero}, the direct summand $$\bC_{1,\omega}:=\Gamma((\CH_1)_\omega,\ul\bC_1)\subset \Gamma(\CH_1,\ul\bC_1)=\bC_1$$ corresponds to the direct summand $$(\ul\bC_2|_{\one_{\CH_2}})_\omega \subset \ul\bC_2|_{\…
+- **Lemma** `l:fiber and global sects gen`  
+  - Location: `gaits5.tex` lines 4462-4493
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:fiber and global sects gen} For $\ul\bC_1\in \ShvCat(\CH_1)$, the following diagram commutes: $$ \CD \bGamma(\CH_2,\on{2-FM}_{\CH_1\to \CH_2}(\ul\bC_1)) @>{\on{ev}|_{h_2}}>> \on{2-FM}_{\CH_2\to \CH_1}(\ul\bC_1)|_{h_2} \\ @A{\text{\eqref{e:fiber FM gen zero}}}A{\sim}A \\…
+- **Theorem** `t:Verdier FM`  
+  - Location: `gaits5.tex` lines 4528-4530
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{t:Verdier FM} The pairing \eqref{e:Verdier pairing Gamma} is of 2-Fourier-Mukai type.
+- **Corollary** `c:Verdier FM invol`  
+  - Location: `gaits5.tex` lines 4596-4603
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:Verdier FM invol} The composition $$\on{2-FM}_{\on{Ge}_{\Gamma^\vee(1)}(X)\to \on{Ge}_{\Gamma}(X)}\circ \on{2-FM}_{\on{Ge}_{\Gamma}(X)\to \on{Ge}_{\Gamma^\vee(1)}(X)}$$ is the involution of $\on{ShvCat}(\on{Ge}_{\Gamma}(X))$ coming from the inversion on $\Gamma$, $$(\Gam…
+- **Lemma** `l:sgrp`  
+  - Location: `gaits5.tex` lines 4664-4668
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:sgrp} There is a canonical equivalence $$\bGamma\left(\on{Ge}_{\Gamma_1}(X), (\ul\bC_\Gamma|_{\on{Ge}_{\Gamma_1}(X)})_{\CG_{\fG_{\Gamma_1^\vee(1)}}}\right) \simeq \bGamma\biggl(\on{Ge}_{\Gamma^\vee(1)}(X)\underset{\on{Ge}_{\Gamma_1^\vee(1)}(X)}\times \{\fG_{\Gamma_1^\vee…
+- **Lemma** `l:Hecke 0 abs`  
+  - Location: `gaits5.tex` lines 4706-4710
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:Hecke 0 abs} Under the identification \eqref{e:fib glob sect neutral}, the action of $\CO_{\on{Ge}_{\Gamma}(X),\alpha}$ on $\bC_\Gamma$ corresponds to the action of $\sP_\alpha$ on $\ul\bC_{\Gamma^\vee(1)}|_{\fG^0_{\Gamma^\vee(1)}}$.
+- **Lemma** `l:Hecke 1 abs`  
+  - Location: `gaits5.tex` lines 4733-4736
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:Hecke 1 abs} Under the identification \eqref{e:fib glob sect neutral}, the action of $\CL^{\otimes -1}_{\CP_{\Gamma^\vee(1)}}$ on $\bC_\Gamma$ corresponds to the action of $\CP_{\Gamma^\vee(1)}$ on $\ul\bC_{\Gamma^\vee(1)}|_{\fG^0_{\Gamma^\vee(1)}}$.
+- **Lemma** `l:fiber and global sects`  
+  - Location: `gaits5.tex` lines 4767-4776
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:fiber and global sects} The following diagram commutes: $$ \CD \bC_{\Gamma^\vee(1)} @>{\on{ev}|_{\fG_{\Gamma^\vee(1)}}}>> (\ul\bC_{\Gamma^\vee(1)})|_{\fG_{\Gamma^\vee(1)}} \\ @A{\text{\eqref{e:glob fib sect neutral}}}A{\sim}A @A{\sim}A{\text{\eqref{e:fib glob sect 1}}}A…
+- **Lemma** `auto0056@L4813`  
+  - Location: `gaits5.tex` lines 4813-4817
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: With respect to the equivalence $\on{2-FM}_{\on{Ge}_{\Gamma}(X)\to \on{Ge}_{\Gamma^\vee(1)}(X)}$, the objects $$\ul\QCoh^\Gamma(\Bun_T) \text{ and } \ul\QCoh^{\Gamma^\vee(1)}(\Bun_{T^\vee_1})$$ correspond to one another.
+- **Remark** `r:twisted groups`  
+  - Location: `gaits5.tex` lines 4923-4938
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{r:twisted groups} We can think $\Bun_{G,\fG_{Z_G}}$ as follows: pick a $G_{\on{ad}}$-torsor $\CP_{G_{\on{ad}}}$ that maps to $\fG_{Z_G}$, and let $$G_{\CP_{G_{\on{ad}}}}$$ be the corresponding (non-pure) inner form of the constant group-scheme with fiber $G$. \medskip Then…
+- **Theorem** `t:FM L`  
+  - Location: `gaits5.tex` lines 4976-4982
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{t:FM L} Under the identification $\pi_1(\cG)\simeq (Z_G)^\vee(1)$, we have $$\on{2-FM}_{\on{Ge}_{Z_G}(X)\to \on{Ge}_{\pi_1(\cG)}(X)}\left(\ul{\Dmod}^{Z_G}_{\frac{1}{2}}(\Bun_{G_{\on{ad}}})\right)\simeq \ul{\Dmod}^{\pi_1(\cG)}_{\frac{1}{2}}(\Bun_G),$$ up to the inversion in…
+- **Corollary** `c:FM L`  
+  - Location: `gaits5.tex` lines 4986-4990
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:FM L} Under the identification $Z_G\simeq (\pi_1(\cG)^\vee)(1)$, we have: $$\on{2-FM}_{\on{Ge}_{\pi_1(\cG)}(X)\to \on{Ge}_{Z_G}(X)}\left(\ul{\Dmod}^{\pi_1(\cG)}_{\frac{1}{2}}(\Bun_G)\right) \simeq \ul{\Dmod}^{Z_G}_{\frac{1}{2}}(\Bun_{G_{\on{ad}}}).$$
+- **Proposition** `p:key local`  
+  - Location: `gaits5.tex` lines 5096-5115
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{p:key local} There is a canonically defined action of the monoidal category $\Rep(\cG_{\on{sc}})_{\Ran,\fG^{\otimes -1}_{\pi_1(\cG)}}$ on $\Dmod_{\frac{1}{2}}(\Bun_{G_{\on{ad}}})_{\CG_{\fG_{\pi_1(\cG)}}}$. Moreover, the following properties hold: \smallskip \noindent{\em(a…
+- **Lemma** `l:L FM glob sect`  
+  - Location: `gaits5.tex` lines 5137-5153
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{l:L FM glob sect} The functor \begin{multline} \label{e:FM L glob} \bGamma\left(\on{Ge}_{\pi_1(\cG)}(X),\ul{\Dmod}^{\pi_1(\cG)}_{\frac{1}{2}}(\Bun_G)\right)\to \\ \to \bGamma\left(\on{Ge}_{\pi_1(\cG)}(X),\on{2-FM}_{\on{Ge}_{Z_G}(X)\to \on{Ge}_{\pi_1(\cG)}(X)}\left(\ul{\Dmo…
+- **Remark** `e:Gamma gr`  
+  - Location: `gaits5.tex` lines 5244-5272
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: Here is an explicit description of the spaces $\on{Ge}_\Gamma(\cD_{\ul{x}})$, $\on{Ge}_\Gamma(\cD^\times_{\ul{x}})$ and $\on{Ge}_\Gamma(\cD_{\ul{x}})_{\ul{x}}$: \medskip Write $\Gamma$ as the kernel of a homomorphism of two tori $T_0\to T_1$. Then $$\on{Ge}_\Gamma(\cD_{\ul{x}})=B…
+- **Remark** `auto0063@L5287`  
+  - Location: `gaits5.tex` lines 5287-5292
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: Although we do not need it in what follows, we remark that the pairing \eqref{e:Verdier pairing Gamma loc} is also of Fourier-Mukai type. When $\ul{x}=x$ is a singleton, this follows immediately from the identifications $$\on{Ge}_\Gamma(\cD_{\ul{x}})_{\ul{x}} \simeq \Gamma(-1) \t…
+- **Remark** `auto0064@L5334`  
+  - Location: `gaits5.tex` lines 5334-5337
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: Note that the map \eqref{e:loc Hecke to gerbes} induces a bijection on the sets of connected components when $G$ is simply-connected.
+- **Lemma** `auto0065@L5363`  
+  - Location: `gaits5.tex` lines 5363-5367
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: There exists a monoidal functor $$\Sat^{\on{nv}}_{G_{\on{ad}},\fG^{\on{loc}}_{\pi_1(\cG)}}: \Rep(\cG_{\on{sc}})_{\ul{x},\fG^{\otimes -1}_{\pi_1(\cG)}}\to \Sph(G_{\on{ad}})_{\ul{x},\CG_{\fG^{\on{loc}}_{\pi_1(\cG)}}}.$$
+- **Remark** `auto0066@L5559`  
+  - Location: `gaits5.tex` lines 5559-5600
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: We claim that $\Op^{\on{mon-free}}_{\cG,x}$ maps in fact to a twisted form of the affine Grassmannian of the group $\cG$, so that \eqref{e:mon-free opers to Ge} factors via this map\footnote{This remark is inessential for the sequel and the reader may choose to skip it.}. \medski…
+- **Corollary** `c:twisted BunG`  
+  - Location: `gaits5.tex` lines 5657-5663
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:twisted BunG} For a $Z_G$-gerbe $\fG_{Z_G}$ on $X$, we have a canonical equivalence: $$\Dmod_{\frac{1}{2}}(\Bun_{G,\fG^{-1}_{Z_G}}) \simeq \Dmod_{\frac{1}{2}}(\Bun_{G})\underset{\QCoh(\LS_\cG)}\otimes \QCoh(\LS_\cG)_{\CG_{\fG_{Z_G}}},$$ where $\QCoh(\LS_\cG)_{\CG_{\fG_{Z…
+- **Corollary** `c:twisted GLC 1`  
+  - Location: `gaits5.tex` lines 5667-5671
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:twisted GLC 1} There is a canonical equivalence: $$\Dmod_{\frac{1}{2}}(\Bun_{G,\fG^{-1}_{Z_G}}) \simeq \IndCoh_\Nilp(\LS_\cG) \underset{\QCoh(\LS_\cG)}\otimes \QCoh(\LS_\cG)_{\CG_{\fG_{Z_G}}}.$$
+- **Corollary** `c:twisted LS`  
+  - Location: `gaits5.tex` lines 5703-5707
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:twisted LS} For a $Z_\cG$-gerbe $\fG_{Z_{\cG}}$ on $X$, there is a canonical equivalence $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\CG_{\fG_{Z_{\cG}}}} \simeq \Dmod_{\frac{1}{2}}(\Bun_{G_{\on{sc}}}) \underset{\QCoh(\LS_{\cG_{\on{ad}}})}\otimes \QCoh(\LS_{\cG,\fG_{Z_{\cG}}}).$$
+- **Corollary** `c:twisted GLC 2`  
+  - Location: `gaits5.tex` lines 5711-5714
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: \label{c:twisted GLC 2} For $\fG_{Z_{\cG}}\in \on{Ge}_{Z_\cG}(X)$ there is a canonical equivalence $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\CG_{\fG_{Z_{\cG}}}} \simeq \IndCoh_\Nilp(\LS_{\cG,\fG_{Z_{\cG}}}).$$
+- **Remark** `auto0071@L5716`  
+  - Location: `gaits5.tex` lines 5716-5721
+  - Context: 2-Fourier-Mukai transform of the automorphic category
+  - Preview: We expect that equivalences parallel to Corollaries \ref{c:twisted GLC 1} and \ref{c:twisted GLC 2} also take place in the framework of Fargues-Scholze theory of \cite{FS}.
+- **Definition** `auto0072@L5864`  
+  - Location: `gaits5.tex` lines 5864-5878
+  - Context: Review of (semi-)stability for \texorpdfstring{$G$}{stb}-bundles / Definition of (semi-)stability
+  - Preview: A $G$-bundle $\CP_G$ on $X$ is \emph{semi-stable} (resp. \emph{stable}) if for every maximal (proper) parabolic subgroup $P \subsetneq G$ and every reduction $\CP_P$ of $\CP_G$ to $P$, we have \[ \langle 2\rhoch_P,\deg(\CP_P)\rangle \leq 0 \,\,\,\, \text{(resp. $< 0$)}. \] \noind…
+- **Example** `auto0073@L5883`  
+  - Location: `gaits5.tex` lines 5883-5898
+  - Context: Review of (semi-)stability for \texorpdfstring{$G$}{stb}-bundles / Definition of (semi-)stability
+  - Preview: This definition is rigged to recover the usual one for $G = GL_n$. \medskip Indeed, suppose $\CE$ has rank $n$ and $P$ is the maximal parabolic whose reductions correspond to subbundles $\CE_0 \subset \CE$ of rank $m$. Then a straightforward calculation yields \[ \langle 2\rhoch_…
+- **Proposition** `p:semistab`  
+  - Location: `gaits5.tex` lines 5906-5932
+  - Context: Review of (semi-)stability for \texorpdfstring{$G$}{stb}-bundles / A characterization of (semi-)stability
+  - Preview: \label{p:semistab} For a $G$-bundle $\CP_G$ on $X$, the following conditions are equivalent. \medskip \noindent{\em(a)} $\CP_G$ is semi-stable (resp. stable). \noindent{\em(b)} For every proper parabolic subgroup $P \subsetneq G$ (possibly not of corank 1) and every reduction $\C…

@@ -1,0 +1,326 @@
+# GLC4 claim index
+
+- Total claims: **78**
+
+## Counts by kind
+- proposition: 23
+- remark: 18
+- theorem: 16
+- corollary: 15
+- lemma: 5
+- conjecture: 1
+
+## Claims (metadata + preview)
+
+- **Remark** `e:FCD quant`  
+  - Location: `gaits4.tex` lines 859-877
+  - Context: Introduction
+  - Preview: In fact, \eqref{e:FCD} is a special case at levels ($\crit$ for $G$, $\infty$ for $\cG$) of an analogous diagram that is expected to exist in the quantum case: \begin{equation} \label{e:FCD quant} \CD \Whit^!(G)_{\kappa,\Ran} @>{\FLE_{\cG,\check\kappa}^\vee}>{\sim}> \KL(\cG)_{-\c…
+- **Proposition** `p:Gamma ff`  
+  - Location: `gaits4.tex` lines 1212-1216
+  - Context: Summary of the Langlands functor
+  - Preview: \label{p:Gamma ff} The functor $$\Gamma^{\on{spec}}_\cG:\QCoh(\LS_\cG)\to \Rep(\cG)_\Ran$$ is fully faithful.
+- **Remark** `auto0003@L1234`  
+  - Location: `gaits4.tex` lines 1234-1239
+  - Context: Summary of the Langlands functor
+  - Preview: The commutation of \eqref{e:L and coeff} is the point of departure for any of the constructions of the Langlands functor.
+- **Theorem** `t:equiv on Eis`  
+  - Location: `gaits4.tex` lines 1338-1340
+  - Context: Summary of the Langlands functor
+  - Preview: \label{t:equiv on Eis} The adjoint functors in \eqref{e:L and LL on Eis} are (mutually inverse) equivalences.
+- **Proposition** `p:LL preserves cusp`  
+  - Location: `gaits4.tex` lines 1439-1441
+  - Context: Summary of the Langlands functor
+  - Preview: \label{p:LL preserves cusp} The functor $\BL^L_G$ sends $\IndCoh_\Nilp(\LS^{\on{irred}}_\cG)$ to $\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}}$.
+- **Corollary** `e:LL cusp diagram in`  
+  - Location: `gaits4.tex` lines 1449-1458
+  - Context: Summary of the Langlands functor
+  - Preview: The following diagram commutes: \begin{equation} \label{e:LL cusp diagram in} \CD \Dmod_{\frac{1}{2}}(\Bun_G) @<{\BL^L_G}<< \IndCoh_\Nilp(\LS_\cG) \\ @A{\be}AA @AA{\jmath_*}A \\ \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}} @<{\BL^L_{G,\on{cusp}}}<< \IndCoh_\Nilp(\LS^{\on{irred}}_\cG).…
+- **Corollary** `c:reduce to cusp`  
+  - Location: `gaits4.tex` lines 1464-1466
+  - Context: Summary of the Langlands functor
+  - Preview: \label{c:reduce to cusp} The functor $\BL_G$ is an equivalence if and only if so is the functor $\BL_{G,\on{cusp}}$.
+- **Proposition** `p:Eis is red`  
+  - Location: `gaits4.tex` lines 1567-1574
+  - Context: Summary of the Langlands functor
+  - Preview: \label{p:Eis is red} With respect to the $\QCoh(\LS_\cG)$-action on $\Dmod_{\frac{1}{2}}(\Bun_G)$, the full subcategory $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\Eis}\subset \Dmod_{\frac{1}{2}}(\Bun_G)$$ is set-theoretically supported on $\LS_\cG^{\on{red}}$, i.e., \begin{equation} \label{…
+- **Corollary** `c:irrred is cusp`  
+  - Location: `gaits4.tex` lines 1582-1589
+  - Context: Summary of the Langlands functor
+  - Preview: \label{c:irrred is cusp} We have an inclusion \begin{equation} \label{e:irred is cusp} \Dmod_{\frac{1}{2}}(\Bun_G)\underset{\QCoh(\LS_\cG)}\otimes \QCoh(\LS^{\on{irred}}_\cG) \subset \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}} \end{equation} as full subcategories of $\Dmod_{\frac{1}{…
+- **Theorem** `t:cusp is irred`  
+  - Location: `gaits4.tex` lines 1593-1595
+  - Context: Summary of the Langlands functor
+  - Preview: \label{t:cusp is irred} The inclusion \eqref{e:irred is cusp} is an equality.
+- **Theorem** `t:cusp cons`  
+  - Location: `gaits4.tex` lines 1659-1661
+  - Context: Summary of the Langlands functor
+  - Preview: \label{t:cusp cons} The functor $\BL_{G,\on{cusp}}$ is conservative.
+- **Remark** `auto0012@L1663`  
+  - Location: `gaits4.tex` lines 1663-1666
+  - Context: Summary of the Langlands functor
+  - Preview: Note that in the case when $G=GL_n$, the assertion of \thmref{t:cusp cons} follows immediately from (the much more elementary) \thmref{t:coeff ff on cusp} below.
+- **Theorem** `t:L is cons`  
+  - Location: `gaits4.tex` lines 1672-1674
+  - Context: Summary of the Langlands functor
+  - Preview: \label{t:L is cons} The functor $\BL_G$ is conservative.
+- **Corollary** `c:reduce to A irred`  
+  - Location: `gaits4.tex` lines 1753-1756
+  - Context: Summary of the Langlands functor
+  - Preview: \label{c:reduce to A irred} The functor $\BL_G$ is an equivalence if and only if the map \eqref{e:unit map A} is an isomorphism in $\QCoh(\LS^{\on{irred}}_\cG)$.
+- **Theorem** `t:coeff ff on cusp`  
+  - Location: `gaits4.tex` lines 1766-1770
+  - Context: Summary of the Langlands functor
+  - Preview: \label{t:coeff ff on cusp} The restriction of the functor $\on{coeff}_G$ to the subcategory $$\Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}}\subset \Dmod_{\frac{1}{2}}(\Bun_G)$$ is fully faithful.
+- **Corollary** `c:L ff on cusp`  
+  - Location: `gaits4.tex` lines 1776-1778
+  - Context: Summary of the Langlands functor
+  - Preview: \label{c:L ff on cusp} The functor $\BL_{G,\on{cusp}}$ is fully faithful.
+- **Remark** `auto0017@L1815`  
+  - Location: `gaits4.tex` lines 1815-1819
+  - Context: Summary of the Langlands functor
+  - Preview: Note that the proof of \corref{c:L ff on cusp} shows that it is actually logically equivalent to \thmref{t:coeff ff on cusp}. Hence, once we establish GLC, we will know that \thmref{t:coeff ff on cusp} also holds for any $G$.
+- **Remark** `auto0018@L1861`  
+  - Location: `gaits4.tex` lines 1861-1867
+  - Context: Summary of the Langlands functor
+  - Preview: Alternatively, the proof of the existence of a non-zero Hecke eigensheaf for a given irreducible local system, valid for any $G$, follows by combining the \cite{BD1} construction of Hecke eigensheaves via localization at the critical level and the result of \cite{Ari}, which says…
+- **Theorem** `t:simple Kevin`  
+  - Location: `gaits4.tex` lines 2053-2058
+  - Context: Left adjoint as the dual
+  - Preview: \label{t:simple Kevin} The functors $$\be^L\circ \on{Poinc}_{G,!}\circ \Theta_{\Whit(G)} \text{ and } \be^L\circ \on{Ps-Id}^{\on{nv}} \circ \on{Poinc}_{G,*}[2\delta_{N_{\rho(\omega_X)}}],$$ $$\Whit_*(G)_\Ran\rightrightarrows \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{cusp}}$$ are canonical…
+- **Lemma** `l:Loc spec and dual`  
+  - Location: `gaits4.tex` lines 2092-2099
+  - Context: Left adjoint as the dual
+  - Preview: \label{l:Loc spec and dual} With respect to the above self-dualities of $\QCoh(\LS_\cG)$ and $\Rep(\cG)_\Ran$, the functors $$\Loc_\cG^{\on{spec}}:\Rep(\cG)_\Ran \leftrightarrow \QCoh(\LS_\cG):\Gamma^{\on{spec}}_\cG$$ identify with each other's duals: $$(\Loc_\cG^{\on{spec}})^\ve…
+- **Theorem** `t:left adj as dual`  
+  - Location: `gaits4.tex` lines 2127-2129
+  - Context: Left adjoint as the dual
+  - Preview: \label{t:left adj as dual} The functor $\Phi_{G,\on{cusp}}$ identifies canonically with $\BL^L_{G,\on{cusp}}$.
+- **Theorem** `t:right adj as dual`  
+  - Location: `gaits4.tex` lines 2258-2260
+  - Context: Right adjoint as the dual
+  - Preview: \label{t:right adj as dual} The functor $\Phi_{G,\on{cusp}}$ identifies canonically with the right adjoint of $\BL_{G,\on{cusp}}$.
+- **Theorem** `t:ambidex`  
+  - Location: `gaits4.tex` lines 2267-2269
+  - Context: Right adjoint as the dual
+  - Preview: \label{t:ambidex} The left and right adjoints of $\BL_{G,\on{cusp}}$ are isomorphic.
+- **Corollary** `c:comp self-adj`  
+  - Location: `gaits4.tex` lines 2271-2275
+  - Context: Right adjoint as the dual
+  - Preview: \label{c:comp self-adj} The endofunctor $$\BL_{G,\on{cusp}}\circ \BL^L_{G,\on{cusp}}$$ of $\QCoh(\LS^{\on{irred}}_\cG)$ is isomorphic to its own left and right adjoint.
+- **Corollary** `c:A G irred`  
+  - Location: `gaits4.tex` lines 2285-2288
+  - Context: Right adjoint as the dual
+  - Preview: \label{c:A G irred} The object $\CA_{G,\on{irred}}\in \QCoh(\LS^{\on{irred}}_\cG)$ is self-dual. In particular, it belongs to $\QCoh(\LS^{\on{irred}}_\cG)^{\on{perf}}$, i.e., it is compact.
+- **Theorem** `t:A G irred`  
+  - Location: `gaits4.tex` lines 2292-2296
+  - Context: Right adjoint as the dual
+  - Preview: \label{t:A G irred} The object $\CA_{G,\on{irred}}\in \QCoh(\LS^{\on{irred}}_\cG)$ is a classical vector bundle, which is equipped with a naturally defined flat connection\footnote{Note that \corref{c:A=B Op} and \propref{p:finite monodromy} imply that the resulting local system…
+- **Remark** `auto0027@L2298`  
+  - Location: `gaits4.tex` lines 2298-2302
+  - Context: Right adjoint as the dual
+  - Preview: Note that it makes sense to talk about classical vector bundles on $\LS^{\on{irred}}_\cG$, since, under the assumption that $\cG$ is semi-simple, the stack $\LS^{\on{irred}}_\cG$ is classical and smooth.
+- **Proposition** `p:Loc crit is Loc`  
+  - Location: `gaits4.tex` lines 2327-2329
+  - Context: Right adjoint as the dual
+  - Preview: \label{p:Loc crit is Loc} The functor $\Loc_{G,\on{cusp}}$ is Verdier quotient.
+- **Proposition** `p:Loc crit and dual`  
+  - Location: `gaits4.tex` lines 2359-2363
+  - Context: Right adjoint as the dual
+  - Preview: \label{p:Loc crit and dual} We have a canonical identification between $\Loc_{G,\on{cusp}}^\vee$ and $$\Loc_{G,\on{cusp}}^R\otimes \det(\Gamma(X,\CO_X)\otimes \fg)[\delta_G],$$ where $\delta_G=\dim(\Bun_G)$.
+- **Proposition** `p:dual of Poinc`  
+  - Location: `gaits4.tex` lines 2463-2468
+  - Context: Right adjoint as the dual
+  - Preview: \label{p:dual of Poinc} With respect to the self-dualities \eqref{e:opers self-dual} and \eqref{e:naive self-dual QCoh irred}, we have a canonical identification between the functor \emph{dual} to $\on{Poinc}^{\on{spec}}_{\cG,*,\on{irred}}$ and $$(\on{Poinc}^{\on{spec}}_{\cG,*,\o…
+- **Theorem** `auto0031@L2892`  
+  - Location: `gaits4.tex` lines 2892-2897
+  - Context: Right adjoint as the dual
+  - Preview: For any $\CF'\in \Dmod_{\frac{1}{2},\Nilp}(\Bun_G)$ and any $\CF''\in \Dmod_{\frac{1}{2}}(\Bun_G)_{\on{co}}$, there is a canonical isomorphism $$\on{C}^\cdot_c(\Bun_G,\CF'\overset{*}\otimes \Mir_{\Bun_G}(\CF''))\simeq \on{C}^\cdot(\Bun_G,\CF'\sotimes \CF'').$$
+- **Remark** `r:Nilp amb`  
+  - Location: `gaits4.tex` lines 2899-2908
+  - Context: Right adjoint as the dual
+  - Preview: \label{r:Nilp amb} The above argument can be generalized so that it proves ambidexterity for the functor induced by $\BL_G$ $$\Dmod_{\frac{1}{2},\Nilp}(\Bun_G)_{\on{cusp}}\to \IndCoh(\LS^{\on{irred,restr}}_\cG),$$ where $$\Dmod_{\frac{1}{2},\Nilp}(\Bun_G)_{\on{cusp}}:=\Dmod_{\fra…
+- **Theorem** `t:BG via Op`  
+  - Location: `gaits4.tex` lines 2980-2984
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{t:BG via Op} There exists a canonical isomorphism between $$\CB_{G,\on{irred}}\simeq \CB^{\Op}_{G,\on{irred}}$$ as plain objects of $\QCoh(\LS^{\on{irred}}_\cG)$.
+- **Remark** `auto0034@L2986`  
+  - Location: `gaits4.tex` lines 2986-2989
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: One can show that the isomorphism of \thmref{t:BG via Op} respects the co-associative coalgebra structures on the two sides. However, we will neither prove\footnote{See, however, Remark \ref{r:coalg}.} nor use this.
+- **Corollary** `c:A=B`  
+  - Location: `gaits4.tex` lines 3009-3013
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{c:A=B} There is a canonical isomorphism $$\CA_{G,\on{irred}}\simeq \CB_{G,\on{irred}}$$ as objects of $\QCoh(\LS^{\on{irred}}_\cG)$.
+- **Corollary** `c:A=B Op`  
+  - Location: `gaits4.tex` lines 3019-3023
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{c:A=B Op} There is a canonical isomorphism $$\CA_{G,\on{irred}}\simeq \CB^{\Op}_{G,\on{irred}}$$ as objects of $\QCoh(\LS^{\on{irred}}_\cG)$.
+- **Corollary** `c:BG is compact`  
+  - Location: `gaits4.tex` lines 3027-3029
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{c:BG is compact} The object $\CB^{\Op}_{G,\on{irred}}\in \QCoh(\LS^{\on{irred}}_\cG)$ is compact.
+- **Proposition** `p:finite monodromy`  
+  - Location: `gaits4.tex` lines 3047-3050
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{p:finite monodromy} The local system $\ul\CB^{\Op}_{G,\on{irred}}$ has a finite monodromy, i.e., it trivializes over a finite \'etale cover of $\LS^{\on{irred}}_\cG$.
+- **Corollary** `auto0039@L3159`  
+  - Location: `gaits4.tex` lines 3159-3162
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: The homology of the fibers of the map $\pi^{\on{irred}}_\Ran$ is acyclic off degree $0$.
+- **Corollary** `auto0040@L3166`  
+  - Location: `gaits4.tex` lines 3166-3168
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: The connected components of the fibers of the map $\pi^{\on{irred}}_\Ran$ are homologically contractible.
+- **Corollary** `c:conn of opers`  
+  - Location: `gaits4.tex` lines 3174-3189
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{c:conn of opers} The following assertions are equivalent: \smallskip \noindent{\em(i)} The functor $\BL_G$ is equivalence. \smallskip \noindent{\em(ii)} The fibers of the map $\pi^{\on{irred}}_\Ran$ are connected. \smallskip \noindent{\em(iii)} The fibers of the map $\pi^{…
+- **Conjecture** `c:oper contr`  
+  - Location: `gaits4.tex` lines 3195-3197
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{c:oper contr} The space of \emph{generic oper structures} on a given irreducible local system is homologically contractible.
+- **Remark** `auto0043@L3199`  
+  - Location: `gaits4.tex` lines 3199-3203
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: Note that the ``bottom" layer of \conjref{c:oper contr} says that the space of generic oper structures on a given irreducible local system is \emph{non-empty}. This statement is actually a theorem, thanks to \cite{Ari}.
+- **Remark** `auto0044@L3205`  
+  - Location: `gaits4.tex` lines 3205-3214
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: The assertion of \conjref{c:oper contr} is easy for $G=GL_n$. In particular, in this way we obtain another proof of GLC in this case (i.e., one that is logically different from that in \secref{ss:GLn})\footnote{The difference between the two arguments is that one uses a fully fai…
+- **Theorem** `t:GLC for class`  
+  - Location: `gaits4.tex` lines 3222-3224
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{t:GLC for class} The geometric Langlands conjecture holds when $G$ is a classical group.
+- **Remark** `auto0046@L3226`  
+  - Location: `gaits4.tex` lines 3226-3237
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: Formally speaking, the main theorem of \cite{BKS} establishes \conjref{c:oper contr} for a slightly different notion of oper, namely, for $\cg$-opers, rather than $\cG$-opers (and it is the latter that appears in \conjref{c:oper contr}). In other words, \cite{BKS} implies \conjre…
+- **Theorem** `t:up and down opers`  
+  - Location: `gaits4.tex` lines 3271-3274
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{t:up and down opers} The comonad on $\QCoh(\LS^{\on{irred}}_\cG)$ corresponding to \eqref{e:Poinc spec adj again} is given by tensor product with $\CB^{\Op}_{G,\on{irred}}$.
+- **Remark** `r:coalg`  
+  - Location: `gaits4.tex` lines 3321-3354
+  - Context: The expression for \texorpdfstring{$\CA_{G,\on{irred}}$}{AGirred} via opers
+  - Preview: \label{r:coalg} Note that \thmref{t:BG via Op} only says that $\CB_{G,\on{irred}}$ and $\CB^{\Op}_{G,\on{irred}}$ are isomorphic as objects of $\QCoh(\LS^{\on{irred}}_\cG)$, but not as co-associative co-algebras. One can upgrade the proof given above to an isomorphism of coalgebr…
+- **Proposition** `p:dr to plain`  
+  - Location: `gaits4.tex` lines 3386-3390
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:dr to plain} The natural transformation \eqref{e:dr to plain} is an isomorphism when evaluated on objects in the essential image of the functor $$\pi^!_\Ran:\Dmod(\LS_\cG)\to \Dmod(\Op^{\on{mon-free}}_\cG(X^{\on{gen}})_\Ran).$$
+- **Remark** `auto0050@L3392`  
+  - Location: `gaits4.tex` lines 3392-3395
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: For the validity of \propref{p:dr to plain}, it is essential that we work with the entire $\Ran$ and not a fixed $\ul{x}\in \Ran$.
+- **Proposition** `p:Ran emb`  
+  - Location: `gaits4.tex` lines 3412-3418
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:Ran emb} The natural transformation \eqref{e:Ran emb}, composed with the coarsening functor $$\Psi_{\LS_\cG}:\IndCoh(\LS_\cG)\to \QCoh(\LS_\cG),$$ is an isomorphism, when evaluated on objects in the essential image of the functor $$\pi^!_\Ran:\IndCoh(\LS_\cG)\to \IndCoh(…
+- **Proposition** `p:dr to plain rel`  
+  - Location: `gaits4.tex` lines 3527-3530
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:dr to plain rel} The natural transformation \eqref{e:dr to plain rel} is an isomorphism when evaluated on objects in the essential image of the functor \eqref{e:pullback to rel}.
+- **Proposition** `p:ind oblv Op`  
+  - Location: `gaits4.tex` lines 3534-3538
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:ind oblv Op} The counit of the adjunction $$\ind^{\on{rel}}\circ \oblv^{\on{rel}}\to \on{Id}$$ is an isomorphism, when evaluated on objects in the essential image of the functor \eqref{e:pullback to rel}.
+- **Proposition** `p:ind oblv YZ`  
+  - Location: `gaits4.tex` lines 3619-3624
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:ind oblv YZ} The counit of the adjunction $$\ind^{\on{rel}}\circ \oblv^{\on{rel}}\to \on{Id}$$ is an isomorphism, when evaluated on objects in the essential image of the pullback functor $$(\pi_{\Ran,\dR^{\on{rel}}})^!:\IndCoh(\on{Sect}_\nabla(X,\CY))\to \IndCoh\left(\le…
+- **Remark** `auto0055@L3672`  
+  - Location: `gaits4.tex` lines 3672-3682
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: We do not know whether $\QCoh_{\on{co}}(\CW)$ is dualizable. However, $\QCoh_{\on{co}}(\CW)$ is tautologically the pre-dual of $\on{QCoh}(\CW)$, i.e., $$\on{QCoh}(\CW)\simeq \on{Funct}(\QCoh_{\on{co}}(\CW),\Vect),$$ where $\on{Funct}(-,-)$ is the category of colimit-preserving fu…
+- **Remark** `r:QCoh* as a sheaf of cats`  
+  - Location: `gaits4.tex` lines 3772-3791
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{r:QCoh* as a sheaf of cats} The assignment $$S\rightsquigarrow \QCoh_{\on{co}}(\CW_\Ran\underset{\Ran}\times S)$$ naturally forms a sheaf of categories over $\Ran$, to be denoted $$\ul{\QCoh_{\on{co}}}(\CW)_\Ran.$$ The above definition of $\QCoh_{\on{co}}(\CW)_\Ran$ is a p…
+- **Proposition** `p:Ran emb abs abs`  
+  - Location: `gaits4.tex` lines 3927-3933
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:Ran emb abs abs} The natural transformation $$\Gamma^{\IndCoh_\Ran}(\Sectna(X^{\on{gen}},\CZ)_\Ran,-)\circ (s_{\CZ,\Ran})^*\circ (s_{\CZ,\Ran})_*\to \Gamma^{\IndCoh_\Ran}(\Sectna(X^{\on{gen}},\CZ)_\Ran,-)$$ is an isomorphism, when evaluated on the image of $\omega_{\Sect…
+- **Remark** `r:apply paradigm`  
+  - Location: `gaits4.tex` lines 4038-4044
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{r:apply paradigm} For our applications, we will take $\CZ=\Op_\cG$ and $\CY=\on{pt}/\cG$ and $\CT:=\Op^{\on{mon-free}}_\cG$. In this case $\on{Sect}_\nabla(X,\CY)=\LS_\cG$, and $\CZ_{\on{Sect}_\nabla(X,\CY)}$ is the D-scheme parameterized by $\LS_\cG$ that classifies oper…
+- **Proposition** `p:Ran emb abs rel`  
+  - Location: `gaits4.tex` lines 4056-4066
+  - Context: Proof of \thmref{t:up and down opers}
+  - Preview: \label{p:Ran emb abs rel} The natural transformation $$(\pi_\Ran)^{\IndCoh_\Ran}_*\circ (s_{\CT,\Ran})^*\circ (s_{\CT,\Ran})_*\to (\pi_\Ran)^{\IndCoh_\Ran}_*$$ is an isomorphism, when evaluated on objects that lie in the essential image of the functor \begin{multline} \label{e:Ra…
+- **Lemma** `l:str reflects`  
+  - Location: `gaits4.tex` lines 4253-4262
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{l:str reflects} The natural diagram of categories $$ \xymatrix{ \IndCoh(\CX_{\dr})_{\on{str}} \ar[r]\ar[d] & \IndCoh(\CX)_{\on{str}} \ar[d]\\ \IndCoh(\CX_{\dr}) \ar[r] & \IndCoh(\CX) } $$ is a pullback square.
+- **Proposition** `p:ind oblv untl`  
+  - Location: `gaits4.tex` lines 4301-4307
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{p:ind oblv untl} The counit of the adjunction $$\ind^{\on{rel}}\circ \oblv^{\on{rel}}\to \on{Id}$$ is an isomorphism, when evaluated on objects in the essential image along $\sft^!$ of $$\IndCoh\left(\left(\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_\Ranu\right)_{\dr^{\on{rel}}…
+- **Proposition** `p:conn autom`  
+  - Location: `gaits4.tex` lines 4367-4372
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{p:conn autom} The functor $$\oblv^{\on{rel}}_{\on{untl,str}}: \left(\IndCoh\left((\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_\Ranu)_{\dr^{\on{rel}}}\right)\right)_{\on{str}}\to \left(\IndCoh\left(\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_\Ranu\right)\right)_{\on{str}}$$ is an equ…
+- **Theorem** `t:Nick x`  
+  - Location: `gaits4.tex` lines 4444-4453
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{t:Nick x} The functor \begin{multline*} \IndCoh\left(\on{Sect}_\nabla(X-\ul{x},\CZ/\CY)_{\dr^{\on{rel}}}\right)\to \\ \to \IndCoh\left(\on{Sect}_\nabla(X-\ul{x},\CZ/\CY)\right)\underset{\IndCoh\left(\on{Sect}_\nabla(X-\ul{x},\CZ/\CY)\times \Ranu\right)}\times \IndCoh\left(…
+- **Remark** `auto0064@L4455`  
+  - Location: `gaits4.tex` lines 4455-4458
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: In fact, this theorem is a particular case of \cite[Corollary 4.6.10]{Ro}: replace the original $\CZ$ by its restriction of scalars along $X-\ul{x}\to X$.
+- **Theorem** `t:Nick fam`  
+  - Location: `gaits4.tex` lines 4502-4514
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{t:Nick fam} The functor \begin{multline} \label{e:Nick fam} \IndCoh\left((\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_\Ranu)_{\dr^{\on{rel}}}\right) \to \\ \to \IndCoh\left(\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_\Ranu\right) \underset{\IndCoh\left(\on{Sect}_\nabla(X^{\on{gen}},…
+- **Lemma** `l:cofinal`  
+  - Location: `gaits4.tex` lines 4538-4542
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{l:cofinal} The functor $$\IndCoh\left(\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)^\wedge_{\on{add}}\right)_{\on{str}}\to \IndCoh\left(\on{Sect}_\nabla(X^{\on{gen}},\CZ/\CY)_{\on{pr}_1}\right)_{\on{str}}$$ is an equivalence.
+- **Lemma** `l:cofinal initial`  
+  - Location: `gaits4.tex` lines 4586-4592
+  - Context: Proof of \propref{p:ind oblv YZ}
+  - Preview: \label{l:cofinal initial} Let $\CW\to \Ranu\times \Ranu$ be a map of categorical prestacks, which is a value-wise co-Cartesian fibration. Then then the induced map $$\CW\underset{\Ranu\times \Ranu,\Delta}\times \Ranu\to \CW$$ induces an isomorphism $$\left(\CW\underset{\Ranu\time…
+- **Proposition** `p:Ran emb unital`  
+  - Location: `gaits4.tex` lines 5007-5012
+  - Context: Proof of \propref{p:Ran emb abs abs}
+  - Preview: \label{p:Ran emb unital} The natural transformation $$\Gamma^{\IndCoh_\Ran}(\Sectna(X^{\on{gen}},\CZ)_\Ran,-)\circ (s_{\CZ,\Ran})^*\circ (s_{\CZ,\Ran})_*\to \Gamma^{\IndCoh_\Ran}(\Sectna(X^{\on{gen}},\CZ)_\Ran,-)$$ is an isomorphism, when evaluated on the essential image of the f…
+- **Proposition** `p:Ran emb unital local`  
+  - Location: `gaits4.tex` lines 5139-5149
+  - Context: Proof of \propref{p:Ran emb abs abs}
+  - Preview: \label{p:Ran emb unital local} The natural transformation \begin{multline*} \Gamma^{\IndCoh_\Ran}(\fL_\nabla(\CZ)_\Ran,-) \to \Gamma^{\IndCoh_\Ran}(\fL_\nabla(\CZ)_\Ran,-) \circ (s_{\CZ,\Ran})_* \circ (s_{\CZ,\Ran})^* \simeq \\ \simeq \Gamma^{\IndCoh_\Ran}(\Sectna(X^{\on{gen}},\C…
+- **Proposition** `p:fact hom`  
+  - Location: `gaits4.tex` lines 5357-5400
+  - Context: Proof of \propref{p:Ran emb abs abs}
+  - Preview: \label{p:fact hom} \hfill \smallskip \noindent{\em(a)} The functor $$\QCoh(\fL^+_\nabla(\CZ))_\Ran \overset{(s_{\CZ,\Ran})^*}\longrightarrow \QCoh(\Sectna(X,\CZ))\otimes \IndCoh(\Ran) \overset{\Gamma(\Sectna(X,\CZ),-)\otimes \on{Id}}\longrightarrow \IndCoh(\Ran)$$ identifies cano…
+- **Lemma** `l:inherit`  
+  - Location: `gaits4.tex` lines 5562-5571
+  - Context: Proof of \propref{p:Ran emb abs abs}
+  - Preview: \label{l:inherit} The composite functor \begin{multline*} \QCoh_{\on{co}}(\fL_\nabla(\CZ))_\Ranu\overset{\sft^!}\to \QCoh_{\on{co}}(\fL_\nabla(\CZ))_\Ran \overset{\on{ins.unit}}\longrightarrow \\ \to \QCoh_{\on{co}}(\fL_\nabla(\CZ))_{\Ran^{\subseteq},\on{big}} \overset{(p_{\fL^+_…
+- **Proposition** `p:diag cofinal`  
+  - Location: `gaits4.tex` lines 5597-5606
+  - Context: Proof of \propref{p:Ran emb abs abs}
+  - Preview: \label{p:diag cofinal} The natural transformation \begin{multline*} \Gamma^{\IndCoh}(\Ran,-)\circ \on{diag}^! \simeq \Gamma^{\IndCoh}(\Ran,-)\circ (\on{pr}_{\on{small}})_*\circ \on{diag}_* \circ \on{diag}^! \to \\ \to \Gamma^{\IndCoh}(\Ran,-)\circ (\on{pr}_{\on{small}})_*\simeq \…
+- **Proposition** `p:loc unital`  
+  - Location: `gaits4.tex` lines 5824-5832
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: \label{p:loc unital} Let $\CY$ be a D-prestack with an affine diagonal, satisfying the finiteness assumptions of \secref{sss:good D stacks} above. Then the natural transformation $$\Loc_\CY\circ (s_{\CY,\Ran})_*\simeq (\on{Id}\otimes \Gamma^{\IndCoh}(\Ran,-))\circ (s_{\CY,\Ran})^…
+- **Proposition** `p:loc unital fund`  
+  - Location: `gaits4.tex` lines 5843-5848
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: \label{p:loc unital fund} Let $\CY$ be a D-prestack with an affine diagonal, satisfying the finiteness assumptions of \secref{sss:good D stacks} above. Then the counit of the adjunction $$\Loc_\CY\circ \Loc^R_\CY \to \on{Id},$$ is an isomorphism.
+- **Corollary** `c:loc unital bis`  
+  - Location: `gaits4.tex` lines 5852-5856
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: \label{c:loc unital bis} Under the above assumptions on $\CY$, the functor $$\Loc^R_\CY:\QCoh(\on{Sect}(X,\CY))\to \QCoh(\CY)_\Ran$$ is fully faithful.
+- **Remark** `auto0076@L5873`  
+  - Location: `gaits4.tex` lines 5873-5876
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: As far as the actual proof of \propref{p:loc unital} is concerned, we will first establish \propref{p:loc unital fund}, and then deduce the general case stated in \propref{p:loc unital}.
+- **Proposition** `p:fact hom rel`  
+  - Location: `gaits4.tex` lines 6182-6186
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: \label{p:fact hom rel} The natural transformation \eqref{e:chir hom nat transf rel} is an isomorphism, when evaluated on objects lying in the essential image of the forgetful functor $$\sft^!:\QCoh(\CZ_1)_\Ranu\to \QCoh(\CZ_1)_\Ran.$$
+- **Corollary** `c:fact hom rel`  
+  - Location: `gaits4.tex` lines 6188-6191
+  - Context: Proof of \propref{p:Ran emb abs rel}
+  - Preview: \label{c:fact hom rel} The natural transformation \eqref{e:chir hom nat transf rel} is an isomorphism, when evaluated on the object $$(p_{\CZ_{1,\Ran}})^*(\omega_\Ran)\in \QCoh(\CZ_1)_\Ran.$$
