@@ -1,0 +1,35 @@
+{
+  "n_claims": 947,
+  "n_edges": 1128,
+  "avg_out_degree": 2.081180811808118,
+  "avg_in_degree": 2.1818181818181817,
+  "max_out_degree": 13,
+  "max_in_degree": 16,
+  "papers": {
+    "GLC1": {
+      "n_claims": 60,
+      "n_edges_out": 68,
+      "avg_deps_per_claim": 1.1333333333333333
+    },
+    "GLC2": {
+      "n_claims": 470,
+      "n_edges_out": 518,
+      "avg_deps_per_claim": 1.102127659574468
+    },
+    "GLC3": {
+      "n_claims": 265,
+      "n_edges_out": 365,
+      "avg_deps_per_claim": 1.3773584905660377
+    },
+    "GLC4": {
+      "n_claims": 78,
+      "n_edges_out": 92,
+      "avg_deps_per_claim": 1.1794871794871795
+    },
+    "GLC5": {
+      "n_claims": 74,
+      "n_edges_out": 85,
+      "avg_deps_per_claim": 1.1486486486486487
+    }
+  }
+}
