@@ -2,7 +2,7 @@
 
 A research repository for **LLM-assisted proof engineering** across three tightly related goals in Langlands Program:
 
-1. **Validate + formalize the Gaitsgory(-Raskin et al.) proof of the (categorical, unramified) Geometric Langlands conjecture** (GLC).
+1. **Validate + formalize the Gaitsgory(-Raskin et al.) proof of the (categorical, unramified) Geometric Langlands conjecture** (tools + atlas folders).
 2. **Transfer the proof architecture/techniques to local ℓ-adic Langlands** in the **Fargues–Scholze** setting (ℓ ≠ p) using the attached blueprint (ladicgeom.tex).
 3. **Prototype a parallel path toward p-adic local Langlands** (ℓ = p) using the attached blueprint (padicgeom.tex).
 
@@ -36,7 +36,7 @@ Ideally we would arrive at formalization (e.g. in Lean), that would validate fir
 
 ## Core sources for Goal 1 (Gaitsgory proof series)
 
-The “proof of GLC” is organized by Gaitsgory’s project page and a **five-paper series**:
+The “proof of GLC” is organized by Gaitsgory’s project page and a **five-paper series** (in tools folder):
 
 - Project page (index):  
   https://people.mpim-bonn.mpg.de/gaitsgde/GLC/
@@ -156,9 +156,9 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error blueprints/padicgeom.tex
 
 ### Milestone A — GLC proof atlas (Goal 1)
 
-* [ ] Canonical bibliography + download scripts (arXiv + MPIM PDFs)
-* [ ] Claim extraction for GLC I–V (defs/lemmas/thms)
-* [ ] Dependency DAG per paper + merged DAG across the series
+* [X] Canonical bibliography + download scripts (arXiv + MPIM PDFs) - tools
+* [X] Claim extraction for GLC I–V (defs/lemmas/thms) - atlas
+* [X] Dependency DAG per paper + merged DAG across the series - atlas
 * [ ] “Gap list”: where a lemma uses technology outside the series (and where)
 
 ### Milestone B — FS categorical geometrization blueprint → task graph (Goal 2)
