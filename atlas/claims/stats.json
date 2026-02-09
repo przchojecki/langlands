@@ -1,0 +1,66 @@
+{
+  "GLC1": {
+    "n_claims": 60,
+    "counts_by_kind": {
+      "remark": 24,
+      "proposition": 14,
+      "theorem": 12,
+      "lemma": 4,
+      "corollary": 3,
+      "conjecture": 2,
+      "question": 1
+    },
+    "tex_file": "gaits1.tex"
+  },
+  "GLC2": {
+    "n_claims": 470,
+    "counts_by_kind": {
+      "remark": 147,
+      "lemma": 129,
+      "corollary": 83,
+      "proposition": 67,
+      "theorem": 39,
+      "definition": 3,
+      "question": 2
+    },
+    "tex_file": "gaits2.tex"
+  },
+  "GLC3": {
+    "n_claims": 265,
+    "counts_by_kind": {
+      "remark": 73,
+      "corollary": 54,
+      "proposition": 48,
+      "theorem": 46,
+      "lemma": 42,
+      "conjecture": 2
+    },
+    "tex_file": "gaits3.tex"
+  },
+  "GLC4": {
+    "n_claims": 78,
+    "counts_by_kind": {
+      "proposition": 23,
+      "remark": 18,
+      "theorem": 16,
+      "corollary": 15,
+      "lemma": 5,
+      "conjecture": 1
+    },
+    "tex_file": "gaits4.tex"
+  },
+  "GLC5": {
+    "n_claims": 74,
+    "counts_by_kind": {
+      "corollary": 17,
+      "remark": 17,
+      "lemma": 15,
+      "proposition": 11,
+      "theorem": 11,
+      "conjecture": 1,
+      "definition": 1,
+      "example": 1
+    },
+    "tex_file": "gaits5.tex"
+  }
+}
